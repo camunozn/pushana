@@ -5,9 +5,30 @@
 }
 
 .container {
-  display: flex;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+}
+
+.container--section-intro {
+  display: flex;
+}
+
+.container--section-servicios {
+  display: flex;
+  gap: 5%;
+}
+
+.section-desarrollo {
+  width: 50%;
+}
+
+.section-innovacion {
+  width: 50%;
 }
 
 section {
