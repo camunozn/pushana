@@ -22,20 +22,18 @@
 }
 
 .slogan-typography-1 {
-  font-size: x-large;
+  font-size: 500%;
   font-weight: bold;
   padding: 1%;
 }
 
 .slogan-typography-2 {
-  font-size: xx-large;
+  font-size: 700%;
 }
 
 .container-section-intro {
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 200%;
   margin: 5% 0;
 }
 
