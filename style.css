@@ -24,11 +24,11 @@
 }
 
 .section-desarrollo {
-  width: 50%;
+  flex-basis: 50%;
 }
 
 .section-innovacion {
-  width: 50%;
+  flex-basis: 50%;
 }
 
 section {
