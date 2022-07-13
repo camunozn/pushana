@@ -15,6 +15,20 @@
   justify-content: space-between;
 }
 
+.container-slogan-typography {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.slogan-typography-1 {
+  font-size: x-large;
+  padding: 1%;
+}
+
+.slogan-typography-2 {
+  font-size: xx-large;
+}
+
 .container-section-intro {
   text-align: center;
   display: flex;
