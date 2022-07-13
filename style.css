@@ -17,11 +17,13 @@
 
 .container-slogan-typography {
   text-align: center;
+  text-transform: uppercase;
   margin: 5% 0;
 }
 
 .slogan-typography-1 {
   font-size: x-large;
+  font-weight: bold;
   padding: 1%;
 }
 
