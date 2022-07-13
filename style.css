@@ -12,25 +12,30 @@
 .main-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.container--section-intro {
+.container-section-intro {
+  text-align: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0;
 }
 
-.container--section-servicios {
+.container-section-servicios {
+  text-align: center;
   display: flex;
-  gap: 5%;
+  justify-content: space-between;
+  margin: 5% 0;
 }
 
 .section-desarrollo {
-  flex-basis: 50%;
+  flex: 0 0 45%;
+  padding: 1%;
 }
 
 .section-innovacion {
-  flex-basis: 50%;
-}
-
-section {
-  margin: 5% 0;
+  flex: 0 0 45%;
+  padding: 1%;
 }
