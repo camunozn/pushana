@@ -88,20 +88,23 @@ h3 {
   margin: 5% 0;
 }
 
-.container-section-servicios {
-  text-align: center;
+.row {
   display: flex;
+  width: 100%;
   justify-content: space-between;
+  gap: 1em;
   margin: 5% 0;
 }
 
 .section-desarrollo {
-  flex: 0 0 45%;
+  text-align: center;
+  flex: 1;
   padding: 1%;
 }
 
 .section-innovacion {
-  flex: 0 0 45%;
+  text-align: center;
+  flex: 1;
   padding: 1%;
 }
 
