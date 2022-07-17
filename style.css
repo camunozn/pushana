@@ -1,3 +1,13 @@
+/* COLORS
+MAIN: #551a8b
+GRAY: #343a40
+
+P1: #907FA4
+P2: #A58FAA
+P3: #EDEDD0
+P4: #A6D6D6
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +16,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  color: #343a40;
 }
 
 h2 {
@@ -39,6 +50,7 @@ p {
 }
 
 .main-header {
+  color: #551a8b;
   grid-column: 1 / -1;
   display: flex;
   align-items: center;
@@ -51,10 +63,13 @@ p {
 }
 
 .main-header-nav {
+  font-size: 18px;
   text-transform: lowercase;
 }
 
 .main-header-nav a:link {
+  color: #551a8b;
+  text-decoration: none;
   margin-right: 4px;
   display: inline-block;
 }
