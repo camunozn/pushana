@@ -1,6 +1,7 @@
 /* COLORS
-MAIN: #551a8b
+MAIN: #581c87
 GRAY: #343a40
+ACCENT:#facc15
 
 P1: #907FA4
 P2: #A58FAA
@@ -50,7 +51,7 @@ p {
 }
 
 .main-header {
-  color: #551a8b;
+  color: #581c87;
   grid-column: 1 / -1;
   display: flex;
   align-items: center;
@@ -67,8 +68,9 @@ p {
   text-transform: lowercase;
 }
 
-.main-header-nav a:link {
-  color: #551a8b;
+.main-header-nav a:link,
+.main-header-nav a:visited {
+  color: #581c87;
   text-decoration: none;
   margin-right: 4px;
   display: inline-block;
