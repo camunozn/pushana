@@ -1,6 +1,6 @@
 /* COLORS
-MAIN: #581c87
-GRAY: #343a40
+MAIN: #581c87 / #6b21a8
+GRAY: #343a40 / #495057
 ACCENT:#facc15
 
 P1: #907FA4
@@ -39,20 +39,21 @@ p {
   font-size: 20px;
   letter-spacing: -0.25px;
   line-height: 1.7;
+  margin-bottom: 16px;
 }
 
 .container {
   width: 80%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 48px;
-  row-gap: 96px;
   margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  margin: 80px 0;
 }
 
 .main-header {
   color: #581c87;
-  grid-column: 1 / -1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,35 +73,63 @@ p {
 .main-header-nav a:visited {
   color: #581c87;
   text-decoration: none;
-  margin-right: 4px;
+  margin-right: 6px;
   display: inline-block;
 }
 
 .section-intro {
-  grid-column: 1 / 2;
   text-transform: uppercase;
   letter-spacing: -4px;
-  padding-bottom: 48px;
+}
+
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 48px;
+  row-gap: 96px;
+  margin-bottom: 32px;
 }
 
 .section-desarrollo {
   grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  grid-row: 1 / 2;
 }
 
 .section-innovacion {
   grid-column: 2 / 3;
-  grid-row: 4 / 5;
+  grid-row: 2 / 3;
 }
 
 .section-comunidad {
   grid-column: 1 / 2;
-  grid-row: 5 / 6;
+  grid-row: 3 / 4;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #581c87;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #6b21a8;
+}
+
+.btn--big:link,
+.btn--big:visited {
+  font-size: 16px;
+  padding: 12px;
 }
 
 footer {
-  grid-column: 1 / -1;
   text-align: center;
+  font-size: 14px;
+  color: #495057;
 }
 
 /*
