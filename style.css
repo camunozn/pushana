@@ -1,12 +1,8 @@
 /* COLORS
-MAIN: #581c87 / #6b21a8
-GRAY: #343a40 / #495057
-ACCENT:#facc15
-
-P1: #907FA4
-P2: #A58FAA
-P3: #EDEDD0
-P4: #A6D6D6
+MAIN: #581c87 // SHADES: #693393 / #79499f // TINTS: #4f197a / #46166c
+GRAY: #343a40 // SHADES: #484e53 / #5d6166 // TINTS: #2f343a / #2a2e33
+ACCENT: #facc15 // SHADES: #fbd12c / #fbd644 // TINTS: #e1b813 / #c8a311
+OTHER: #134e4a
 */
 
 * {
@@ -82,7 +78,7 @@ p {
   letter-spacing: -4px;
 }
 
-.grid-servicios {
+.grid-services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 48px;
@@ -90,17 +86,17 @@ p {
   margin-bottom: 32px;
 }
 
-.section-desarrollo {
+.section-development {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
-.section-innovacion {
+.section-innovation {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
-.section-comunidad {
+.section-community {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
 }
@@ -109,6 +105,7 @@ p {
 .btn:visited {
   background-color: #581c87;
   color: #fff;
+  font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -117,7 +114,7 @@ p {
 
 .btn:hover,
 .btn:active {
-  background-color: #6b21a8;
+  background-color: #693393;
 }
 
 .btn--big:link,
@@ -129,7 +126,7 @@ p {
 footer {
   text-align: center;
   font-size: 14px;
-  color: #495057;
+  color: #5d6166;
 }
 
 /*
