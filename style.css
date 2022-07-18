@@ -14,6 +14,7 @@ OTHER: #134e4a
 body {
   font-family: 'Montserrat', sans-serif;
   color: #343a40;
+  border-bottom: #581c87 solid 8px;
 }
 
 h2 {
@@ -43,11 +44,6 @@ p {
   margin: 0 auto;
 }
 
-.row {
-  display: flex;
-  margin: 80px 0;
-}
-
 .main-header {
   color: #581c87;
   display: flex;
@@ -73,12 +69,24 @@ p {
   display: inline-block;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
 .section-intro {
   text-transform: uppercase;
   letter-spacing: -4px;
 }
 
-.grid-services {
+.section-intro-img {
+  height: 280px;
+  border-radius: 20px;
+}
+
+.services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 48px;
