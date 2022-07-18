@@ -14,13 +14,8 @@ OTHER: #134e4a
 body {
   font-family: 'Montserrat', sans-serif;
   color: #343a40;
+  margin-top: 6px;
   border-bottom: #581c87 solid 8px;
-}
-
-h2 {
-  /* / 62 / 74 / 86 / */
-  font-size: 74px;
-  font-weight: normal;
 }
 
 h3 {
@@ -36,7 +31,7 @@ p {
   font-size: 20px;
   letter-spacing: -0.25px;
   line-height: 1.7;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .container {
@@ -46,17 +41,16 @@ p {
 
 .row {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
-  gap: 48px;
-  margin: 128px 0;
+  gap: 64px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 48px;
-  row-gap: 96px;
+  row-gap: 128px;
   margin-bottom: 96px;
 }
 
@@ -77,34 +71,54 @@ p {
   text-transform: lowercase;
 }
 
-.main-header-nav a:link,
-.main-header-nav a:visited {
+.nav-link:link,
+.nav-link:visited {
   color: #581c87;
   text-decoration: none;
   margin-right: 6px;
   display: inline-block;
 }
 
+.nav-link:hover,
+.nav-link:active {
+  color: #4f197a;
+  text-decoration: underline 2px;
+}
+
 .section-intro {
-  flex-basis: 1fr;
+  margin: 128px 0;
 }
 
 .section-intro-typography {
+  font-size: 98px;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: -4px;
-  margin-bottom: 24px;
+  align-self: flex-end;
 }
 
 .section-intro-description {
-  line-height: 1.9;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 240px 32px 16px 32px;
+  background-image: linear-gradient(
+      rgba(70, 22, 108, 0.6),
+      rgba(42, 46, 51, 0.95)
+    ),
+    url(img/back-cover.jpg);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.25);
 }
 
-.section-intro-img {
-  height: 360px;
+/* .section-intro-img {
+  height: 350px;
   border-radius: 20px;
   display: inline-block;
-  box-shadow: 0 2rem 3rem rgb(0 0 0 / 20%);
-}
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+} */
 
 .section-development {
   grid-column: 1 / 2;
@@ -145,7 +159,6 @@ p {
 
 footer {
   color: #5d6166;
-  text-align: center;
   font-size: 14px;
   padding-bottom: 4px;
 }
