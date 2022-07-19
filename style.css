@@ -85,7 +85,7 @@ p {
 
 .section-intro {
   margin-top: 128px;
-  margin-bottom: 168px;
+  margin-bottom: 148px;
 }
 
 .section-intro-typography {
@@ -102,17 +102,17 @@ p {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.6;
   padding: 240px 32px 16px 32px;
   background-image: linear-gradient(
-      rgba(70, 22, 108, 0.65),
+      rgba(70, 22, 108, 0.6),
       rgba(42, 46, 51, 0.95)
     ),
     url(img/back-cover.jpg);
   background-size: cover;
   background-position: center center;
   border-radius: 30px;
-  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
 }
 
 .section-development {
