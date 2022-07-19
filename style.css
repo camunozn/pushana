@@ -60,12 +60,13 @@ p {
 }
 
 .main-header-title {
-  font-weight: normal;
+  font-weight: 500;
   text-transform: lowercase;
 }
 
 .main-header-nav {
   font-size: 18px;
+  font-weight: 500;
   text-transform: lowercase;
 }
 
