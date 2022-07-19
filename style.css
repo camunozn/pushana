@@ -73,12 +73,12 @@ p {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  gap: 128px;
+  gap: 96px;
 }
 
 .section-intro {
-  margin-top: 6rem;
-  margin-bottom: 7rem;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
 }
 
 .section-intro-typography {
@@ -98,10 +98,10 @@ p {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.6;
-  padding: 224px 32px 24px 32px;
+  padding: 216px 48px 24px 48px;
   background-image: linear-gradient(
-      rgba(70, 22, 108, 0.6),
-      rgba(42, 46, 51, 0.9)
+      rgba(70, 22, 108, 0.25),
+      rgba(42, 46, 51, 1)
     ),
     url(img/back-cover.jpg);
 
