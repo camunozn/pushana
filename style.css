@@ -18,6 +18,13 @@ body {
   border-bottom: #581c87 solid 8px;
 }
 
+h2 {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 12px;
+}
+
 h3 {
   font-size: 44px;
   font-weight: 700;
@@ -81,30 +88,29 @@ p {
   margin-bottom: 6rem;
 }
 
-.section-intro-typography {
-  order: 2;
-  flex-grow: 1;
-  font-size: 98px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: -6px;
-  align-self: center;
+.section-intro-intro {
+  order: 1;
+  padding: 16px 0;
 }
 
-.section-intro-description {
-  order: 1;
-  flex-basis: 45rem;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.6;
-  padding: 216px 48px 24px 48px;
+.section-intro-title {
+  flex: 1;
+  align-self: center;
+  margin-bottom: 32px;
+}
+
+.section-intro-p2 {
+  padding: 0;
+}
+
+.section-intro-img {
+  order: 2;
+  flex: 0 0 50%;
   background-image: linear-gradient(
-      rgba(70, 22, 108, 0.25),
-      rgba(42, 46, 51, 1)
+      rgba(70, 22, 108, 0.4),
+      rgba(70, 22, 108, 0.1)
     ),
     url(img/back-cover.jpg);
-
   background-size: cover;
   background-position: center center;
   border-radius: 12px;
