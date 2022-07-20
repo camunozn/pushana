@@ -19,21 +19,21 @@ body {
 }
 
 h2 {
-  font-size: 52px;
+  font-size: 44px;
   font-weight: 700;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
   margin-bottom: 12px;
 }
 
 h3 {
-  font-size: 44px;
+  font-size: 36px;
   font-weight: 700;
   letter-spacing: -2px;
   margin-bottom: 12px;
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: -0.25px;
   line-height: 1.7;
   padding-bottom: 24px;
@@ -80,15 +80,15 @@ p {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  gap: 96px;
   margin: 5rem 0;
 }
 
 .intro-text {
   order: 1;
   flex: 1;
-  font-weight: 500;
-  padding: 16px 0;
+  padding: 32px;
+  border-radius: 16px 0 0 16px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .intro-text-title {
@@ -110,31 +110,43 @@ p {
     url(img/back-cover.jpg);
   background-size: cover;
   background-position: center center;
-  border-radius: 12px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 0 16px 16px 0;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-services-title {
+  margin-bottom: 98px;
 }
 
 .grid-2-col {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 48px;
   row-gap: 96px;
   margin-bottom: 96px;
 }
 
-.section-development {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.section-innovation {
+.section-services-development {
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
+  padding: 32px;
+  border-radius: 0 16px 16px 0;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.section-community {
+.section-services-innovation {
   grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  padding: 32px;
+  border-radius: 16px 0 0 16px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-services-community {
+  grid-column: 2 / 3;
   grid-row: 3 / 4;
+  padding: 32px;
+  border-radius: 0 16px 16px 0;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn:link,
