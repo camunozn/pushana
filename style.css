@@ -62,16 +62,16 @@ p {
   text-transform: lowercase;
 }
 
-.nav-link:link,
-.nav-link:visited {
+.main-header-nav > a:link,
+.main-header-nav > a:visited {
   color: #581c87;
   text-decoration: none;
   margin-right: 6px;
   display: inline-block;
 }
 
-.nav-link:hover,
-.nav-link:active {
+.main-header-nav > a:hover,
+.main-header-nav > a:active {
   color: #4f197a;
   text-decoration: underline 2px;
 }
