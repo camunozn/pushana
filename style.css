@@ -155,7 +155,7 @@ p {
   display: inline-block;
   border-radius: 24px;
   margin-top: 24px;
-  margin-right: 16px;
+  margin-right: 12px;
 }
 
 .btn:hover,
@@ -169,13 +169,13 @@ p {
   padding: 16px 32px;
 }
 
-.btn--alt:link,
-.btn--alt:visited {
+.btn--gray:link,
+.btn--gray:visited {
   background-color: #343a40;
 }
 
-.btn--alt:hover,
-.btn--alt:active {
+.btn--gray:hover,
+.btn--gray:active {
   background-color: #484e53;
 }
 
