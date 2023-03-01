@@ -37,6 +37,13 @@ Medium: 11px
 
 :root {
   --color-primary: #21033a;
+  --color-accents-one: #1b93c2;
+  --color-accents-two: #c91668;
+  --color-tints-lighter: #1e0334;
+  --color-tints-darker: #170229;
+  --color-shades-lighter: #e1d9e8;
+  --color-shades-darker: #572981;
+  --color-white: #fff;
   --linear-gradient-bg: linear-gradient(
     to bottom right,
     #170229,
@@ -59,11 +66,11 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Blinker", sans-serif;
   line-height: 1;
   font-weight: 400;
   background-image: var(--linear-gradient-bg);
-  color: #555;
+  color: var(--color-white);
   overflow-x: hidden;
 }
 
