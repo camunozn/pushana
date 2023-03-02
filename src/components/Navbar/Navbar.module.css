@@ -17,6 +17,7 @@
 }
 
 .navbar-brand__name {
+  font-family: "Blinker", sans-serif;
   display: inline-block;
   font-size: 3.2rem;
 }
