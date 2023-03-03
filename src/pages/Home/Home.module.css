@@ -1,46 +1,162 @@
 .home {
+  max-width: 144rem;
   width: 100%;
-  margin: 4.8rem 0;
+  margin: 4.8rem auto;
 }
 
 .section-hero {
   width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 3.2rem;
   padding: 0 8rem;
 }
 
-.hero-heading {
-  width: 55%;
+.hero-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.hero-heading__text {
-  font-size: 8.6rem;
+.hero-main__heading {
+  width: 60%;
+}
+
+.hero-main__heading__text {
+  font-size: 8.4rem;
   font-weight: 400;
   letter-spacing: -0.75px;
   line-height: 1.05; /* Small */
-  margin-bottom: 5.6rem;
+  margin-bottom: 4.8rem;
 }
 
-.hero-heading__text span {
+.hero-main__heading__text span {
   color: var(--color-accent-primary);
   margin-left: 2rem;
 }
 
-.hero-heading__buttons {
+.hero-buttons {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 3.2rem;
 }
 
-.hero-img {
-  width: 45%;
-  text-align: center;
+.hero-main__img {
+  width: 40%;
 }
 
-.hero-img img {
-  max-width: 100%;
+.hero-main__img img {
+  height: 42rem;
+}
+
+/**************************/
+/* BELOW 1232px (Small desktop) */
+/**************************/
+@media (max-width: 77em) {
+  .hero-main__heading__text {
+    font-size: 7.4rem;
+  }
+
+  .hero-main__img img {
+    height: 36rem;
+  }
+}
+
+/**************************/
+/* BELOW 1088px (Landscape tablets) */
+/**************************/
+@media (max-width: 68em) {
+  .hero-main__heading__text {
+    font-size: 6.2rem;
+  }
+
+  .hero-main__img img {
+    height: 31rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Portrait tablets) */
+/**************************/
+@media (max-width: 59em) {
+  .section-hero {
+    padding: 0 9.6rem;
+  }
+
+  .hero-main__heading__text {
+    font-size: 5.2rem;
+  }
+
+  .hero-main__img img {
+    height: 28rem;
+  }
+
+  .hero-main__heading {
+    width: 55%;
+  }
+
+  .hero-main__img {
+    width: 45%;
+    text-align: center;
+  }
+}
+
+/**************************/
+/* BELOW 768px (Portrait small tablets) */
+/**************************/
+@media (max-width: 48em) {
+  .hero-main__heading {
+    width: 50%;
+  }
+
+  .hero-main__img {
+    width: 50%;
+  }
+
+  .hero-main__heading__text {
+    font-size: 4.4rem;
+  }
+
+  .hero-main__img img {
+    height: 22rem;
+  }
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+@media (max-width: 37em) {
+  .section-hero {
+    padding: 0 6.4rem;
+  }
+
+  .hero-main {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3.2rem;
+  }
+
+  .hero-main__heading {
+    max-width: 33rem;
+    width: 100%;
+  }
+
+  .hero-main__heading__text {
+    font-size: 3.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .hero-main__img {
+    width: 100%;
+  }
+
+  .hero-main__heading__text span {
+    margin-left: 1rem;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+  }
 }
