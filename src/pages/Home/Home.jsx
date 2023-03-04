@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { TypeAnimation } from 'react-type-animation';
 import { setIsSticky } from '../../store/slices/isSticky.slice';
-import styles from './Home.module.css';
 import heroImgArr from '../../assets/images/index';
+import styles from './Home.module.css';
 
 const Home = () => {
   const [heroImg, setHeroImg] = useState(heroImgArr[0]);
@@ -44,6 +44,8 @@ const Home = () => {
                   'efectiva',
                   1000,
                   'eficiente',
+                  1000,
+                  'clara',
                   1000,
                   'accesible',
                   1000,
