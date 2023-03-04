@@ -7,10 +7,14 @@ import heroImgArr from '../../assets/images/index';
 
 const Home = () => {
   const [heroImg, setHeroImg] = useState(heroImgArr[0]);
-
   const isSticky = useSelector(state => state.isSticky);
+
   const heroRef = useRef();
   const dispatch = useDispatch();
+
+  const generateRandom = (min, max) => {
+    return Math.round(Math.random() * (max - min) + min);
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -21,16 +25,9 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    let i = 0;
-    setInterval(() => {
-      if (i < heroImgArr.length - 1) {
-        i = i + 1;
-        setHeroImg(heroImgArr[i]);
-      } else {
-        i = 0;
-        setHeroImg(heroImgArr[i]);
-      }
-    }, 1800);
+    const maxIndex = heroImgArr.length - 1;
+    const minIndex = 0;
+    setHeroImg(heroImgArr[generateRandom(minIndex, maxIndex)]);
   }, []);
 
   return (
