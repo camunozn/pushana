@@ -1,13 +1,42 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { TypeAnimation } from 'react-type-animation';
+import { setIsSticky } from '../../store/slices/isSticky.slice';
 import styles from './Home.module.css';
-import heroImg from '../../assets/images/hero-img-easy.png';
+import heroImgArr from '../../assets/images/index';
 
 const Home = () => {
+  const [heroImg, setHeroImg] = useState(heroImgArr[0]);
+
+  const isSticky = useSelector(state => state.isSticky);
+  const heroRef = useRef();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      const entry = entries[0];
+      dispatch(setIsSticky(!entry.isIntersecting));
+    });
+    observer.observe(heroRef.current);
+  }, []);
+
+  useEffect(() => {
+    let i = 0;
+    setInterval(() => {
+      if (i < heroImgArr.length - 1) {
+        i = i + 1;
+        setHeroImg(heroImgArr[i]);
+      } else {
+        i = 0;
+        setHeroImg(heroImgArr[i]);
+      }
+    }, 1800);
+  }, []);
+
   return (
     <div className={styles.home}>
-      <div className={styles['section-hero']}>
-        <div className={styles['hero-main']}>
+      <div className={`${styles['section-hero']} ${isSticky && styles.sticky}`}>
+        <div ref={heroRef} className={styles['hero-main']}>
           <div className={styles['hero-main__heading']}>
             <h1 className={styles['hero-main__heading__text']}>
               Gestión de proyectos de construcción hecha
@@ -28,18 +57,21 @@ const Home = () => {
               />
             </h1>
           </div>
-          <div className={styles['hero-main__img']}>
+          <div className={`${styles['hero-main__img']}`}>
             <img src={heroImg} alt="Hero image" />
           </div>
         </div>
         <div className={styles['hero-buttons']}>
           <a className="btn btn__primary" href="">
-            Descubre más
+            Registro anticipado
           </a>
           <a className="btn btn__secondary" href="">
-            Contáctanos
+            Descubre más
           </a>
         </div>
+      </div>
+      <div className={styles['section-details']}>
+        <h1>SECTION</h1>
       </div>
     </div>
   );

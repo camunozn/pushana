@@ -53,6 +53,7 @@ Medium: 11px
   --color-tints-darker: #170229;
   --color-shades-lighter: #e1d9e8;
   --color-shades-darker: #572981;
+  --color-grays-lighter: #ebe0ea;
   --color-white: #fff;
   --linear-gradient-bg: linear-gradient(
     to bottom right,
@@ -61,7 +62,14 @@ Medium: 11px
     #1e0334,
     #21033a
   );
-  --linear-gradient-btn: linear-gradient(to right, #572981, #c91668);
+  --linear-gradient-nav: linear-gradient(
+    to bottom right,
+    rgba(23, 2, 41, 0.97),
+    rgba(26, 2, 46, 0.97),
+    rgba(30, 3, 52, 0.97),
+    rgba(33, 3, 58, 0.97)
+  );
+  --linear-gradient-btn: linear-gradient(to right, #c91668, #572981);
 }
 
 * {
@@ -81,6 +89,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: var(--color-white);
+  background-image: var(--linear-gradient-bg);
   overflow-x: hidden;
 }
 
@@ -88,20 +97,29 @@ body {
   min-width: 40em;
   width: 100%;
   height: 100%;
-  background-image: var(--linear-gradient-bg);
-  padding-bottom: 6.4rem;
 }
 
 /*****************************/
 /* GENERAL COMPONENTS*/
 /*****************************/
+a:link,
+a:visited {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-.btn {
+a:hover,
+a:active {
+  color: var(--color-accent-primary);
+}
+
+.btn:link,
+.btn:visited {
   min-width: 18rem;
   text-align: center;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 0.5px;
   text-decoration: none;
   color: var(--color-white);
   border-radius: 11px;
@@ -117,6 +135,11 @@ body {
   border: solid 1px var(--color-shades-darker);
 }
 
+.btn:hover,
+.btn:active {
+  color: var(--color-white);
+}
+
 /*****************************/
 /* QUERIES*/
 /*****************************/
@@ -127,6 +150,10 @@ body {
 @media (max-width: 59em) {
   html {
     font-size: 56.25%;
+  }
+
+  .App {
+    position: relative;
   }
 }
 

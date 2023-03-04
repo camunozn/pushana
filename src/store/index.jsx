@@ -1,5 +1,8 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
+import isStickySlice from './slices/isSticky.slice';
 
 export default configureStore({
-  reducer: {},
+  reducer: {
+    isSticky: isStickySlice,
+  },
 });
