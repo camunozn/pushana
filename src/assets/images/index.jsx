@@ -1,8 +1,19 @@
-import img1 from './heroImages/hero-img-easy.png';
-import img2 from './heroImages/hero-img-effective.png';
-import img3 from './heroImages/hero-img-efficient.png';
-import img4 from './heroImages/hero-img-accesible.png';
-import img5 from './heroImages/hero-img-transparent.png';
-import img6 from './heroImages/hero-img-clear.png';
+import homeImg0 from './homeImages/home-img-construction.png';
+import homeImg1 from './homeImages/home-img-easy.png';
+import homeImg2 from './homeImages/home-img-effective.png';
+import homeImg3 from './homeImages/home-img-efficient.png';
+import homeImg4 from './homeImages/home-img-accesible.png';
+import homeImg5 from './homeImages/home-img-transparent.png';
+import homeImg6 from './homeImages/home-img-clear.png';
 
-export default [img1, img2, img3, img4, img5, img6];
+const homeImgArr = [
+  homeImg0,
+  homeImg1,
+  homeImg2,
+  homeImg3,
+  homeImg4,
+  homeImg5,
+  homeImg6,
+];
+
+export default homeImgArr;

@@ -2,19 +2,14 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { TypeAnimation } from 'react-type-animation';
 import { setIsSticky } from '../../store/slices/isSticky.slice';
-import heroImgArr from '../../assets/images/index';
+import homeImgArr from '../../assets/images/index';
 import styles from './Home.module.css';
+import Card from '../../components/UI/Card';
 
 const Home = () => {
-  const [heroImg, setHeroImg] = useState(heroImgArr[0]);
   const isSticky = useSelector(state => state.isSticky);
-
-  const heroRef = useRef();
   const dispatch = useDispatch();
-
-  const generateRandom = (min, max) => {
-    return Math.round(Math.random() * (max - min) + min);
-  };
+  const heroRef = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -22,12 +17,6 @@ const Home = () => {
       dispatch(setIsSticky(!entry.isIntersecting));
     });
     observer.observe(heroRef.current);
-  }, []);
-
-  useEffect(() => {
-    const maxIndex = heroImgArr.length - 1;
-    const minIndex = 0;
-    setHeroImg(heroImgArr[generateRandom(minIndex, maxIndex)]);
   }, []);
 
   return (
@@ -57,20 +46,30 @@ const Home = () => {
             </h1>
           </div>
           <div className={`${styles['hero-main__img']}`}>
-            <img src={heroImg} alt="Hero image" />
+            <img src={homeImgArr[0]} alt="Hero image" />
           </div>
         </div>
         <div className={styles['hero-buttons']}>
-          <a className="btn btn__primary" href="">
+          <a className="btn btn__primary" href="/">
             Registro anticipado
           </a>
-          <a className="btn btn__secondary" href="">
+          <a className="btn btn__secondary" href="/">
             Descubre más
           </a>
         </div>
       </div>
-      <div className={styles['section-details']}>
-        <h1>SECTION</h1>
+      <div className={styles['section-intro']}>
+        <h2 className={styles['intro-heading']}>
+          Pushana es una empresa emergente que busca cambiar la forma de
+          planificar y controlar los proyectos de construcción en el país.
+        </h2>
+      </div>
+      <div className={styles['section-features']}>
+        <div className={styles['features-container']}>
+          <Card image={homeImgArr[3]} title="Pushana CPM" accent="primary" />
+          <Card image={homeImgArr[4]} title="Comunidad" accent="secondary" />
+          <Card image={homeImgArr[5]} title="Blog" accent="primary" />
+        </div>
       </div>
     </div>
   );
