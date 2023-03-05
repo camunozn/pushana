@@ -11,6 +11,19 @@ const Home = () => {
   const dispatch = useDispatch();
   const heroRef = useRef();
 
+  const wordSequenceArray = [
+    'fácil',
+    1000,
+    'efectiva',
+    1000,
+    'eficiente',
+    1000,
+    'clara',
+    1000,
+    'accesible',
+    1000,
+  ];
+
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       const entry = entries[0];
@@ -27,18 +40,7 @@ const Home = () => {
             <h1 className={styles['hero-main__heading__text']}>
               Gestión de proyectos de construcción hecha
               <TypeAnimation
-                sequence={[
-                  'fácil',
-                  1000,
-                  'efectiva',
-                  1000,
-                  'eficiente',
-                  1000,
-                  'clara',
-                  1000,
-                  'accesible',
-                  1000,
-                ]}
+                sequence={wordSequenceArray}
                 speed={50} // Custom Speed from 1-99 - Default Speed: 40
                 wrapper="span" // Animation will be rendered as a <span>
                 repeat={Infinity} // Repeat this Animation Sequence infinitely
