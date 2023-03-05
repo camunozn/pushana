@@ -66,8 +66,8 @@ const Home = () => {
         <p className={styles['intro-text']}>
           Nuestra aplicación está diseñada para facilitar la planificación y el
           control de proyectos de construcción, haciendo estos procesos
-          eficientes, efectivos y accesibles para todos, especialmente para
-          pequeños y medianos constructores.
+          eficientes, efectivos, claros y accesibles para todos, especialmente
+          pensada para pequeños y medianos constructores.
         </p>
       </div>
       <div className={styles['section-features']}>
