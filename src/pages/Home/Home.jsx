@@ -63,10 +63,16 @@ const Home = () => {
           Pushana es una empresa emergente que busca cambiar la forma de
           planificar y controlar los proyectos de construcción en el país.
         </h2>
+        <p className={styles['intro-text']}>
+          Nuestra aplicación está diseñada para facilitar la planificación y el
+          control de proyectos de construcción, haciendo estos procesos
+          eficientes, efectivos y accesibles para todos, especialmente para
+          pequeños y medianos constructores.
+        </p>
       </div>
       <div className={styles['section-features']}>
         <div className={styles['features-container']}>
-          <Card image={homeImgArr[3]} title="Pushana CPM" accent="primary" />
+          <Card image={homeImgArr[3]} title="Pushana App" accent="primary" />
           <Card image={homeImgArr[4]} title="Comunidad" accent="secondary" />
           <Card image={homeImgArr[5]} title="Blog" accent="primary" />
         </div>
