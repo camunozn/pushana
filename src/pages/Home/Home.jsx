@@ -14,13 +14,13 @@ const Home = () => {
   const wordSequenceArray = [
     'fácil',
     1000,
-    'efectiva',
-    1000,
     'eficiente',
     1000,
     'clara',
     1000,
     'accesible',
+    1000,
+    'efectiva',
     1000,
   ];
 
