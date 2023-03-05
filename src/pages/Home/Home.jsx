@@ -67,10 +67,19 @@ const Home = () => {
           Nuestra aplicación está diseñada para facilitar la planificación y el
           control de proyectos de construcción, haciendo estos procesos
           eficientes, claros y accesibles para todos. Especialmente pensada para
-          pequeños y medianos constructores.
+          potenciar a pequeños y medianos constructores.
         </p>
+        <div className={styles['intro-div']}>
+          <span></span>
+        </div>
       </div>
       <div className={styles['section-features']}>
+        <h3></h3>
+        <h2 className={styles['features-heading']}>Explora ahora</h2>
+        <p className={styles['features-text']}>
+          Conoce nuestra app, apóyate en nuestra comunidad o aprende algo nuevo
+          con nuestro blog.
+        </p>
         <div className={styles['features-container']}>
           <Card image={homeImgArr[3]} title="Pushana App" accent="primary" />
           <Card image={homeImgArr[4]} title="Comunidad" accent="secondary" />

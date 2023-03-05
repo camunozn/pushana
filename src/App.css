@@ -56,7 +56,10 @@ Medium: 11px
   --color-shades-normal: #976ea5;
   --color-shades-darker: #572981;
   --color-grays-lighter: #ebe0ea;
+  --color-grays-darker: #333;
   --color-white: #fff;
+  --color-bg-lighter: #1c1f2a;
+  --color-bg-darker: #161622;
   --linear-gradient-bg: linear-gradient(
     to bottom right,
     #170229,
@@ -192,7 +195,6 @@ a:active {
 /*****************************/
 /* QUERIES*/
 /*****************************/
-
 /**************************/
 /* BELOW 960px (Portrait tablets) */
 /**************************/

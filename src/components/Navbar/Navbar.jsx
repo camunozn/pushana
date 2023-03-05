@@ -25,7 +25,7 @@ const Navbar = () => {
         <ul className={`${styles['navbar-list']} ${showNav && styles.visible}`}>
           <li className={styles['navbar-list__item']}>
             <a className={styles['navbar-link']} href="#">
-              Productos
+              Aplicación
             </a>
           </li>
           <li className={styles['navbar-list__item']}>
