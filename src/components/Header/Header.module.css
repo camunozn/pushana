@@ -1,0 +1,66 @@
+.header {
+  width: 100%;
+  height: 8rem;
+  border-bottom: solid 1px var(--color-shades-darker);
+}
+
+/* STICKY NAV */
+.header.sticky {
+  background-image: var(--linear-gradient-nav);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.container {
+  max-width: 140rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin: 0 auto;
+}
+
+.brand {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.brand:hover,
+.brand:active {
+  color: var(--color-shades-lighter);
+}
+
+.brand-logo {
+  display: inline-block;
+  height: 8rem;
+}
+
+.brand-name {
+  font-family: 'Blinker', sans-serif;
+  display: inline-block;
+  font-size: 3.2rem;
+}
+
+/* MOBILE */
+.btn-mobile {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 3rem;
+  color: var(--color-white);
+  cursor: pointer;
+  margin-right: 2.4rem;
+}
+
+/**************************/
+/* BELOW 944px (Portrait tablets) */
+/**************************/
+@media (max-width: 59em) {
+  .btn-mobile {
+    display: block;
+    z-index: 1000;
+  }
+}

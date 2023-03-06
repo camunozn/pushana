@@ -33,7 +33,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={styles.home}>
+    <main className={styles.home}>
       <div className={`${styles['section-hero']} ${isSticky && styles.sticky}`}>
         <div ref={heroRef} className={styles['hero-main']}>
           <div className={styles['hero-main__heading']}>
@@ -88,7 +88,7 @@ const Home = () => {
           <Card image={homeImgArr[5]} title="Blog" accent="primary" />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
