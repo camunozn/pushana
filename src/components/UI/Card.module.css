@@ -65,4 +65,7 @@
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
+  .card-title {
+    font-size: 3.6rem;
+  }
 }

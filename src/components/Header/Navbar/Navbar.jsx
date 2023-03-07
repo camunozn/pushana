@@ -5,32 +5,32 @@ const Navbar = props => {
   return (
     <div className={styles.navbar}>
       <ul
-        className={`${styles['navbar-list']} ${
+        className={`${styles['navbar__list']} ${
           props.showNav && styles.visible
         }`}
       >
-        <li className={styles['navbar-list__item']}>
-          <a className={styles['navbar-link']} href="#">
+        <li>
+          <a className={styles['navbar__link']} href="#">
             Productos
           </a>
         </li>
-        <li className={styles['navbar-list__item']}>
-          <a className={styles['navbar-link']} href="#">
+        <li>
+          <a className={styles['navbar__link']} href="#">
             Comunidad
           </a>
         </li>
-        <li className={styles['navbar-list__item']}>
-          <a className={styles['navbar-link']} href="#">
+        <li>
+          <a className={styles['navbar__link']} href="#">
             Blog
           </a>
         </li>
-        <li className={styles['navbar-list__item']}>
-          <a className={styles['navbar-link']} href="#">
+        <li>
+          <a className={styles['navbar__link']} href="#">
             Nosotros
           </a>
         </li>
-        <li className={styles['navbar-list__item']}>
-          <a className={`btn btn__primary ${styles['navbar-cta']}`} href="#">
+        <li>
+          <a className={`btn btn--primary ${styles['navbar__cta']}`} href="#">
             Registro anticipado
           </a>
         </li>

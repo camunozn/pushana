@@ -2,20 +2,20 @@
   margin: 0 2.4rem;
 }
 
-.navbar-list {
+.navbar__list {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 4.8rem;
 }
 
-.navbar-link:link,
-.navbar-link:visited {
+.navbar__link:link,
+.navbar__link:visited {
   display: inline-block;
 }
 
-.navbar-cta:link,
-.navbar-cta:visited {
+.navbar__cta:link,
+.navbar__cta:visited {
   padding: 1.2rem 2.4rem;
 }
 
@@ -23,7 +23,7 @@
 /* BELOW 1088px (Landscape tablets) */
 /**************************/
 @media (max-width: 68em) {
-  .navbar-list {
+  .navbar__list {
     gap: 3.2rem;
   }
 }
@@ -32,7 +32,7 @@
 /* BELOW 944px (Portrait tablets) */
 /**************************/
 @media (max-width: 59em) {
-  .navbar-list {
+  .navbar__list {
     position: absolute;
     top: 0;
     left: 0;
@@ -53,7 +53,7 @@
     visibility: hidden;
   }
 
-  .navbar-list.visible {
+  .navbar__list.visible {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -61,13 +61,13 @@
     z-index: 100;
   }
 
-  .navbar-link:link,
-  .navbar-link:visited {
+  .navbar__link:link,
+  .navbar__link:visited {
     font-size: 3rem;
   }
 
-  .navbar-cta:link,
-  .navbar-cta:visited {
+  .navbar__cta:link,
+  .navbar__cta:visited {
     font-size: 2.4rem;
     padding: 1.4rem 2.4rem;
   }

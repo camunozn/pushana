@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Navbar from './Navbar/Navbar';
 import styles from './Header.module.css';
-import logoImg from '../../assets/logo/logo-purple-transparent-bg.png';
+import logoImg from '../../assets/logo/logo-transparent-bg.png';
 
 const Header = () => {
-  const [showNav, setShowNav] = useState(false);
   const isSticky = useSelector(state => state.isSticky);
+  const [showNav, setShowNav] = useState(false);
 
   const toggleShowNav = () => {
     setShowNav(!showNav);
@@ -14,17 +14,17 @@ const Header = () => {
 
   return (
     <header className={`${styles.header} ${isSticky && styles.sticky}`}>
-      <div className={styles.container}>
-        <a className={styles['brand']} href="/">
+      <div className={styles['header__container']}>
+        <a className={styles['header__logo-box']} href="/">
           <img
-            className={styles['brand-logo']}
+            className={styles['header__logo-img']}
             src={logoImg}
             alt="Pushana logo"
           />
-          <span className={styles['brand-name']}>Pushana</span>
+          <span className={styles['header__logo-text']}>Pushana</span>
         </a>
         <Navbar showNav={showNav} />
-        <button className={styles['btn-mobile']} onClick={toggleShowNav}>
+        <button className={styles['btn--mobile']} onClick={toggleShowNav}>
           <i className={`fa-solid fa-${showNav ? 'xmark' : 'bars'}`}></i>
         </button>
       </div>

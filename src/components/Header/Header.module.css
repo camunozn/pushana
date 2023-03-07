@@ -13,7 +13,7 @@
   z-index: 10;
 }
 
-.container {
+.header__container {
   max-width: 140rem;
   display: flex;
   align-items: center;
@@ -22,30 +22,30 @@
   margin: 0 auto;
 }
 
-.brand {
+.header__logo-box {
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
-.brand:hover,
-.brand:active {
+.header__logo-box:hover,
+.header__logo-box:active {
   color: var(--color-shades-lighter);
 }
 
-.brand-logo {
+.header__logo-img {
   display: inline-block;
   height: 8rem;
 }
 
-.brand-name {
+.header__logo-text {
   font-family: 'Blinker', sans-serif;
   display: inline-block;
   font-size: 3.2rem;
 }
 
 /* MOBILE */
-.btn-mobile {
+.btn--mobile {
   display: none;
   border: none;
   background: none;
@@ -59,7 +59,7 @@
 /* BELOW 944px (Portrait tablets) */
 /**************************/
 @media (max-width: 59em) {
-  .btn-mobile {
+  .btn--mobile {
     display: block;
     z-index: 1000;
   }

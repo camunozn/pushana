@@ -87,7 +87,9 @@ Medium: 11px
     linear-gradient(to right, #c91668, #572981);
 }
 
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -180,16 +182,33 @@ a:active {
   opacity: 0;
 }
 
-.btn__primary {
+.btn--primary {
   background-image: var(--linear-gradient-btn-primary);
 }
 
-.btn__primary::after {
+.btn--primary::after {
   background-image: var(--linear-gradient-btn-primary);
 }
 
-.btn__secondary {
+.btn--secondary {
   border: solid 1px var(--color-shades-darker);
+}
+
+.subheading {
+  font-family: 'Blinker', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: var(--color-shades-lighter);
+  margin-bottom: 2.4rem;
+}
+
+.paragraph {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  color: var(--color-grays-lighter);
 }
 
 /*****************************/
@@ -205,6 +224,11 @@ a:active {
 
   .App {
     position: relative;
+  }
+
+  .subheading,
+  .paragraph {
+    font-size: 2.4rem;
   }
 }
 
