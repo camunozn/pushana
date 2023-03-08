@@ -9,7 +9,7 @@ const Explore = () => {
       <div className={styles['explore__title-box']}>
         <h2 className="subheading">Explora ahora</h2>
         <p className="paragraph">
-          Conoce nuestra app, apóyate en nuestra comunidad o aprende algo nuevo
+          Conoce nuestra app, apóyate en nuestra comunidad o descubre algo nuevo
           con nuestro blog.
         </p>
       </div>
