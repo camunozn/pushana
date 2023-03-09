@@ -5,7 +5,7 @@ import styles from './Explore.module.css';
 
 const Explore = () => {
   return (
-    <section className={styles.explore}>
+    <section id="section-explore" className={styles.explore}>
       <div className={styles['explore__title-box']}>
         <h2 className="subheading">Explora ahora</h2>
         <p className="paragraph">

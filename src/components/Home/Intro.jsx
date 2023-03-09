@@ -3,7 +3,7 @@ import styles from './Intro.module.css';
 
 const Intro = () => {
   return (
-    <section className={styles['intro']}>
+    <section id="section-intro" className={styles['intro']}>
       <div className={styles['intro__container']}>
         <h2 className={styles['intro__heading']}>
           Cambiamos la forma de planificar y controlar tus proyectos de

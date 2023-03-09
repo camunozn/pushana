@@ -76,6 +76,12 @@ Medium: 11px
     rgba(33, 3, 58, 0.97)
   );
   --linear-gradient-accent: linear-gradient(to right, #1b93c2, #c91668);
+  --linear-gradient-border: linear-gradient(
+    to right,
+    #1b93c2,
+    #976ea5,
+    #c91668
+  );
   --linear-gradient-btn-primary: linear-gradient(to right, #c91668, #572981);
   --linear-gradient-btn-secondary: linear-gradient(to right, #1b93c2, #c91668);
 }
@@ -126,6 +132,7 @@ a:active {
   color: var(--color-accent-primary);
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   min-width: 18rem;
@@ -147,13 +154,11 @@ a:active {
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0rem 0rem 0.5rem var(--color-shades-darker);
-  /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); */
 }
 
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0rem 0rem 0.4rem var(--color-shades-darker);
-  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); */
 }
 
 .btn::after {
@@ -175,13 +180,18 @@ a:active {
   opacity: 0;
 }
 
+.btn--link {
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
 .btn--primary {
-  /* background-color: var(--color-accent-primary); */
   background-image: var(--linear-gradient-btn-primary);
 }
 
 .btn--primary::after {
-  /* background-color: var(--color-accent-primary); */
   background-image: var(--linear-gradient-btn-primary);
 }
 
@@ -256,6 +266,7 @@ a:active {
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
+  .btn,
   .btn:link,
   .btn:visited {
     width: 100%;

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { TypeAnimation } from 'react-type-animation';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { setIsSticky } from '../../store/slices/isSticky.slice';
 import imagesArray from '../../assets/index';
 import styles from './Hero.module.css';
@@ -33,9 +34,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className={`${styles['hero']} ${isSticky && styles.sticky}`}>
-      <div className={styles['hero__container']}>
-        <div ref={heroRef} className={styles['hero__text-box']}>
+    <section
+      id="section-hero"
+      className={`${styles['hero']} ${isSticky && styles.sticky}`}
+    >
+      <div ref={heroRef} className={styles['hero__container']}>
+        <div className={styles['hero__text-box']}>
           <h1 className={styles['hero__heading']}>
             Gestión de proyectos de construcción hecha
             <TypeAnimation
@@ -53,9 +57,15 @@ const Hero = () => {
           <a className="btn btn--primary" href="/">
             Regístrate ahora
           </a>
-          <a className="btn btn--secondary" href="/">
+          <Link
+            to="section-intro"
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="btn btn--link btn--secondary"
+          >
             Descubre más
-          </a>
+          </Link>
         </div>
       </div>
     </section>
