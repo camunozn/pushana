@@ -31,7 +31,7 @@ const Navbar = props => {
         </li>
         <li>
           <a className={`btn btn--primary ${styles['navbar__cta']}`} href="#">
-            Registro anticipado
+            Regístrate ahora
           </a>
         </li>
       </ul>

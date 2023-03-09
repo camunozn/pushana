@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
         <div className={styles['hero__btn-box']}>
           <a className="btn btn--primary" href="/">
-            Registro anticipado
+            Regístrate ahora
           </a>
           <a className="btn btn--secondary" href="/">
             Descubre más
