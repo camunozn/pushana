@@ -20,11 +20,21 @@ const Explore = () => {
           accent="primary"
         />
         <Card
-          image={imagesArray.imgCommunity}
-          title="Comunidad"
+          image={imagesArray.imgEffective}
+          title="PM Consulting"
           accent="secondary"
         />
-        <Card image={imagesArray.imgBlog} title="Blog" accent="primary" />
+        <Card image={imagesArray.imgClear} title="PM School" accent="primary" />
+        <Card
+          image={imagesArray.imgCommunity}
+          title="Comunidad Pushana"
+          accent="secondary"
+        />
+        <Card
+          image={imagesArray.imgBlog}
+          title="Pushana Blog"
+          accent="primary"
+        />
       </div>
     </section>
   );

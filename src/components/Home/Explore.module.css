@@ -21,30 +21,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  flex-wrap: wrap;
+  gap: 4.8rem;
 }
 
 /**************************/
 /* QUERIES*/
 /**************************/
-/**************************/
-/* BELOW 1232px (Small desktop) */
-/**************************/
-@media (max-width: 77em) {
-  .explore__cards-box {
-    gap: 4.8rem;
-  }
-}
-
-/**************************/
-/* BELOW 1088px (Landscape tablets) */
-/**************************/
-@media (max-width: 68em) {
-  .explore__cards-box {
-    flex-wrap: wrap;
-  }
-}
-
 /**************************/
 /* BELOW 768px (Portrait small tablets) */
 /**************************/
