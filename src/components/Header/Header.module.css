@@ -23,9 +23,9 @@
 }
 
 .header__logo-box {
-  text-decoration: none;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .header__logo-box:hover,

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
+import { animateScroll as scroll } from 'react-scroll';
 import Navbar from './Navbar/Navbar';
-import styles from './Header.module.css';
 import logoImg from '../../assets/logo/logo-transparent-bg.png';
+import styles from './Header.module.css';
 
 const Header = () => {
   const isSticky = useSelector(state => state.isSticky);
@@ -12,17 +13,21 @@ const Header = () => {
     setShowNav(!showNav);
   };
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <header className={`${styles.header} ${isSticky && styles.sticky}`}>
-      <div className={styles['header__container']}>
-        <a className={styles['header__logo-box']} href="/">
+      <div className={styles['header__container']} onClick={scrollToTop}>
+        <div className={styles['header__logo-box']}>
           <img
             className={styles['header__logo-img']}
             src={logoImg}
             alt="Pushana logo"
           />
           <span className={styles['header__logo-text']}>Pushana</span>
-        </a>
+        </div>
         <Navbar showNav={showNav} />
         <button className={styles['btn--mobile']} onClick={toggleShowNav}>
           <i className={`fa-solid fa-${showNav ? 'xmark' : 'bars'}`}></i>

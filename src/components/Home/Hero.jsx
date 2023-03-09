@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { TypeAnimation } from 'react-type-animation';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { setIsSticky } from '../../store/slices/isSticky.slice';
 import imagesArray from '../../assets/index';
 import styles from './Hero.module.css';
