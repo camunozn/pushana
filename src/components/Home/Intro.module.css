@@ -6,8 +6,8 @@
   width: 100%;
   text-align: center;
   background-color: var(--color-white);
-  color: var(--color-grays-darker);
-  /* box-shadow: 0 0 3rem var(--color-shades-darker);*/
+  color: var(--color-dark);
+  box-shadow: 0 0 2rem var(--color-shades-darker);
   padding: 16rem 9.6rem;
 }
 
