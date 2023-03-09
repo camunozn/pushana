@@ -6,7 +6,7 @@
   width: 100%;
   text-align: center;
   background-color: var(--color-bg-darker);
-  box-shadow: 0 0 1rem var(--color-shades-darker);
+  box-shadow: 0 0 .5rem var(--color-shades-darker);
   padding: 16rem 9.6rem;
 }
 
@@ -15,7 +15,7 @@
   width: 90%;
   font-size: 4.4rem;
   font-weight: 500;
-  color: var(--color-shades-normal);
+  color: var(--color-shades-darker);
   margin: 0 auto;
   margin-bottom: 3.2rem;
 }
