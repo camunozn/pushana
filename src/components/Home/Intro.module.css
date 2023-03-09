@@ -6,7 +6,7 @@
   width: 100%;
   text-align: center;
   background-color: var(--color-bg-darker);
-  box-shadow: 0 0 3rem var(--color-shades-darker);
+  /* box-shadow: 0 0 3rem var(--color-shades-darker);*/
   padding: 16rem 9.6rem;
 }
 
