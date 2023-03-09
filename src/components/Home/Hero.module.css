@@ -2,7 +2,6 @@
 /* SECTION HERO */
 /**************************/
 .hero {
-  max-width: 140rem;
   width: 100%;
   padding: 8rem 6.4rem;
   margin: 0 auto;
@@ -14,26 +13,27 @@
 
 .hero__container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   justify-content: space-between;
 }
 
 .hero__text-box {
-  width: 85%;
+  overflow: hidden;
 }
 
 .hero__heading {
-  font-size: 8.4rem;
+  font-size: 7.4rem;
   font-weight: 400;
   letter-spacing: -0.75px;
-  line-height: 1.05; /* Small */
+  line-height: 1.05;
   margin-bottom: 4.8rem;
 }
 
 .hero__heading span {
   color: var(--color-accent-primary);
   margin-left: 2rem;
+  z-index: 1;
 }
 
 .hero__img-box {
@@ -43,7 +43,7 @@
 }
 
 .hero__img-box img {
-  height: 40rem;
+  height: 45rem;
   animation: moveInRight 1s ease-out 0.5s;
   animation-fill-mode: backwards;
 }
@@ -78,11 +78,11 @@
 /**************************/
 @media (max-width: 77em) {
   .hero__heading {
-    font-size: 7.4rem;
+    font-size: 6.2rem;
   }
 
   .hero__img-box img {
-    height: 36rem;
+    height: 40rem;
   }
 }
 
@@ -91,11 +91,11 @@
 /**************************/
 @media (max-width: 68em) {
   .hero__heading {
-    font-size: 6.2rem;
+    font-size: 5.6rem;
   }
 
   .hero__img-box img {
-    height: 32rem;
+    height: 35rem;
   }
 }
 
@@ -107,8 +107,13 @@
     padding: 8rem 4.8rem;
   }
 
-  .hero__img-box img {
-    height: 30rem;
+  .hero__heading {
+    font-size: 5.4rem;
+    line-height: 1.2;
+  }
+
+  .hero__text-box span {
+    margin-left: 1rem;
   }
 }
 
@@ -116,16 +121,16 @@
 /* BELOW 768px (Portrait small tablets) */
 /**************************/
 @media (max-width: 48em) {
-  .hero__text-box {
-    width: 80%;
+  .hero__text-box h1 {
+    width: 90%;
   }
 
   .hero__heading {
-    font-size: 5.2rem;
+    font-size: 4.6rem;
   }
 
   .hero__img-box img {
-    height: 26rem;
+    height: 30rem;
   }
 }
 
@@ -134,7 +139,7 @@
 /**************************/
 @media (max-width: 37em) {
   .hero {
-    padding: 8rem 2.4rem;
+    padding: 6.4rem 2.4rem;
   }
 
   .hero__container {
@@ -150,13 +155,13 @@
     margin: 0 auto;
   }
 
+  .hero__text-box h1 {
+    width: 100%;
+  }
+
   .hero__heading {
     font-size: 4.4rem;
     margin-bottom: 2.4rem;
-  }
-
-  .hero__text-box span {
-    margin-left: 1rem;
   }
 
   .hero__img-box {
