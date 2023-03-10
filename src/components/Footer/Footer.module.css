@@ -1,0 +1,143 @@
+.footer {
+  background-color: var(--color-tints-darker);
+  color: var(--color-grays-lighter);
+  padding: 2.4rem 8rem 3.2rem 8rem;
+}
+
+.footer__container {
+  max-width: 140rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 3.2rem;
+  margin: 0 auto;
+}
+
+.footer__logo-col,
+.footer__contact-col,
+.footer__account-col,
+.footer__company-col {
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.footer__brand-logo {
+  cursor: pointer;
+  margin-bottom: 2.4rem;
+}
+
+.footer__brand-logo img {
+  width: 14rem;
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.footer__social-list a {
+  font-size: 2.4rem;
+}
+
+.footer__copyright {
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.footer__heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-white);
+  margin: 3.2rem auto;
+}
+
+.footer__address {
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 1.6;
+  margin-bottom: 3.2rem;
+}
+
+.footer__nav-list {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.footer__link:link,
+.footer__link:visited {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--color-grays-lighter);
+}
+
+.footer__link:hover,
+.footer__link:active {
+  color: var(--color-accent-primary);
+}
+
+.footer__contact .footer__link:link,
+.footer__contact .footer__link:visited {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+/*****************************/
+/* QUERIES*/
+/*****************************/
+/**************************/
+/* BELOW 768px (Portrait small tablets) */
+/**************************/
+@media (max-width: 48em) {
+  .footer__container {
+    flex-wrap: wrap;
+    gap: 6.4rem;
+  }
+
+  .footer__account-col {
+    order: 2;
+  }
+
+  .footer__contact-col {
+    order: 3;
+  }
+
+  .footer__logo-col {
+    order: 4;
+  }
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+@media (max-width: 37em) {
+  .footer {
+    padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+  }
+
+  .footer__container {
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  /* .footer__logo-col {
+    order: 3;
+  }
+
+  .footer__contact-col {
+    order: 4;
+  } */
+}
