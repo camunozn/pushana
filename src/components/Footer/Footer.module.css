@@ -57,7 +57,7 @@
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--color-white);
-  margin: 3.2rem auto;
+  margin: 3.2rem 0;
 }
 
 .footer__address {
