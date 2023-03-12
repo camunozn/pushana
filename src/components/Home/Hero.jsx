@@ -51,7 +51,7 @@ const Hero = () => {
           </h1>
         </div>
         <div className={`${styles['hero__img-box']}`}>
-          <img src={imagesArray.imgConstruction} alt="Hero image" />
+          <img src={imagesArray.imgHero} alt="Hero image" />
         </div>
         <div className={styles['hero__btn-box']}>
           <a className="btn btn--primary" href="/">

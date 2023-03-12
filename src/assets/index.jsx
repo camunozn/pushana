@@ -5,6 +5,7 @@ import imgEfficient from './images/img-efficient.png';
 import imgCommunity from './images/img-community.png';
 import imgBlog from './images/img-blog.png';
 import imgClear from './images/img-clear.png';
+import imgHero from './images/img-hero.png';
 
 const imagesArray = {
   imgConstruction,
@@ -14,6 +15,7 @@ const imagesArray = {
   imgCommunity,
   imgBlog,
   imgClear,
+  imgHero,
 };
 
 export default imagesArray;

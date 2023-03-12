@@ -11,7 +11,7 @@
   border: solid 1px var(--color-shades-darker);
   box-shadow: 0rem 0rem 0.5rem var(--color-shades-darker);
   border-radius: 15px;
-  padding: 6.4rem 2.4rem;
+  padding: 8rem 2.4rem;
 }
 
 .intro__heading {
@@ -55,7 +55,7 @@
 /**************************/
 @media (max-width: 48em) {
   .intro__container {
-    padding: 3.2rem 2.4rem;
+    padding: 4.8rem 2.4rem;
   }
 }
 
@@ -65,10 +65,6 @@
 @media (max-width: 37em) {
   .intro {
     padding: 8rem 2.4rem;
-  }
-
-  .intro__container {
-    padding: 4.8rem 2.4rem;
   }
 
   .intro__heading {
