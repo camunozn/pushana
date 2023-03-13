@@ -4,7 +4,6 @@
 .explore {
   height: 100%;
   width: 100%;
-  background-color: var(--color-bg-lighter);
 }
 
 .explore__container {
@@ -32,6 +31,16 @@
     padding: 3.2rem 6.4rem;
   }
 }
+
+/**************************/
+/* BELOW 960px (Portrait tablets) */
+/**************************/
+@media (max-width: 59em) {
+  .explore__cards-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /**************************/
 /* BELOW 592px (Phones) */
 /**************************/

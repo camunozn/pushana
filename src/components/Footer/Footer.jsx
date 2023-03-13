@@ -33,15 +33,18 @@ const Footer = () => {
             </li>
           </ul>
           <p className={styles['footer__copyright']}>
-            Copyright &copy; 2023 Pushana S.A.S &mdash; Todos los derechos
-            reservados
+            Copyright &copy; 2023 Pushana S.A.S.
+            <br />
+            Todos los derechos reservados
           </p>
         </div>
         <div className={styles['footer__contact-col']}>
           <p className={styles['footer__heading']}>Contáctanos</p>
           <address className={styles['footer__contact-info']}>
             <p className={styles['footer__address']}>
-              Av. Eugenio Espejo 2410. Quito &mdash; Ecuador
+              Av. Eugenio Espejo 2410.
+              <br />
+              Quito &mdash; Ecuador
             </p>
             <p className={styles['footer__contact']}>
               <a className={styles['footer__link']} href="tel:+593998043941">
@@ -60,7 +63,7 @@ const Footer = () => {
           </address>
         </div>
         <div className={styles['footer__account-col']}>
-          <p className={styles['footer__heading']}>Cuenta</p>
+          <p className={styles['footer__heading']}>Cuenta de usuario</p>
           <ul className={styles['footer__nav-list']}>
             <li>
               <a className={styles['footer__link']} href="#">

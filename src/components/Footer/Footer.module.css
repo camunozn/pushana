@@ -1,15 +1,14 @@
 .footer {
   background-color: var(--color-bg-darker);
   color: var(--color-grays-lighter);
-  padding: 2.4rem 8rem 3.2rem 8rem;
 }
 
 .footer__container {
   max-width: 140rem;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  gap: 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4.8rem;
+  padding: 1.6rem 8rem 3.2rem 8rem;
   margin: 0 auto;
 }
 
@@ -17,12 +16,12 @@
 .footer__contact-col,
 .footer__account-col,
 .footer__company-col {
-  width: 16rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  margin: auto;
+  justify-content: flex-start;
+  margin: 0 auto;
 }
 
 .footer__brand-logo {
@@ -41,6 +40,7 @@
   justify-content: space-around;
   gap: 2.4rem;
   margin-bottom: 3.2rem;
+  flex-grow: 1;
 }
 
 .footer__social-list a {
@@ -58,6 +58,11 @@
   font-weight: 500;
   color: var(--color-white);
   margin: 3.2rem 0;
+  flex-grow: 0;
+}
+
+.footer__contact-info {
+  flex-grow: 1;
 }
 
 .footer__address {
@@ -74,11 +79,12 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1.6rem;
+  flex-grow: 1;
 }
 
 .footer__link:link,
 .footer__link:visited {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   color: var(--color-grays-lighter);
@@ -99,45 +105,39 @@
 /* QUERIES*/
 /*****************************/
 /**************************/
+/* BELOW 960px (Portrait tablets) */
+/**************************/
+@media (max-width: 59em) {
+  .footer__container {
+    gap: 1.2rem;
+  }
+}
+/**************************/
 /* BELOW 768px (Portrait small tablets) */
 /**************************/
 @media (max-width: 48em) {
-  .footer__container {
-    flex-wrap: wrap;
-    gap: 6.4rem;
-  }
-
-  .footer__account-col {
-    order: 2;
-  }
-
-  .footer__contact-col {
-    order: 3;
-  }
-
-  .footer__logo-col {
-    order: 4;
-  }
 }
 
 /**************************/
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
-  .footer {
-    padding: 2.4rem 2.4rem 3.2rem 2.4rem;
-  }
-
   .footer__container {
-    align-items: center;
-    gap: 2.4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    padding: 1.2rem 2.4rem 3.2rem 4.8rem;
   }
 
-  /* .footer__logo-col {
+  .footer__logo-col {
     order: 3;
   }
-
   .footer__contact-col {
     order: 4;
-  } */
+  }
+  .footer__account-col {
+    order: 2;
+  }
+  .footer__company-col {
+    order: 1;
+  }
 }

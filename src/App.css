@@ -60,8 +60,9 @@ Medium: 11px
   --color-grays-darker: #333;
   --color-white: #fff;
   --color-dark: #000;
-  --color-bg-lighter: #170229;
-  --color-bg-darker: #11021d;
+  --color-bg-lighter: #11021d;
+  --color-bg-normal: #170229;
+  --color-bg-darker: #0d0117;
   --linear-gradient-bg: linear-gradient(
     to bottom right,
     #170229,
