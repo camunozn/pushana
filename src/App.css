@@ -27,9 +27,10 @@ Large: 1.8
 
 ---02 COLORS ---
 - Primary: #21033a
-- Tints:  #170229 #1a022e #1e0334
+- Tints: #170229 #1a022e #1e0334
 - Shades: #e1d9e8 #976ea5 #572981
 - Accents: #c91668 #1b93c2
+- Darks: #11021d #0d0117
 - Grays: #888 #666 #555 #333 #ebe0ea
 
 ---03 IMAGES ---
@@ -59,8 +60,8 @@ Medium: 11px
   --color-grays-darker: #333;
   --color-white: #fff;
   --color-dark: #000;
-  --color-bg-lighter: #1c1f2a;
-  --color-bg-darker: #161622;
+  --color-bg-lighter: #170229;
+  --color-bg-darker: #11021d;
   --linear-gradient-bg: linear-gradient(
     to bottom right,
     #170229,

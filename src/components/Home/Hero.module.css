@@ -2,9 +2,8 @@
 /* SECTION HERO */
 /**************************/
 .hero {
+  height: 100%;
   width: 100%;
-  padding: 2.4rem 6.4rem;
-  margin: 0 auto;
 }
 
 .hero.sticky {
@@ -12,6 +11,9 @@
 }
 
 .hero__container {
+  max-width: 140rem;
+  padding: 2.4rem 6.4rem;
+  margin: 0 auto 8rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -104,7 +106,7 @@
 /* BELOW 944px (Portrait tablets) */
 /**************************/
 @media (max-width: 59em) {
-  .hero {
+  .hero__container {
     padding: 1.2rem 4.8rem;
   }
 
@@ -155,15 +157,12 @@
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
-  .hero {
-    padding: 0 2.4rem;
-  }
-
   .hero__container {
     text-align: center;
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr;
+    padding: 0 2.4rem;
     margin-bottom: 3.2rem;
   }
 
