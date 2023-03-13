@@ -60,7 +60,7 @@ const Hero = () => {
           <Link
             to="section-intro"
             smooth={true}
-            offset={-70}
+            offset={0}
             duration={500}
             className="btn btn--link btn--secondary"
           >

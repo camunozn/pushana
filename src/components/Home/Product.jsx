@@ -29,12 +29,12 @@ const Product = () => {
           <div className={styles['product__feature-cards']}>
             <Card
               icon="fa-solid fa-sack-dollar"
-              title="Presupuestos"
+              title="Presupuesto"
               style="secondary"
             />
             <Card
               icon="fa-solid fa-bars-staggered"
-              title="Cronogramas"
+              title="Cronograma"
               style="secondary"
             />
             <Card
@@ -44,7 +44,7 @@ const Product = () => {
             />
             <Card
               icon="fa-solid fa-superscript"
-              title="Fórmulas Polinómicas"
+              title="Fórmula Polinómica"
               style="secondary"
             />
           </div>

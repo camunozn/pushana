@@ -12,12 +12,12 @@
 
 .hero__container {
   max-width: 140rem;
-  padding: 2.4rem 6.4rem;
-  margin: 0 auto 8rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-between;
+  padding: 2.4rem 6.4rem 12.8rem 6.4rem;
+  margin: 0 auto;
 }
 
 .hero__text-box {
@@ -107,7 +107,7 @@
 /**************************/
 @media (max-width: 59em) {
   .hero__container {
-    padding: 1.2rem 4.8rem;
+    padding: 1.2rem 4.8rem 9.6rem 4.8rem;
   }
 
   .hero__heading {
@@ -162,8 +162,7 @@
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr;
-    padding: 0 2.4rem;
-    margin-bottom: 3.2rem;
+    padding: 0 2.4rem 9.6rem 2.4rem;
   }
 
   .hero__text-box {
