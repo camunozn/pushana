@@ -11,7 +11,7 @@ const Product = () => {
             Para todas las etapas de tu proyecto
           </h2>
           <p className="title-paragraph paragraph--primary">
-            Desde la fase pre-contractual hasta la conclusión del contrato. Te
+            Desde la fase pre-contractual hasta el final de la construcción. Te
             acompañamos en todos los procesos de la gestión de proyectos.
           </p>
         </div>
@@ -45,7 +45,8 @@ const Product = () => {
               <span className={styles['accent--secondary']}>
                 &mdash; inicio y planificación:{' '}
               </span>
-              prepárate de la mejor manera para arrancar la construcción.
+              prepárate de la mejor manera antes de iniciar la construcción de
+              tu proyecto.
             </h3>
             <p className={styles['feature__text']}>
               Transición sin inconvenientes. Pasa de la licitación al inicio de
