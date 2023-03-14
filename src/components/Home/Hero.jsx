@@ -41,7 +41,11 @@ const Hero = () => {
       <div ref={heroRef} className={styles['hero__container']}>
         <div className={styles['hero__text-box']}>
           <h1 className={styles['hero__heading']}>
-            Gestión de proyectos de construcción hecha
+            Gestión de proyectos
+            <br />
+            de construcción
+            <br />
+            hecha
             <TypeAnimation
               sequence={wordSequenceArray}
               speed={50} // Custom Speed from 1-99 - Default Speed: 40
@@ -49,13 +53,17 @@ const Hero = () => {
               repeat={Infinity} // Repeat this Animation Sequence infinitely
             />
           </h1>
+          <p className={styles['hero__text']}>
+            Simplifica los procesos de planificación y control, evita reprocesos
+            y haz que la información fluya en todas las etapas de tu proyecto.
+          </p>
         </div>
         <div className={`${styles['hero__img-box']}`}>
           <img src={imagesArray.imgHero} alt="Hero image" />
         </div>
         <div className={styles['hero__btn-box']}>
           <a className="btn btn--primary" href="/">
-            Regístrate ahora
+            Prueba ahora
           </a>
           <Link
             to="section-intro"

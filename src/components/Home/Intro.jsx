@@ -21,7 +21,7 @@ const Intro = () => {
         <div className={styles['intro__cards-box']}>
           <Card
             icon="fa-solid fa-wand-magic-sparkles"
-            title="Claro e intuitivo"
+            title="Simple e intuitivo"
             style="secondary"
             text="Desarrollamos una interfáz minimalista, clara y fácil de entender. Seguimos el flujo natural de los proyectos de construcción."
           />
