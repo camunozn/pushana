@@ -45,8 +45,8 @@ const Product = () => {
               <span className={styles['accent--secondary']}>
                 &mdash; inicio y planificación:{' '}
               </span>
-              prepárate de la mejor manera antes de iniciar la construcción de
-              tu proyecto.
+              prepárate de la mejor manera antes de la construcción de tu
+              proyecto.
             </h3>
             <p className={styles['feature__text']}>
               Transición sin inconvenientes. Pasa de la licitación al inicio de
