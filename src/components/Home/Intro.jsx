@@ -27,7 +27,7 @@ const Intro = () => {
           />
           <Card
             icon="fa-solid fa-gauge-high"
-            title="Eficiente y ágil"
+            title="Ágil y eficiente"
             style="secondary"
             text="Eliminamos tareas manuales y reprocesos. Enfocamos nuestra aplicación en el uso eficiente del tiempo, las metodologías ágiles y el trabajo inteligente."
           />
