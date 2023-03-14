@@ -33,7 +33,7 @@ const Intro = () => {
           />
           <Card
             icon="fa-solid fa-magnifying-glass-chart"
-            title="Decisiones basas en datos"
+            title="Decisiones basadas en datos"
             style="secondary"
             text="Incluimos recursos que facilitan y promueven el análisis de la información. Hacemos énfasis en la toma de decisiones basadas en datos."
           />
