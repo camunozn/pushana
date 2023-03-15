@@ -156,7 +156,7 @@
 /**************************/
 @media (max-width: 48em) {
   .hero {
-    max-height: 60rem;
+    max-height: 55rem;
   }
 
   .hero__heading {
@@ -198,7 +198,7 @@
   }
 
   .hero__text-box {
-    margin: 0 auto 4.8rem auto;
+    margin: 0 auto 2.4rem auto;
   }
 
   .hero__heading {
