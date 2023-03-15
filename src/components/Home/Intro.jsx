@@ -8,8 +8,7 @@ const Intro = () => {
       <div className={styles['intro__container']}>
         <div className={styles['intro__text-box']}>
           <h2 className={styles['intro__heading']}>
-            Cambiamos la forma de planificar y controlar tus proyectos de
-            construcción.
+            Cambiamos la forma de planificar y controlar tus proyectos.
           </h2>
           <p className={styles['intro__text']}>
             Nuestra aplicación está diseñada para facilitar la planificación y
@@ -23,7 +22,7 @@ const Intro = () => {
             icon="fa-solid fa-wand-magic-sparkles"
             title="Simple e intuitivo"
             style="secondary"
-            text="Desarrollamos una interfáz minimalista, clara y fácil de entender. Seguimos el flujo natural de los proyectos de construcción."
+            text="Desarrollamos una interfáz minimalista, clara y fácil de entender. Seguimos el flujo natural de los proyectos de construcción adaptado a la realidad nacional."
           />
           <Card
             icon="fa-solid fa-gauge-high"
@@ -41,7 +40,7 @@ const Intro = () => {
             icon="fa-solid fa-hand-holding-dollar"
             title="Versátil y accesible"
             style="secondary"
-            text="Tomamos en cuenta la naturaleza temporal de los proyectos. Solo paga por los usuarios y el tiempo que necesites."
+            text="Tomamos en cuenta la naturaleza temporal de los proyectos. Solo suscríbete por el tiempo y para los usuarios necesarios. Sin ataduras."
           />
         </div>
       </div>

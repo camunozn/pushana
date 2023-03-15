@@ -7,12 +7,11 @@ const Product = () => {
     <section className={styles.product}>
       <div className={styles['product__container']}>
         <div className="title-box">
-          <h2 className="title-subheading">
-            Para todas las etapas de tu proyecto
-          </h2>
+          <h2 className="title-subheading">Para todas las etapas</h2>
           <p className="title-paragraph paragraph--primary">
             Desde la fase pre-contractual hasta el final de la construcción. Te
-            acompañamos en todos los procesos de la gestión de proyectos.
+            acompañamos en todas las etapas y todos los procesos de la gestión
+            de proyectos.
           </p>
         </div>
         <div className={styles['product__feature']}>
@@ -72,11 +71,12 @@ const Product = () => {
               todo momento.
             </h3>
             <p className={styles['feature__text']}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-              nulla laudantium minus culpa expedita laborum id alias adipisci
-              porro error consequatur ea quaerat dignissimos mollitia nobis!
-              Possimus, rem velit? Perferendis, quis. Ipsam voluptatibus ipsum
-              illum iusto quod natus exercitationem perferendis.
+              Simplificamos y automatizamos las tareas de registro,
+              procesamiento y análisis de los datos de campo para reducir los
+              tiempos de entrega de informes y garantizar la calidad de la
+              información. Así. te mantenemos actualizado sobre el estado de tu
+              proyecto y te permitimos tomar mejores decisiones basadas en
+              datos.
             </p>
             <div className={styles['feature__img-box']}>
               <img src={imagesArray.imgControl} alt="Imagen control" />
