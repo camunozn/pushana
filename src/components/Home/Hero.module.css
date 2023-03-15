@@ -156,7 +156,7 @@
 /**************************/
 @media (max-width: 48em) {
   .hero {
-    max-height: 55rem;
+    max-height: 51rem;
   }
 
   .hero__heading {
