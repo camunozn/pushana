@@ -19,8 +19,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-between;
-  padding: 0 6.4rem;
-  padding-bottom: 12.8rem;
+  padding: 6.4rem;
   margin: 0 auto;
 }
 
@@ -128,7 +127,6 @@
 @media (max-width: 59em) {
   .hero__container {
     padding: 4.8rem;
-    padding-bottom: 12.8rem;
   }
 
   .hero__text-box span {
