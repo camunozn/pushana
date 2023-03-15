@@ -2,8 +2,11 @@
 /* SECTION HERO */
 /**************************/
 .hero {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
+  height: calc(100vh - 8rem);
+  display: flex;
+  align-items: center;
 }
 
 .hero.sticky {
@@ -16,7 +19,8 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-between;
-  padding: 4.8rem 6.4rem 12.8rem 6.4rem;
+  padding: 0 6.4rem;
+  padding-bottom: 12.8rem;
   margin: 0 auto;
 }
 
@@ -123,7 +127,8 @@
 /**************************/
 @media (max-width: 59em) {
   .hero__container {
-    padding: 3.2rem 4.8rem 9.6rem 4.8rem;
+    padding: 4.8rem;
+    padding-bottom: 12.8rem;
   }
 
   .hero__text-box span {
@@ -151,6 +156,10 @@
 /* BELOW 768px (Portrait small tablets) */
 /**************************/
 @media (max-width: 48em) {
+  .hero {
+    height: calc(60vh - 8rem);
+  }
+
   .hero__heading {
     font-size: 3.4rem;
   }
@@ -177,16 +186,20 @@
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
+  .hero {
+    height: calc(100vh - 8rem);
+  }
+
   .hero__container {
     text-align: center;
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr;
-    padding: 2.4rem 2.4rem 9.6rem 2.4rem;
+    padding: 2.4rem;
   }
 
   .hero__text-box {
-    margin: 0 auto 3.2rem auto;
+    margin: 0 auto 4.8rem auto;
   }
 
   .hero__heading {
