@@ -10,8 +10,7 @@ const Product = () => {
           <h2 className="title-subheading">Para todas las etapas</h2>
           <p className="title-paragraph paragraph--primary">
             Desde la fase pre-contractual hasta el final de la construcción. Te
-            acompañamos en todas las etapas y todos los procesos de la gestión
-            de proyectos.
+            acompañamos en todas las etapas de tus proyectos.
           </p>
         </div>
         <div className={styles['product__feature']}>

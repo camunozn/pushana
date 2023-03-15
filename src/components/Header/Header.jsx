@@ -19,8 +19,8 @@ const Header = () => {
 
   return (
     <header className={`${styles.header} ${isSticky && styles.sticky}`}>
-      <div className={styles['header__container']} onClick={scrollToTop}>
-        <div className={styles['header__logo-box']}>
+      <div className={styles['header__container']}>
+        <div className={styles['header__logo-box']} onClick={scrollToTop}>
           <img
             className={styles['header__logo-img']}
             src={logoImg}

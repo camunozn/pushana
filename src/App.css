@@ -287,10 +287,6 @@ a:active {
     font-size: 56.25%;
   }
 
-  .App {
-    position: relative;
-  }
-
   .title-subheading {
     font-size: 2.4rem;
   }
@@ -327,7 +323,7 @@ a:active {
   }
 
   .title-paragraph {
-    text-align: left;
+    /* text-align: left; */
     hyphens: auto;
     padding: 0;
   }

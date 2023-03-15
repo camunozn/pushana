@@ -59,6 +59,10 @@
 /* BELOW 944px (Portrait tablets) */
 /**************************/
 @media (max-width: 59em) {
+  .header__container {
+    position: relative;
+  }
+
   .btn--mobile {
     display: block;
     z-index: 1000;
