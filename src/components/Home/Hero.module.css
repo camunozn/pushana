@@ -19,7 +19,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-between;
-  padding: 6.4rem;
+  padding: 0 6.4rem;
   margin: 0 auto;
 }
 
@@ -126,7 +126,7 @@
 /**************************/
 @media (max-width: 59em) {
   .hero__container {
-    padding: 4.8rem;
+    padding: 0 4.8rem;
   }
 
   .hero__text-box span {
@@ -193,7 +193,7 @@
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr;
-    padding: 2.4rem;
+    padding: 0 2.4rem;
   }
 
   .hero__text-box {
