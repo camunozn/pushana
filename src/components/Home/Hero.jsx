@@ -54,8 +54,8 @@ const Hero = () => {
             />
           </h1>
           <p className={styles['hero__text']}>
-            Simplifica los procesos de planificación y control, evita reprocesos
-            y haz que la información fluya en todas las etapas de tu proyecto.
+            Simplifica la planificación y el control, evita reprocesos, haz que
+            la información fluya y mejora el desempeño de tus proyectos.
           </p>
         </div>
         <div className={`${styles['hero__img-box']}`}>
