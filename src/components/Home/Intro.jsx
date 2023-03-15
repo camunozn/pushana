@@ -13,7 +13,7 @@ const Intro = () => {
           <p className={styles['intro__text']}>
             Nuestra aplicación está diseñada para facilitar la planificación y
             el control de proyectos de construcción, haciendo a estos procesos
-            eficiente, claros y accesibles para todos.
+            eficientes, claros y accesibles para todos.
           </p>
         </div>
         <div className={styles['intro__cards-box']}>
