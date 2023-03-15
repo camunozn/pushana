@@ -2,7 +2,8 @@
 /* SECTION HERO */
 /**************************/
 .hero {
-  /* height: 100%; */
+  max-height: 75rem;
+  min-height: 55rem;
   width: 100%;
   height: calc(100vh - 8rem);
   display: flex;
@@ -127,6 +128,7 @@
 @media (max-width: 59em) {
   .hero__container {
     padding: 0 4.8rem;
+    padding-bottom: 8rem;
   }
 
   .hero__text-box span {
@@ -155,7 +157,7 @@
 /**************************/
 @media (max-width: 48em) {
   .hero {
-    height: calc(60vh - 8rem);
+    max-height: 60rem;
   }
 
   .hero__heading {
@@ -185,7 +187,7 @@
 /**************************/
 @media (max-width: 37em) {
   .hero {
-    height: calc(100vh - 8rem);
+    max-height: 100%;
   }
 
   .hero__container {
@@ -194,6 +196,7 @@
     justify-content: center;
     grid-template-columns: 1fr;
     padding: 0 2.4rem;
+    padding-bottom: 4.8rem;
   }
 
   .hero__text-box {
