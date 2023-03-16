@@ -39,7 +39,7 @@ const Intro = () => {
             icon="fa-solid fa-hand-holding-dollar"
             title="Versátil y accesible"
             style="secondary"
-            text="Tomamos en cuenta la naturaleza temporal de los proyectos. Solo suscríbete por el tiempo y para los usuarios necesarios. Sin ataduras."
+            text="Tomamos en cuenta la naturaleza temporal de los proyectos. Solo suscríbete por el tiempo y para los usuarios que necesites. Sin ataduras."
           />
         </div>
       </div>

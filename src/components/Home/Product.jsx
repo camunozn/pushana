@@ -30,9 +30,9 @@ const Product = () => {
         <div className={styles['product__feature']}>
           <div className={styles['feature__container']}>
             <h3 className={styles['feature__heading']}>
-              Pre-contractual{' '}
+              Pre-contractual:{' '}
               <span className={styles['accent--primary']}>
-                &mdash; licitaciones y cotizaciones:{' '}
+                licitaciones y cotizaciones{' '}
               </span>
               para clientes públicos o privados.
             </h3>
@@ -61,12 +61,11 @@ const Product = () => {
         <div className={styles['product__feature']}>
           <div className={styles['feature__container']}>
             <h3 className={styles['feature__heading']}>
-              Pre-construcción{' '}
+              Pre-construcción:{' '}
               <span className={styles['accent--secondary']}>
-                &mdash; inicio y planificación:{' '}
+                inicio y planificación{' '}
               </span>
-              prepárate de la mejor manera antes de la construcción de tu
-              proyecto.
+              para prepararte de la mejor manera.
             </h3>
             <p className={styles['feature__text']}>
               Transición sin inconvenientes. Pasa de la licitación al inicio de
@@ -79,31 +78,46 @@ const Product = () => {
               <img src={imagesArray.imgPlanning} alt="Imagen planificación" />
             </div>
           </div>
-          <div className={styles['product__feature-cards']}></div>
+        </div>
+        <div className={styles['product__box']}>
+          <Box
+            heading={'Ofertas públicas o privadas'}
+            text={
+              'Todo lo que necesitas para presentar una oferta completa y competitiva'
+            }
+            details={bidDetails}
+          />
         </div>
         <div className={styles['product__feature']}>
           <div className={styles['feature__container']}>
             <h3 className={styles['feature__heading']}>
-              Construcción{' '}
+              Construcción:{' '}
               <span className={styles['accent--primary']}>
-                &mdash; monitoreo y control:{' '}
+                monitoreo y control{' '}
               </span>
-              ejecución con conciencia, conoce el desempeño de tu proyecto en
-              todo momento.
+              para una ejecución con conciencia. Datos para tomar decisiones.
             </h3>
             <p className={styles['feature__text']}>
               Simplificamos y automatizamos las tareas de registro,
               procesamiento y análisis de los datos de campo para reducir los
               tiempos de entrega de informes y garantizar la calidad de la
-              información. Así. te mantenemos actualizado sobre el estado de tu
-              proyecto y te permitimos tomar mejores decisiones basadas en
+              información. Así. te mantenemos actualizado sobre el desempeño de
+              tu proyecto y te permitimos tomar mejores decisiones basadas en
               datos.
             </p>
             <div className={styles['feature__img-box']}>
               <img src={imagesArray.imgControl} alt="Imagen control" />
             </div>
           </div>
-          <div className={styles['product__feature-cards']}></div>
+        </div>
+        <div className={styles['product__box']}>
+          <Box
+            heading={'Ofertas públicas o privadas'}
+            text={
+              'Todo lo que necesitas para presentar una oferta completa y competitiva'
+            }
+            details={bidDetails}
+          />
         </div>
       </div>
     </section>
