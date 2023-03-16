@@ -101,7 +101,7 @@ const Product = () => {
               Simplificamos y automatizamos las tareas de registro,
               procesamiento y análisis de los datos de campo para reducir los
               tiempos de entrega de informes y garantizar la calidad de la
-              información. Así. te mantenemos actualizado sobre el desempeño de
+              información. Así, te mantenemos actualizado sobre el desempeño de
               tu proyecto y te permitimos tomar mejores decisiones basadas en
               datos.
             </p>
