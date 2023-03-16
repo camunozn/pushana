@@ -1,0 +1,135 @@
+.box {
+  padding-bottom: 8rem;
+}
+
+.box__margin {
+  background-image: var(--linear-gradient-border);
+  border-radius: 15px;
+  padding: 1px;
+}
+
+.box__container {
+  background-color: var(--color-bg-normal);
+  border-radius: 15px;
+  padding: 2.4rem 9.6rem 4.8rem 9.6rem;
+}
+
+.box__title-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4.8rem;
+}
+
+.box__title-heading {
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: -0.25px;
+  text-transform: uppercase;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--linear-gradient-accent);
+  margin-bottom: 3.2rem;
+}
+
+.box__title-text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.box__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4.8rem;
+  row-gap: 2.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.box__detail {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.box__detail i {
+  min-width: 3.2rem;
+  font-size: 2.4rem;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--linear-gradient-accent);
+}
+
+.box__detail p {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+}
+
+.box__button-box {
+  text-align: right;
+  margin-right: 3.2rem;
+}
+
+/*****************************/
+/* QUERIES*/
+/*****************************/
+/**************************/
+/* BELOW 1232px (Small desktop) */
+/**************************/
+@media (max-width: 77em) {
+  .box__container {
+    padding: 2.4rem 6.4rem 4.8rem 6.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 1088px (Landscape tablets) */
+/**************************/
+@media (max-width: 68em) {
+  .box__detail p {
+    display: inline-block;
+    font-size: 2rem;
+  }
+}
+
+/**************************/
+/* BELOW 768px (Portrait small tablets) */
+/**************************/
+@media (max-width: 48em) {
+  .box__container {
+    padding: 2.4rem 3.2rem 4.8rem 3.2rem;
+  }
+
+  .box__grid {
+    margin-bottom: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+@media (max-width: 37em) {
+  .box__container {
+    padding: 2.4rem 3.2rem 4.8rem 4.8rem;
+  }
+
+  .box__title-heading {
+    font-size: 1.4rem;
+  }
+
+  .box__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .box__button-box {
+    margin-right: 1.6rem;
+  }
+}

@@ -1,8 +1,22 @@
 import React from 'react';
 import imagesArray from '../../assets/index';
+import Box from '../UI/Box';
 import styles from './Product.module.css';
 
 const Product = () => {
+  const bidDetails = [
+    { name: 'Presupuesto', icon: 'fa-solid fa-sack-dollar' },
+    { name: 'Cronograma', icon: 'fa-solid fa-bars-staggered' },
+    { name: 'Desagregación tecnológica', icon: 'fa-solid fa-chart-pie' },
+    { name: 'Fórmula polinómica', icon: 'fa-solid fa-superscript' },
+    { name: 'Análisis de costos directos', icon: 'fa-solid fa-helmet-safety' },
+    { name: 'Análisis de costos indirectos', icon: 'fa-solid fa-briefcase' },
+    { name: 'Análisis por permanencia', icon: 'fa-solid fa-calendar-days' },
+    { name: 'Análisis de Pareto', icon: 'fa-solid fa-chart-bar' },
+    { name: 'Análisis comparativo', icon: 'fa-solid fa-code-compare' },
+    { name: 'Ficha para cierre de oferta', icon: 'fa-solid fa-trophy' },
+  ];
+
   return (
     <section className={styles.product}>
       <div className={styles['product__container']}>
@@ -34,7 +48,15 @@ const Product = () => {
               <img src={imagesArray.imgBid} alt="Imagen licitaciones" />
             </div>
           </div>
-          <div className={styles['product__feature-cards']}></div>
+        </div>
+        <div className={styles['product__box']}>
+          <Box
+            heading={'Ofertas públicas o privadas'}
+            text={
+              'Todo lo que necesitas para presentar una oferta completa y competitiva'
+            }
+            details={bidDetails}
+          />
         </div>
         <div className={styles['product__feature']}>
           <div className={styles['feature__container']}>
