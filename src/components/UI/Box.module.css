@@ -40,6 +40,7 @@
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 0.5px;
+  line-height: 1.2;
 }
 
 .box__grid {
@@ -70,7 +71,7 @@
   display: inline-block;
   font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 0.75px;
+  letter-spacing: 0.5px;
   line-height: 1.2;
 }
 

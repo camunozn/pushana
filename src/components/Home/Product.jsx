@@ -162,7 +162,7 @@ const Product = () => {
           <Box
             heading={'Gestión del valor ganado'}
             text={
-              'Aplica la gestión del valor ganado para evaluar el desempeño de tu proyecto.'
+              'Aplica la gestión del valor ganado para evaluar el desempeño de tu proyecto'
             }
             details={controlDetails}
           />
