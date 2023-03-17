@@ -3,6 +3,7 @@ import styles from './Box.module.css';
 
 const Box = props => {
   const detailsArray = props.details;
+  const accentColor = props.accent;
 
   return (
     <div className={styles.box}>
