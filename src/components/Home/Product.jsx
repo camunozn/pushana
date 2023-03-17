@@ -14,7 +14,55 @@ const Product = () => {
     { name: 'Análisis por permanencia', icon: 'fa-solid fa-calendar-days' },
     { name: 'Análisis de Pareto', icon: 'fa-solid fa-chart-bar' },
     { name: 'Análisis comparativo', icon: 'fa-solid fa-code-compare' },
-    { name: 'Ficha para cierre de oferta', icon: 'fa-solid fa-trophy' },
+    { name: 'Ficha para cierre de oferta', icon: 'fa-solid fa-award' },
+  ];
+
+  const planDetails = [
+    { name: 'Centros de control', icon: 'fa-solid fa-file-invoice-dollar' },
+    { name: 'Presupuesto meta', icon: 'fa-solid fa-bullseye' },
+    { name: 'Programación ajustada', icon: 'fa-solid fa-calendar-check' },
+    { name: 'Plan de uso de recursos', icon: 'fa-solid fa-person-digging' },
+    { name: 'Plan de compras', icon: 'fa-solid fa-dolly' },
+    { name: 'Plan de subcontratos', icon: 'fa-solid fa-helmet-safety' },
+    { name: 'Plan de control de la calidad', icon: 'fa-solid fa-list-check' },
+    {
+      name: 'Plan de gestión de riesgos',
+      icon: 'fa-solid fa-triangle-exclamation',
+    },
+  ];
+
+  const controlDetails = [
+    {
+      name: 'Registro y control de avance de obra',
+      icon: 'fa-solid fa-chart-line',
+    },
+    {
+      name: 'Registro y control de horas hombre',
+      icon: 'fa-solid fa-address-card',
+    },
+    {
+      name: 'Registro y control de horas máquina',
+      icon: 'fa-solid fa-snowplow',
+    },
+    {
+      name: 'Registro y control de inventario',
+      icon: 'fa-solid fa-warehouse',
+    },
+    {
+      name: 'Registro y control de subcontratos',
+      icon: 'fa-solid fa-helmet-safety',
+    },
+    {
+      name: 'Control de productividad',
+      icon: 'fa-solid fa-gauge-simple-high',
+    },
+    { name: 'Control de cambios', icon: 'fa-solid fa-code-compare' },
+    { name: 'Control de costos', icon: 'fa-solid fa-money-bill-trend-up' },
+    { name: 'Control de cronograma', icon: 'fa-solid fa-diagram-successor' },
+    {
+      name: 'Tableros de mando e informes gerenciales',
+      icon: 'fa-regular fa-compass',
+    },
   ];
 
   return (
@@ -81,11 +129,11 @@ const Product = () => {
         </div>
         <div className={styles['product__box']}>
           <Box
-            heading={'Ofertas públicas o privadas'}
+            heading={'Línea Base del proyecto'}
             text={
-              'Todo lo que necesitas para presentar una oferta completa y competitiva'
+              'Prepara fácilmente todo lo necesario para fijar tu línea base y empezar a construir'
             }
-            details={bidDetails}
+            details={planDetails}
           />
         </div>
         <div className={styles['product__feature']}>
@@ -112,11 +160,11 @@ const Product = () => {
         </div>
         <div className={styles['product__box']}>
           <Box
-            heading={'Ofertas públicas o privadas'}
+            heading={'Gestión del valor ganado'}
             text={
-              'Todo lo que necesitas para presentar una oferta completa y competitiva'
+              'Aplica la gestión del valor ganado para evaluar el desempeño de tu proyecto de forma simple, eficiente y efectiva.'
             }
-            details={bidDetails}
+            details={controlDetails}
           />
         </div>
       </div>
