@@ -1,0 +1,49 @@
+import React from 'react';
+import HeadingLarge from '../../molecules/UI/HeadingLarge';
+import CardsBox from '../../molecules/UI/CardsBox';
+import styles from './Summary.module.css';
+
+const Summary = () => {
+  const heading = {
+    title: 'Cambiamos la forma de planificar y controlar tus proyectos.',
+    text: 'Nuestra aplicación está diseñada para facilitar la planificación y el control de proyectos de construcción, haciendo a estos procesos eficientes, claros y accesibles para todos.',
+  };
+
+  const cardsList = [
+    {
+      icon: 'fa-solid fa-wand-magic-sparkles',
+      title: 'Simple e intuitivo',
+      style: 'secondary',
+      text: 'Desarrollamos una interfaz minimalista, clara y fácil de entender. Seguimos el flujo natural de los proyectos de construcción adaptado a la realidad nacional.',
+    },
+    {
+      icon: 'fa-solid fa-gauge-high',
+      title: 'Ágil y eficiente',
+      style: 'secondary',
+      text: 'Eliminamos tareas manuales y reprocesos. Enfocamos nuestra aplicación en el uso eficiente del tiempo, las metodologías ágiles y el trabajo inteligente.',
+    },
+    {
+      icon: 'fa-solid fa-magnifying-glass-chart',
+      title: 'Decisiones basadas en datos',
+      style: 'secondary',
+      text: 'Incluimos recursos que facilitan y promueven el análisis de la información. Hacemos énfasis en la toma de decisiones basadas en datos.',
+    },
+    {
+      icon: 'fa-solid fa-hand-holding-dollar',
+      title: 'Versátil y accesible',
+      style: 'secondary',
+      text: 'Tomamos en cuenta la naturaleza temporal de los proyectos. Solo suscríbete por el tiempo y para los usuarios que necesites. Sin ataduras.',
+    },
+  ];
+
+  return (
+    <section id="section-intro" className={styles['intro']}>
+      <div className={styles['intro__container']}>
+        <HeadingLarge title={heading.title} text={heading.text} />
+        <CardsBox cardsList={cardsList} />
+      </div>
+    </section>
+  );
+};
+
+export default Summary;

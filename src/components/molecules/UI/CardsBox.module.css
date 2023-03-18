@@ -1,0 +1,59 @@
+.cards-box {
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 4.8rem;
+  padding: 3.2rem 0;
+}
+
+.cards-box.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cards-box.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards-box.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/**************************/
+/* QUERIES*/
+/**************************/
+/**************************/
+/* BELOW 1088px (Landscape tablets) */
+/**************************/
+@media (max-width: 68em) {
+  .cards-box {
+    padding: 3.2rem 6.4rem;
+  }
+
+  .cards-box.grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-box.grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+@media (max-width: 37em) {
+  .cards-box {
+    padding: 3.2rem;
+  }
+
+  .cards-box.grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cards-box.grid--3-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cards-box.grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

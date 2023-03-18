@@ -2,9 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-scroll';
-import { setIsSticky } from '../../store/slices/isSticky.slice';
-import imagesArray from '../../assets/index';
+import { setIsSticky } from '../../../store/slices/isSticky.slice';
+import imagesArray from '../../../assets/index';
 import styles from './Hero.module.css';
+import Button from '../../atoms/Button';
 
 const Hero = () => {
   const isSticky = useSelector(state => state.isSticky);
@@ -12,7 +13,7 @@ const Hero = () => {
 
   const heroRef = useRef();
 
-  const wordSequenceArray = [
+  const sequenceWords = [
     'fácil',
     1000,
     'eficiente',
@@ -47,7 +48,7 @@ const Hero = () => {
             <br />
             hecha
             <TypeAnimation
-              sequence={wordSequenceArray}
+              sequence={sequenceWords}
               speed={50} // Custom Speed from 1-99 - Default Speed: 40
               wrapper="span" // Animation will be rendered as a <span>
               repeat={Infinity} // Repeat this Animation Sequence infinitely
@@ -62,17 +63,9 @@ const Hero = () => {
           <img src={imagesArray.imgHero} alt="Hero image" />
         </div>
         <div className={styles['hero__btn-box']}>
-          <a className="btn btn--primary" href="/">
-            Prueba ahora
-          </a>
-          <Link
-            to="section-intro"
-            smooth={true}
-            offset={0}
-            duration={500}
-            className="btn btn--link btn--secondary"
-          >
-            Descubre más
+          <Button text="Prueba ahora" style="primary" align="center" />
+          <Link to="section-intro" smooth={true} offset={0} duration={500}>
+            <Button text="Descubre más" style="secondary" align="center" />
           </Link>
         </div>
       </div>

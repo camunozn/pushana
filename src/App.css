@@ -134,95 +134,6 @@ a:active {
   color: var(--color-accent-primary);
 }
 
-.btn,
-.btn:link,
-.btn:visited {
-  min-width: 18rem;
-  text-align: center;
-  text-decoration: none;
-  color: var(--color-white);
-  display: inline-block;
-  position: relative;
-  border-radius: 11px;
-  padding: 1.6rem 2.4rem;
-  transition: all 0.3s;
-}
-
-.btn:hover,
-.btn:active {
-  color: var(--color-white);
-}
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0rem 0rem 0.5rem var(--color-shades-darker);
-}
-
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0rem 0rem 0.4rem var(--color-shades-darker);
-}
-
-.btn::after {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 11px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-
-.btn:hover::after {
-  box-shadow: 0rem 0rem 4rem var(--color-shades-darker);
-  transform: scaleX(1.3) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn--link {
-  cursor: pointer;
-  font-size: 1.8rem;
-  font-weight: 500;
-  transition: all 0.3s;
-}
-
-.btn--primary {
-  background-image: var(--linear-gradient-btn-primary);
-}
-
-.btn--primary::after {
-  background-image: var(--linear-gradient-btn-primary);
-}
-
-.btn--secondary {
-  border: solid 1px var(--color-shades-darker);
-}
-
-.title-box {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 12.8rem;
-  margin-bottom: 4.8rem;
-}
-
-.title-subheading {
-  font-size: 1.6rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: var(--linear-gradient-accent);
-  margin-bottom: 2.4rem;
-}
-
 .title-heading {
   font-weight: 400;
 }
@@ -237,35 +148,6 @@ a:active {
   margin-bottom: 1.6rem;
 }
 
-.title-paragraph {
-  font-weight: 300;
-  line-height: 1.6;
-  color: var(--color-grays-lighter);
-}
-
-.paragraph--primary {
-  font-size: 2.4rem;
-  letter-spacing: 0.75px;
-}
-
-.paragraph--secondary {
-  font-size: 1.8rem;
-  letter-spacing: 1px;
-}
-
-.div-line {
-  text-align: center;
-  margin-top: 9.6rem;
-}
-
-.div-line span {
-  content: '';
-  display: inline-block;
-  height: 1px;
-  width: 30%;
-  background-color: var(--color-shades-darker);
-}
-
 /*****************************/
 /* QUERIES*/
 /*****************************/
@@ -273,9 +155,6 @@ a:active {
 /* BELOW 1088px (Landscape tablets) */
 /**************************/
 @media (max-width: 68em) {
-  .title-box {
-    padding: 0 4.8rem;
-  }
 }
 
 /**************************/
@@ -284,10 +163,6 @@ a:active {
 @media (max-width: 59em) {
   html {
     font-size: 56.25%;
-  }
-
-  .title-subheading {
-    font-size: 2.4rem;
   }
 }
 
@@ -298,39 +173,10 @@ a:active {
   html {
     font-size: 50%;
   }
-
-  .title-box {
-    padding: 0 2.4rem;
-  }
 }
 
 /**************************/
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
-  .btn,
-  .btn:link,
-  .btn:visited {
-    width: 100%;
-    font-size: 2.2rem;
-    border-radius: 9px;
-    padding: 1.8rem 2.4rem;
-  }
-
-  .title-box {
-    padding: 0;
-  }
-
-  .title-paragraph {
-    hyphens: auto;
-    padding: 0;
-  }
-
-  .paragraph--secondary {
-    font-size: 2rem;
-  }
-
-  .div-line span {
-    width: 20%;
-  }
 }

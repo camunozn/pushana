@@ -1,0 +1,21 @@
+.logo-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-box:hover,
+.logo-box:active {
+  color: var(--color-shades-lighter);
+}
+
+.logo__img {
+  display: inline-block;
+  height: 8rem;
+}
+
+.logo__text {
+  font-family: 'Blinker', sans-serif;
+  display: inline-block;
+  font-size: 3.2rem;
+}

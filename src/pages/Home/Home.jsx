@@ -1,18 +1,31 @@
 import React from 'react';
 import styles from './Home.module.css';
-import Hero from '../../components/Home/Hero';
-import Intro from '../../components/Home/Intro';
-import Explore from '../../components/Home/Explore';
-import Product from '../../components/Home/Product';
+import Hero from '../../components/organisms/Home/Hero';
+import Summary from '../../components/organisms/Home/Summary';
+import Explore from '../../components/organisms/Home/Explore';
+import Product from '../../components/organisms/Home/Product';
+import Header from '../../components/organisms/Header/Header';
+import Footer from '../../components/organisms/Footer/Footer';
 
 const Home = () => {
+  const linksList = [
+    { name: 'Productos', link: '/' },
+    { name: 'Comunidad', link: '/' },
+    { name: 'Blog', link: '/' },
+    { name: 'Nosotros', link: '/' },
+  ];
+
   return (
-    <main className={styles.home}>
-      <Hero />
-      <Intro />
-      <Product />
-      <Explore />
-    </main>
+    <div className={styles.home}>
+      <Header linksList={linksList} />
+      <main>
+        <Hero />
+        <Summary />
+        <Product />
+        <Explore />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
