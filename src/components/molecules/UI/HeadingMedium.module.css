@@ -10,8 +10,9 @@
 
 .heading__title {
   font-size: 1.6rem;
-  font-weight: 900;
+  font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 1px;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
