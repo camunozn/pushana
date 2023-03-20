@@ -8,8 +8,8 @@ import styles from './Product.module.css';
 const Product = () => {
   // Section Heading
   const heading = {
-    title: 'Para todas las etapas',
-    text: 'Desde la fase pre-contractual hasta el final de la construcción. Te acompañamos en todas las etapas de tus proyectos.',
+    title: 'Desde la fase pre-contractual hasta el final de la construcción.',
+    text: 'Te acompañamos en las principales etapas de tu proyecto.',
   };
 
   // Feature Headings

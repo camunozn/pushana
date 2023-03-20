@@ -6,7 +6,7 @@ import styles from './Summary.module.css';
 const Summary = () => {
   const heading = {
     title: 'Cambiamos la forma de planificar y controlar tus proyectos.',
-    text: 'Nuestra aplicación está diseñada para facilitar la planificación y el control de proyectos de construcción, haciendo a estos procesos eficientes, claros y accesibles para todos.',
+    text: 'Nuestra aplicación está diseñada para facilitar la planificación y el control de proyectos de construcción, haciendo a estos procesos fáciles, eficientes y accesibles para todos.',
   };
 
   const cardsList = [

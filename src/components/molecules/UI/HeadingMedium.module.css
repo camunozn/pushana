@@ -1,32 +1,26 @@
 .heading-box {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 12.8rem;
-  margin-bottom: 6.4rem;
+  padding: 2.4rem 0;
 }
 
 .heading__title {
-  font-size: 2rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1.25px;
+  font-size: 3.6rem;
+  font-weight: 500;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: var(--linear-gradient-accent);
-  margin-bottom: 2.4rem;
+  margin: 0 auto 2.4rem auto;
 }
 
 .heading__text {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 300;
-  letter-spacing: -0.75px;
-  line-height: 1.05;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
   color: var(--color-grays-lighter);
+  margin: 0 auto;
 }
 
 /*****************************/
@@ -56,7 +50,7 @@
   }
 
   .heading__title {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 
   .heading__text {
@@ -69,7 +63,7 @@
 /**************************/
 @media (max-width: 37em) {
   .heading-box {
-    padding: 0;
+    padding: 0 0 4.8rem 0;
   }
 
   .heading__text {
