@@ -4,8 +4,8 @@ import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-scroll';
 import { setIsSticky } from '../../../store/slices/isSticky.slice';
 import imagesArray from '../../../assets/index';
-import styles from './Hero.module.css';
 import Button from '../../atoms/Button';
+import styles from './Hero.module.css';
 
 const Hero = () => {
   const isSticky = useSelector(state => state.isSticky);
@@ -64,9 +64,7 @@ const Hero = () => {
         </div>
         <div className={styles['hero__btn-box']}>
           <Button text="Prueba ahora" style="primary" align="center" />
-          <Link to="section-intro" smooth={true} offset={0} duration={500}>
-            <Button text="Descubre más" style="secondary" align="center" />
-          </Link>
+          <Button text="Descubre más" style="secondary" align="center" />
         </div>
       </div>
     </section>

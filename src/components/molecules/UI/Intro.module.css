@@ -9,7 +9,7 @@
 }
 
 .feature-heading__title {
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: -0.75px;
 }
@@ -23,7 +23,7 @@
 }
 
 .feature-heading__text {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 300;
   letter-spacing: 0.75px;
   line-height: 1.6;
@@ -49,10 +49,6 @@
 /* BELOW 1232px (Small desktop) */
 /**************************/
 @media (max-width: 77em) {
-  .feature-heading__text {
-    /* font-size: 1.8rem; */
-  }
-
   .feature-heading__img-box img {
     width: 30rem;
   }
@@ -102,10 +98,6 @@
   .feature-heading__container {
     column-gap: 2.4rem;
   }
-
-  .feature-heading__text {
-    /* font-size: 1.8rem; */
-  }
 }
 
 /**************************/
@@ -123,10 +115,6 @@
 
   .feature-heading__title {
     grid-column: auto;
-  }
-
-  .feature-heading__text {
-    /* font-size: 2.4rem; */
   }
 
   .feature-heading__img-box {

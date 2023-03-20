@@ -9,7 +9,7 @@ const Product = () => {
   // Section Heading
   const heading = {
     title: 'Desde la fase pre-contractual hasta el final de la construcción.',
-    text: 'Te acompañamos en las principales etapas de tu proyecto.',
+    text: 'Te acompañamos en las principales etapas de tu proyecto: pre-contractual, pre-construcción y construcción',
   };
 
   // Feature Headings

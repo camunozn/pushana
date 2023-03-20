@@ -5,8 +5,8 @@ import styles from './Explore.module.css';
 
 const Explore = () => {
   const heading = {
-    title: 'Explora más',
-    text: 'Conoce más servicios, apóyate en nuestra comunidad o descubre algo nuevo con nuestro blog.',
+    title: 'Explora más: consultoría, capacitaciones, comunidad o blog',
+    text: 'Conoce nuestros servicios complementarios, apóyate en nuestra comunidad o descubre nuestro blog.',
   };
 
   const cardsList = [

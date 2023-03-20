@@ -84,6 +84,10 @@
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
+  .btn-box {
+    width: 100%;
+  }
+
   .btn,
   .btn:link,
   .btn:visited {
