@@ -16,6 +16,7 @@
 }
 
 .heading__text {
+  width: 80%;
   font-size: 2.4rem;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -31,8 +32,8 @@
 /* BELOW 1088px (Landscape tablets) */
 /**************************/
 @media (max-width: 68em) {
-  .heading-box {
-    padding: 0 4.8rem;
+  .heading__text {
+    width: 85%;
   }
 }
 
@@ -46,17 +47,6 @@
 /* BELOW 768px (Portrait small tablets) */
 /**************************/
 @media (max-width: 48em) {
-  .heading-box {
-    padding: 0 2.4rem;
-  }
-
-  .heading__title {
-    font-size: 3rem;
-  }
-
-  .heading__text {
-    font-size: 2.4rem;
-  }
 }
 
 /**************************/
@@ -68,7 +58,13 @@
     margin-bottom: 0;
   }
 
+  .heading__title {
+    font-size: 3rem;
+  }
+
   .heading__text {
-    padding: 0;
+    width: 90%;
+    font-size: 2rem;
+    line-height: 1.4;
   }
 }

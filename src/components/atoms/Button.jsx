@@ -6,7 +6,7 @@ const Button = props => {
     <div
       className={`${styles['btn-box']} ${styles[`box-align--${props.align}`]}`}
     >
-      <a className={`${styles.btn} ${styles[`btn--${props.style}`]}`} href="/">
+      <a className={`${styles.btn} ${styles[`btn--${props.style}`]}`} href="">
         {props.text}
       </a>
     </div>

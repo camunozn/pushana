@@ -5,7 +5,7 @@ import styles from './Explore.module.css';
 
 const Explore = () => {
   const heading = {
-    title: 'Explora más: consultoría, capacitaciones, comunidad o blog',
+    title: 'Explora más: consultorías, capacitaciones, comunidad y blog',
     text: 'Conoce nuestros servicios complementarios, apóyate en nuestra comunidad o descubre nuestro blog.',
   };
 
