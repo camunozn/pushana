@@ -6,9 +6,12 @@ const Button = props => {
     <div
       className={`${styles['btn-box']} ${styles[`box-align--${props.align}`]}`}
     >
-      <a className={`${styles.btn} ${styles[`btn--${props.style}`]}`} href="">
+      <button
+        className={`${styles.btn} ${styles[`btn--${props.style}`]}`}
+        onClick={() => props.clickHandler(props.element)}
+      >
         {props.text}
-      </a>
+      </button>
     </div>
   );
 };

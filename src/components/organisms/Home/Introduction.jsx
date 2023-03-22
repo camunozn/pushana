@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import HeadingLarge from '../../molecules/UI/HeadingLarge';
 import CardsBox from '../../molecules/UI/CardsBox';
-import styles from './Summary.module.css';
+import styles from './Introduction.module.css';
 
-const Summary = () => {
+const Introduction = () => {
   const heading = {
     title:
       'Cambiamos la forma de planificar y controlar tus proyectos de construcción.',
@@ -38,7 +38,7 @@ const Summary = () => {
   ];
 
   return (
-    <section id="section-intro" className={styles['intro']}>
+    <section id="section-introduction" className={styles['intro']}>
       <div className={styles['intro__container']}>
         <HeadingLarge title={heading.title} text={heading.text} />
         <CardsBox cardsList={cardsList} />
@@ -47,4 +47,4 @@ const Summary = () => {
   );
 };
 
-export default Summary;
+export default Introduction;

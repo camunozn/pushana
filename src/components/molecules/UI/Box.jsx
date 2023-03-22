@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../atoms/Button';
+import Button from '../../atoms/UI/Button';
 import List from './List';
 import HeadingSmall from './HeadingSmall';
 import styles from './Box.module.css';

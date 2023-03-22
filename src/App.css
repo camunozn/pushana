@@ -120,6 +120,14 @@ body {
 /*****************************/
 /* GENERAL COMPONENTS*/
 /*****************************/
+
+button {
+  background-color: transparent;
+  border-style: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 a:link,
 a:visited {
   font-size: 1.8rem;

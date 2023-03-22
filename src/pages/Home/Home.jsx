@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css';
 import Hero from '../../components/organisms/Home/Hero';
-import Summary from '../../components/organisms/Home/Summary';
+import Introduction from '../../components/organisms/Home/Introduction';
 import Explore from '../../components/organisms/Home/Explore';
 import Product from '../../components/organisms/Home/Product';
 import Header from '../../components/organisms/Header/Header';
@@ -20,7 +20,7 @@ const Home = () => {
       <Header linksList={linksList} />
       <main>
         <Hero />
-        <Summary />
+        <Introduction />
         <Product />
         <Explore />
       </main>

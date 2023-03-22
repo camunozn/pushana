@@ -1,16 +1,16 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { TypeAnimation } from 'react-type-animation';
 import { setIsSticky } from '../../../store/slices/isSticky.slice';
 import imagesArray from '../../../assets/index';
-import Button from '../../atoms/Button';
+import Button from '../../atoms/UI/Button';
 import styles from './Hero.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
   const isSticky = useSelector(state => state.isSticky);
   const dispatch = useDispatch();
-
-  const heroRef = useRef();
+  const navigate = useNavigate();
 
   const sequenceWords = [
     'fácil',
@@ -30,15 +30,26 @@ const Hero = () => {
       const entry = entries[0];
       dispatch(setIsSticky(!entry.isIntersecting));
     });
-    observer.observe(heroRef.current);
+    observer.observe(document.getElementById('section-hero'));
   }, []);
+
+  const scrollToSection = section => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const navigateToPage = page => {
+    navigate(page);
+  };
 
   return (
     <section
       id="section-hero"
       className={`${styles['hero']} ${isSticky && styles.sticky}`}
     >
-      <div ref={heroRef} className={styles['hero__container']}>
+      <div className={styles['hero__container']}>
         <div className={styles['hero__text-box']}>
           <h1 className={styles['hero__heading']}>
             Gestión de proyectos
@@ -62,8 +73,20 @@ const Hero = () => {
           <img src={imagesArray.imgHero} alt="Hero image" />
         </div>
         <div className={styles['hero__btn-box']}>
-          <Button text="Prueba ahora" style="primary" align="center" />
-          <Button text="Descubre más" style="secondary" align="center" />
+          <Button
+            text="Prueba ahora"
+            style="primary"
+            align="center"
+            clickHandler={navigateToPage}
+            element="/product"
+          />
+          <Button
+            text="Descubre más"
+            style="secondary"
+            align="center"
+            clickHandler={scrollToSection}
+            element="section-introduction"
+          />
         </div>
       </div>
     </section>
