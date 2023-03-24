@@ -42,7 +42,7 @@
 /**************************/
 @media (max-width: 37em) {
   .cards-box {
-    padding: 3.2rem;
+    padding: 3.2rem 0;
   }
 
   .cards-box.grid--2-cols {

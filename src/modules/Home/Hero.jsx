@@ -5,12 +5,10 @@ import { setIsSticky } from '../../store/slices/isSticky.slice';
 import imagesArray from '../../assets/index';
 import Button from '../../components/atoms/UI/Button';
 import styles from './Hero.module.css';
-import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
   const isSticky = useSelector(state => state.isSticky);
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   const sequenceWords = [
     'fácil',
@@ -32,17 +30,6 @@ const Hero = () => {
     });
     observer.observe(document.getElementById('section-hero'));
   }, []);
-
-  const scrollToSection = section => {
-    const element = document.getElementById(section);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const navigateToPage = page => {
-    navigate(page);
-  };
 
   return (
     <section
@@ -77,14 +64,14 @@ const Hero = () => {
             text="Prueba ahora"
             style="primary"
             align="center"
-            clickHandler={navigateToPage}
+            type="page"
             element="/product"
           />
           <Button
             text="Descubre más"
             style="secondary"
             align="center"
-            clickHandler={scrollToSection}
+            type="section"
             element="section-introduction"
           />
         </div>

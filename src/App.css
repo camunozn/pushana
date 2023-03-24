@@ -77,6 +77,13 @@ Medium: 11px
     rgba(30, 3, 52, 0.97),
     rgba(33, 3, 58, 0.97)
   );
+  --linear-gradient-hero: linear-gradient(
+    to bottom right,
+    rgba(23, 2, 41, 0.85),
+    rgba(26, 2, 46, 0.85),
+    rgba(30, 3, 52, 0.85),
+    rgba(33, 3, 58, 0.85)
+  );
   --linear-gradient-accent: linear-gradient(to right, #1b93c2, #c91668);
   --linear-gradient-border: linear-gradient(
     to right,

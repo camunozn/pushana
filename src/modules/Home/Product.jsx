@@ -8,14 +8,14 @@ import styles from './Product.module.css';
 const Product = () => {
   // Section Heading
   const heading = {
-    title: 'Desde la fase pre-contractual hasta el final de la construcción.',
-    text: 'Te acompañamos en las principales etapas de tu proyecto: pre-contractual, pre-construcción y construcción',
+    title: 'Desde la fase precontractual hasta el final de la construcción.',
+    text: 'Te acompañamos en las principales etapas de tu proyecto: precontractual, preconstrucción y construcción',
   };
 
   // Feature Headings
   const bidFeatureIntro = {
     title: {
-      start: 'Pre-contractual:',
+      start: 'Precontractual:',
       middle: 'licitaciones y cotizaciones',
       end: 'para clientes públicos o privados.',
     },
@@ -26,7 +26,7 @@ const Product = () => {
 
   const planningFeatureIntro = {
     title: {
-      start: 'Pre-construcción:',
+      start: 'Preconstrucción:',
       middle: 'inicio y planificación',
       end: 'para prepararte de la mejor manera.',
     },

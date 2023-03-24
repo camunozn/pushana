@@ -54,17 +54,21 @@
 /**************************/
 @media (max-width: 37em) {
   .heading-box {
-    padding: 0 0 4.8rem 0;
+    text-align: left;
+    padding: 2.4rem 0;
     margin-bottom: 0;
   }
 
   .heading__title {
-    font-size: 3rem;
+    hyphens: auto;
+    font-size: 4.2rem;
+    line-height: 1.2;
   }
 
   .heading__text {
-    width: 90%;
-    font-size: 2rem;
+    width: 100%;
+    hyphens: auto;
+    font-size: 3rem;
     line-height: 1.4;
   }
 }
