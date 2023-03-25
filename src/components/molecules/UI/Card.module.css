@@ -116,7 +116,7 @@
 /**************************/
 @media (max-width: 37em) {
   .card {
-    max-width: 45rem;
+    max-width: 100%;
   }
 
   .title--primary {

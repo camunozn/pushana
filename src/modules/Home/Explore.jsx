@@ -12,7 +12,12 @@ const Explore = () => {
   const cardsList = [
     {
       icon: 'fa-regular fa-compass',
-      title: 'Consulting & Training',
+      title: 'Consulting',
+      style: 'primary',
+    },
+    {
+      icon: 'fa-solid fa-graduation-cap',
+      title: 'Training',
       style: 'primary',
     },
     {

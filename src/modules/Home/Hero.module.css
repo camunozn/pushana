@@ -29,11 +29,11 @@
   height: 80vw;
   width: 80vw;
   position: absolute;
-  top: 35%;
-  right: -70%;
+  top: 60%;
+  right: -60%;
   background-color: var(--color-bg-shapes);
   border-radius: 10%;
-  transform: rotate(60deg);
+  transform: rotate(70deg);
   z-index: -1;
 }
 

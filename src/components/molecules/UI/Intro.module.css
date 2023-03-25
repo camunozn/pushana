@@ -9,8 +9,8 @@
 }
 
 .feature-heading__title {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.6rem;
+  font-weight: 500;
   letter-spacing: -0.75px;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .feature-heading__text {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 300;
   letter-spacing: 0.75px;
   line-height: 1.6;

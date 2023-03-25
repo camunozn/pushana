@@ -9,7 +9,7 @@ const Product = () => {
   // Section Heading
   const heading = {
     title: 'Desde la fase precontractual hasta el final de la construcción.',
-    text: 'Te acompañamos en las principales etapas de tu proyecto: precontractual, preconstrucción y construcción',
+    text: 'Te acompañamos en las principales etapas de tu proyecto: precontractual, preconstrucción y construcción.',
   };
 
   // Feature Headings
@@ -19,7 +19,7 @@ const Product = () => {
       middle: 'licitaciones y cotizaciones',
       end: 'para clientes públicos o privados.',
     },
-    text: 'Hacemos fácil el proceso de elaboración de licitaciones y cotizaciones, optimizamos nuestra interfaz para brindar una experiencia ágil y eficiente. Además incluimos herramientas para ayudarte con el análisis como: 80/20, uso de recursos, análisis paramétricos, análisis comparativos y fichas de cierre para mejorar tu oferta.',
+    text: 'Hacemos fácil el proceso de elaboración de licitaciones y cotizaciones, optimizamos nuestra app para brindar una experiencia ágil y eficiente. Además incluimos herramientas para ayudarte con el análisis de tu oferta.',
     image: imagesArray.imgBid,
     accent: 'primary',
   };
@@ -30,7 +30,7 @@ const Product = () => {
       middle: 'inicio y planificación',
       end: 'para prepararte de la mejor manera.',
     },
-    text: 'Transición sin inconvenientes. Pasa de la licitación al inicio de la construcción sin problemas. Revisa el alcance, realiza el presupuesto meta, ajusta la programación de obra, haz un plan de compras y prepara toda la información que necesitas para empezar la ejecución de tu proyecto.',
+    text: 'Pasa de la licitación al inicio de la construcción sin problemas. Revisa el alcance, realiza el presupuesto meta, ajusta la programación y prepara toda la información que necesitas para empezar la ejecución de tu proyecto.',
     image: imagesArray.imgPlanning,
     accent: 'secondary',
   };
@@ -39,9 +39,9 @@ const Product = () => {
     title: {
       start: 'Construcción:',
       middle: 'monitoreo y control',
-      end: 'para una ejecución con conciencia. Datos para tomar mejores decisiones.',
+      end: 'para una ejecución con conciencia.',
     },
-    text: 'Simplificamos y automatizamos las tareas de registro, procesamiento y análisis de los datos de campo para reducir los tiempos de entrega de informes y garantizar la calidad de la información. Así, te mantenemos actualizado sobre el desempeño de tu proyecto y te permitimos tomar mejores decisiones basadas en datos.',
+    text: 'Simplificamos los procesos de registro y análisis de la información campo para mantener los reportes sobre el desempeño de tu proyecto actualizados en todo momento y permitir la toma de decisiones basadas en datos.',
     image: imagesArray.imgControl,
     accent: 'primary',
   };
@@ -49,15 +49,15 @@ const Product = () => {
   // Feature Box Headings
   const bidBoxHeading = {
     title: 'Ofertas públicas o privadas',
-    text: 'Todo lo que necesitas para presentar una oferta completa y competitiva',
+    text: 'Todo lo que necesitas para presentar una oferta completa y competitiva.',
   };
   const planningBoxHeading = {
     title: 'Línea Base del proyecto',
-    text: 'Prepara fácilmente todo lo necesario para fijar tu línea base y empezar a construir',
+    text: 'Prepara fácilmente todo lo necesario para fijar tu línea base y empezar a construir.',
   };
   const controlBoxHeading = {
     title: 'Gestión del valor ganado',
-    text: 'Aplica la gestión del valor ganado para evaluar el desempeño de tu proyecto',
+    text: 'Aplica la gestión del valor ganado para evaluar el desempeño de tu proyecto.',
   };
 
   // Features Content

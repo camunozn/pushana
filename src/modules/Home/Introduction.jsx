@@ -15,13 +15,13 @@ const Introduction = () => {
       icon: 'fa-solid fa-wand-magic-sparkles',
       title: 'Simple e intuitivo',
       style: 'secondary',
-      text: 'Desarrollamos una interfaz minimalista, clara y fácil de entender. Seguimos el flujo natural de los proyectos de construcción adaptado a la realidad nacional.',
+      text: 'Desarrollamos una interfaz minimalista, sencilla y clara. Seguimos un flujo de trabajo natural e intuitivo, con procesos simples y fáciles de seguir.',
     },
     {
       icon: 'fa-solid fa-gauge-high',
       title: 'Ágil y eficiente',
       style: 'secondary',
-      text: 'Eliminamos tareas manuales y reprocesos. Enfocamos nuestra aplicación en el uso eficiente del tiempo, las metodologías ágiles y el trabajo inteligente.',
+      text: 'Eliminamos tareas manuales y reprocesos. Enfocamos nuestra aplicación en el trabajo eficiente, los procesos ágiles y la entrega de valor constante.',
     },
     {
       icon: 'fa-solid fa-magnifying-glass-chart',
@@ -33,7 +33,7 @@ const Introduction = () => {
       icon: 'fa-solid fa-hand-holding-dollar',
       title: 'Versátil y accesible',
       style: 'secondary',
-      text: 'Tomamos en cuenta la naturaleza temporal de los proyectos. Solo suscríbete por el tiempo y para los usuarios que necesites. Sin ataduras.',
+      text: 'Tomamos en cuenta la naturaleza temporal de los proyectos. Ofrecemos suscripciones solo por el tiempo y para los usuarios que necesites.',
     },
   ];
 
