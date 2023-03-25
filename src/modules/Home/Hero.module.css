@@ -24,6 +24,19 @@
   z-index: -1;
 }
 
+.hero::after {
+  content: '';
+  height: 80vw;
+  width: 80vw;
+  position: absolute;
+  top: 35%;
+  right: -70%;
+  background-color: var(--color-bg-shapes);
+  border-radius: 10%;
+  transform: rotate(60deg);
+  z-index: -1;
+}
+
 .hero.sticky {
   margin-top: 8rem;
 }
@@ -208,6 +221,10 @@
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: 0 0, 130% -90px;
+  }
+
+  .hero::before {
+    display: none;
   }
 
   .hero::after {
