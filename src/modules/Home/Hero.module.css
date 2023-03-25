@@ -8,6 +8,20 @@
   height: calc(100vh - 8rem);
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  height: 80vw;
+  width: 80vw;
+  position: absolute;
+  top: 0%;
+  left: -65%;
+  background-color: var(--color-bg-shapes);
+  border-radius: 10%;
+  transform: rotate(30deg);
+  z-index: -1;
 }
 
 .hero.sticky {
@@ -194,6 +208,10 @@
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: 0 0, 130% -90px;
+  }
+
+  .hero::after {
+    display: none;
   }
 
   .hero__container {

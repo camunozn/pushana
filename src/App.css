@@ -63,6 +63,7 @@ Medium: 11px
   --color-bg-lighter: #11021d;
   --color-bg-normal: #170229;
   --color-bg-darker: #0d0117;
+  --color-bg-shapes: rgba(86, 41, 129, 0.1);
   --linear-gradient-bg: linear-gradient(
     to bottom right,
     #170229,
@@ -129,10 +130,11 @@ body {
 /*****************************/
 
 button {
-  background-color: transparent;
-  border-style: none;
   font-size: 1.8rem;
   font-weight: 700;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
 }
 
 a:link,

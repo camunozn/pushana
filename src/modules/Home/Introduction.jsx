@@ -27,7 +27,7 @@ const Introduction = () => {
       icon: 'fa-solid fa-magnifying-glass-chart',
       title: 'Decisiones basadas en datos',
       style: 'secondary',
-      text: 'Incluimos recursos que facilitan y promueven el análisis de la información. Hacemos énfasis en la toma de decisiones basadas en datos.',
+      text: 'Incluimos herramientas que facilitan y promueven el análisis de la información. Hacemos énfasis en la toma de decisiones basadas en datos.',
     },
     {
       icon: 'fa-solid fa-hand-holding-dollar',
