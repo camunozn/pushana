@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../atoms/UI/Button';
+import Button from '../../atoms/button/Button';
 import styles from './Navbar.module.css';
 
 const Navbar = props => {

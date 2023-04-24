@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../../atoms/UI/Button';
-import List from './List';
-import HeadingSmall from './HeadingSmall';
+import Button from '../../atoms/button/Button';
+import List from '../item-list/List';
+import HeadingSmall from '../heading-small/HeadingSmall';
 import styles from './Box.module.css';
 
 const Box = props => {

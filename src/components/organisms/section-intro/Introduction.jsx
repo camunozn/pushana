@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import HeadingLarge from '../../molecules/UI/HeadingLarge';
-import CardsBox from '../../molecules/UI/CardsBox';
+import HeadingLarge from '../../molecules/heading-large/HeadingLarge';
+import CardsBox from '../../molecules/cards-box/CardsBox';
 import styles from './Introduction.module.css';
 
 const Introduction = () => {

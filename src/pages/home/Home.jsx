@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Home.module.css';
-import Hero from '../../components/organisms/Home/Hero';
-import Introduction from '../../components/organisms/Home/Introduction';
-import Explore from '../../components/organisms/Home/Explore';
-import Product from '../../components/organisms/Home/Product';
-import Header from '../../components/organisms/Header/Header';
-import Footer from '../../components/organisms/Footer/Footer';
+import Hero from '../../components/organisms/section-hero/Hero';
+import Introduction from '../../components/organisms/section-intro/Introduction';
+import Explore from '../../components/organisms/section-explore/Explore';
+import Product from '../../components/organisms/section-product/Product';
+import Header from '../../components/organisms/header/Header';
+import Footer from '../../components/organisms/footer/Footer';
 
 const Home = () => {
   const linksList = [

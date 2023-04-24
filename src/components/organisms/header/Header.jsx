@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import Navbar from '../../molecules/Header/Navbar';
-import LogoBox from '../../molecules/Header/LogoBox';
-import ButtonMobile from '../../atoms/Header/ButtonMobile';
+import Navbar from '../../molecules/nav-bar/Navbar';
+import LogoBox from '../../molecules/logo-box/LogoBox';
+import ButtonMobile from '../../atoms/button-mobile/ButtonMobile';
 import logoImg from '../../../assets/logo/logo-transparent-bg.png';
 import styles from './Header.module.css';
 

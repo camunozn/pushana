@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { TypeAnimation } from 'react-type-animation';
 import { setIsSticky } from '../../../store/slices/isSticky.slice';
 import imagesArray from '../../../assets/index';
-import Button from '../../atoms/UI/Button';
+import Button from '../../atoms/button/Button';
 import styles from './Hero.module.css';
 
 const Hero = () => {

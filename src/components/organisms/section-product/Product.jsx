@@ -1,7 +1,7 @@
 import React from 'react';
-import Box from '../../molecules/UI/Box';
-import Intro from '../../molecules/UI/Intro';
-import HeadingMedium from '../../molecules/UI/HeadingMedium';
+import Box from '../../molecules/box/Box';
+import Intro from '../../molecules/intro-box/Intro';
+import HeadingMedium from '../../molecules/heading-medium/HeadingMedium';
 import imagesArray from '../../../assets/index';
 import styles from './Product.module.css';
 
