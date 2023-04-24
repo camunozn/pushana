@@ -1,6 +1,6 @@
 import React from 'react';
-import CardsBox from '../../components/molecules/UI/CardsBox';
-import HeadingMedium from '../../components/molecules/UI/HeadingMedium';
+import CardsBox from '../../molecules/UI/CardsBox';
+import HeadingMedium from '../../molecules/UI/HeadingMedium';
 import styles from './Explore.module.css';
 
 const Explore = () => {

@@ -1,8 +1,8 @@
 import React from 'react';
-import Box from '../../components/molecules/UI/Box';
-import Intro from '../../components/molecules/UI/Intro';
-import HeadingMedium from '../../components/molecules/UI/HeadingMedium';
-import imagesArray from '../../assets/index';
+import Box from '../../molecules/UI/Box';
+import Intro from '../../molecules/UI/Intro';
+import HeadingMedium from '../../molecules/UI/HeadingMedium';
+import imagesArray from '../../../assets/index';
 import styles from './Product.module.css';
 
 const Product = () => {

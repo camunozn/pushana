@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import Navbar from '../../components/molecules/Header/Navbar';
-import LogoBox from '../../components/molecules/Header/LogoBox';
-import ButtonMobile from '../../components/atoms/Header/ButtonMobile';
-import logoImg from '../../assets/logo/logo-transparent-bg.png';
+import Navbar from '../../molecules/Header/Navbar';
+import LogoBox from '../../molecules/Header/LogoBox';
+import ButtonMobile from '../../atoms/Header/ButtonMobile';
+import logoImg from '../../../assets/logo/logo-transparent-bg.png';
 import styles from './Header.module.css';
 
 const Header = props => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import imgBrand from '../../assets/logo/logo-name-transparent-bg.png';
+import imgBrand from '../../../assets/logo/logo-name-transparent-bg.png';
 import styles from './Footer.module.css';
 
 const Footer = () => {
