@@ -55,122 +55,25 @@ const Home = () => {
   const cardsListIntroServices = [
     {
       icon: 'fa-regular fa-compass',
-      title: 'Consultoría',
+      title: 'Pushana Consulting',
       style: 'primary',
-      type: 'section',
-      element: 'section-consulting',
+      type: 'page',
+      element: '/consulting',
     },
     {
       icon: 'fa-solid fa-laptop-code',
-      title: 'Pushana App',
+      title: 'Pushana CPMS',
       style: 'primary',
-      type: 'section',
-      element: 'section-software',
+      type: 'page',
+      element: '/software',
     },
     {
       icon: 'fa-solid fa-people-group',
-      title: 'Comunidad',
+      title: 'Comunidad Pushana',
       style: 'primary',
+      type: 'page',
+      element: '/community',
     },
-  ];
-
-  // SERVICES CONTENT
-  const colsServices = 2;
-
-  const headingServices = {
-    title: 'Desde la fase precontractual hasta el final de la construcción.',
-    text: 'Te acompañamos en las principales etapas de tu proyecto: precontractual, preconstrucción y construcción. Somos tu aliado en cada paso del camino.',
-    // title: 'Tu aliado estratégico para fortalecer la gestión.',
-    // text: 'Desde la ingeniería de costos hasta la planificación detallada y el monitoreo y control, somos tu aliado en cada paso del camino.',
-  };
-
-  const firstFeatureIntroServices = {
-    title: {
-      start: 'Precontractual:',
-      middle: 'licitaciones y cotizaciones',
-      end: 'para clientes públicos o privados.',
-    },
-    text: 'Hacemos fácil el proceso de elaboración de licitaciones y cotizaciones, optimizamos nuestra app para brindar una experiencia ágil y eficiente. Además incluimos herramientas para ayudarte con el análisis de tu oferta.',
-    image: imagesArray.imgBid,
-    accent: 'primary',
-  };
-
-  const secondFeatureIntroServices = {
-    title: {
-      start: 'Preconstrucción:',
-      middle: 'inicio y planificación',
-      end: 'para prepararte de la mejor manera.',
-    },
-    text: 'Pasa de la licitación al inicio de la construcción sin problemas. Revisa el alcance, realiza el presupuesto meta, ajusta la programación y prepara toda la información que necesitas para empezar la ejecución de tu proyecto.',
-    image: imagesArray.imgPlanning,
-    accent: 'secondary',
-  };
-
-  const thirdFeatureIntroServices = {
-    title: {
-      start: 'Construcción:',
-      middle: 'monitoreo y control',
-      end: 'para una ejecución con conciencia.',
-    },
-    text: 'Simplificamos los procesos de registro y análisis de la información campo para mantener los reportes sobre el desempeño de tu proyecto actualizados en todo momento y permitir la toma de decisiones basadas en datos.',
-    image: imagesArray.imgControl,
-    accent: 'primary',
-  };
-
-  // Feature Box Headings
-  const firstBoxHeadingServices = {
-    title: 'Ofertas públicas o privadas',
-    text: 'Todo lo que necesitas para presentar una oferta completa y competitiva.',
-  };
-  const secondBoxHeadingServices = {
-    title: 'Línea Base del proyecto',
-    text: 'Prepara fácilmente todo lo necesario para fijar tu línea base y empezar a construir.',
-  };
-  const thirdBoxHeadingServices = {
-    title: 'Gestión del valor ganado',
-    text: 'Aplica la gestión del valor ganado para evaluar el desempeño de tu proyecto.',
-  };
-
-  // Features Content
-
-  // prettier-ignore
-  const firstFeaturesServices = [
-    { name: 'Presupuesto', icon: 'fa-solid fa-sack-dollar' },
-    { name: 'Cronograma', icon: 'fa-solid fa-bars-staggered' },
-    { name: 'Desagregación tecnológica', icon: 'fa-solid fa-chart-pie' },
-    { name: 'Fórmula polinómica', icon: 'fa-solid fa-superscript' },
-    { name: 'Análisis de costos directos', icon: 'fa-solid fa-helmet-safety' },
-    { name: 'Análisis de costos indirectos', icon: 'fa-solid fa-briefcase' },
-    { name: 'Análisis por permanencia', icon: 'fa-solid fa-calendar-days' },
-    { name: 'Análisis de Pareto', icon: 'fa-solid fa-chart-bar' },
-    { name: 'Análisis comparativo', icon: 'fa-solid fa-code-compare' },
-    { name: 'Ficha para cierre de oferta', icon: 'fa-solid fa-award' },
-  ];
-
-  // prettier-ignore
-  const secondFeaturesServices = [
-    { name: 'Centros de control', icon: 'fa-solid fa-file-invoice-dollar' },
-    { name: 'Presupuesto meta', icon: 'fa-solid fa-bullseye' },
-    { name: 'Programación ajustada', icon: 'fa-solid fa-calendar-check' },
-    { name: 'Plan de uso de recursos', icon: 'fa-solid fa-person-digging' },
-    { name: 'Plan de compras', icon: 'fa-solid fa-dolly' },
-    { name: 'Plan de subcontratos', icon: 'fa-solid fa-helmet-safety' },
-    { name: 'Plan de control de la calidad', icon: 'fa-solid fa-list-check' },
-    { name: 'Plan de gestión de riesgos', icon: 'fa-solid fa-triangle-exclamation' },
-  ];
-
-  // prettier-ignore
-  const thirdFeaturesServices = [
-    { name: 'Registro y control de avance de obra', icon:'fa-solid fa-chart-line'},
-    { name: 'Registro y control de horas hombre', icon: 'fa-solid fa-address-card'},
-    { name: 'Registro y control de horas máquina', icon: 'fa-solid fa-snowplow' },
-    { name: 'Registro y control de inventario', icon: 'fa-solid fa-warehouse' },
-    { name: 'Registro y control de subcontratos', icon: 'fa-solid fa-helmet-safety' },
-    { name: 'Control de productividad', icon: 'fa-solid fa-gauge-simple-high' },
-    { name: 'Control de cambios', icon: 'fa-solid fa-code-compare' },
-    { name: 'Control de costos', icon: 'fa-solid fa-money-bill-trend-up' },
-    { name: 'Control de cronograma', icon: 'fa-solid fa-diagram-successor' },
-    { name: 'Tableros de mando e informes gerenciales', icon: 'fa-regular fa-compass' },
   ];
 
   // EXPLORE MORE CONTENT
@@ -210,21 +113,6 @@ const Home = () => {
         heading={headingIntroServices}
         cardsList={cardsListIntroServices}
       />
-      <Product
-        id="section-services"
-        cols={colsServices}
-        heading={headingServices}
-        firstFeatureIntro={firstFeatureIntroServices}
-        secondFeatureIntro={secondFeatureIntroServices}
-        thirdFeatureIntro={thirdFeatureIntroServices}
-        firstBoxHeading={firstBoxHeadingServices}
-        secondBoxHeading={secondBoxHeadingServices}
-        thirdBoxHeading={thirdBoxHeadingServices}
-        firstFeatures={firstFeaturesServices}
-        secondFeatures={secondFeaturesServices}
-        thirdFeatures={thirdFeaturesServices}
-      />
-
       <Explore heading={headingExplore} cardsList={cardsListExplore} />
     </div>
   );

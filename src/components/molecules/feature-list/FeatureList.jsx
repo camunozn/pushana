@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './List.module.css';
+import styles from './FeatureList.module.css';
 
-const List = props => {
+const FeatureList = props => {
   const listItems = props.list;
 
   return (
@@ -20,4 +20,4 @@ const List = props => {
   );
 };
 
-export default List;
+export default FeatureList;
