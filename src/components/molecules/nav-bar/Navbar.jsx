@@ -1,9 +1,20 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import Button from '../../atoms/button/Button';
 import styles from './Navbar.module.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = props => {
-  const linksList = props.linksList;
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
+  const scrollToSection = section => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className={styles.navbar}>
@@ -12,15 +23,15 @@ const Navbar = props => {
           props.openNav && styles.visible
         }`}
       >
-        {linksList.map(link => (
+        {props.linksList.map(link => (
           <li key={link.name}>
-            <a className={styles['navbar__link']} href={link.link}>
+            <Link className={styles['navbar__link']} to={link.link}>
               {link.name}
-            </a>
+            </Link>
           </li>
         ))}
         <li>
-          <Button text="Prueba ahora" style="primary" align="center" />
+          <Button text="Contáctenos" style="primary" align="center" />
         </li>
       </ul>
     </div>

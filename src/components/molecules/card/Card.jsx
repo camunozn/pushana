@@ -1,9 +1,25 @@
 import React from 'react';
 import styles from './Card.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const Card = props => {
+  const navigate = useNavigate();
+
+  const scrollToSection = section => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const navigateToPage = page => {
+    navigate(page);
+  };
+
+  const clickHandler = props.type === 'page' ? navigateToPage : scrollToSection;
+
   return (
-    <div className={styles.card}>
+    <div className={styles.card} onClick={() => clickHandler(props.element)}>
       <div>
         {props.image && (
           <div className={styles['card__img']}>

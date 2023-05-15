@@ -17,6 +17,8 @@ const CardsBox = props => {
           title={card.title}
           style={card.style}
           text={card.text}
+          type={card.type}
+          element={card.element}
         />
       ))}
     </div>

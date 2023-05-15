@@ -1,90 +1,56 @@
 import React from 'react';
-import styles from './Home.module.css';
-import Hero from '../../modules/section-hero/Hero';
 import Introduction from '../../modules/section-intro/Introduction';
-import Explore from '../../modules/section-explore/Explore';
-import imagesArray from '../../assets';
 import Product from '../../modules/section-product/Product';
+import imagesArray from '../../assets';
+import { useDispatch } from 'react-redux';
+import { setIsSticky } from '../../store/slices/isSticky.slice';
 
-const Home = () => {
-  //HERO CONTENT
-  const headingHero = {
-    start: 'Gestión de proyectos',
-    middle: 'de construcción',
-    end: 'hecha',
-    text: 'Simplifica la planificación, potencia el control, evita reprocesos, haz que la información fluya y en general, mejora el desempeño de tus proyectos.',
-    image: imagesArray.imgHero,
-  };
+const Software = () => {
+  const dispatch = useDispatch();
+  dispatch(setIsSticky(true));
 
-  const sequenceWords = [
-    'fácil',
-    1000,
-    'eficiente',
-    1000,
-    'clara',
-    1000,
-    'accesible',
-    1000,
-    'efectiva',
-    1000,
-  ];
-
-  const primaryBtnOptions = {
-    text: 'Contáctenos',
-    style: 'primary',
-    align: 'center',
-    type: 'page',
-    element: '/',
-  };
-
-  const secondaryBtnOptions = {
-    text: 'Descubre más',
-    style: 'secondary',
-    align: 'center',
-    type: 'section',
-    element: 'section-introduction',
-  };
-
-  // INTRO SERVICES CONTENT
-  const headingIntroServices = {
+  // INTRO APP CONTENT
+  const headingIntroSoftware = {
     title:
-      'Potenciamos los procesos de planificación y control de tus proyectos de construcción.',
-    text: 'Impulsamos la gestión de tus proyectos a través de servicios de consultoría especializados y soluciones de software intuitivas que generan resultados. Además, tenemos una gran comunidad en la que te puedes apoyar!',
+      'Cambiamos la forma de planificar y controlar tus proyectos de construcción.',
+    text: 'Nuestra aplicación está diseñada para hacer los procesos de planificación y control fáciles, eficientes y accesibles para todos.',
   };
 
-  const cardsListIntroServices = [
+  const cardsListIntroSoftware = [
     {
-      icon: 'fa-regular fa-compass',
-      title: 'Consultoría',
-      style: 'primary',
-      type: 'section',
-      element: 'section-consulting',
+      icon: 'fa-solid fa-wand-magic-sparkles',
+      title: 'Simple e intuitivo',
+      style: 'secondary',
+      text: 'Desarrollamos una interfaz minimalista, sencilla y clara, con un flujo de trabajo intuitivo.',
     },
     {
-      icon: 'fa-solid fa-laptop-code',
-      title: 'Pushana App',
-      style: 'primary',
-      type: 'section',
-      element: 'section-software',
+      icon: 'fa-solid fa-gauge-high',
+      title: 'Ágil y eficiente',
+      style: 'secondary',
+      text: 'Eliminamos tareas manuales y reprocesos. Enfocamos nuestra aplicación en procesos ágiles.',
     },
     {
-      icon: 'fa-solid fa-people-group',
-      title: 'Comunidad',
-      style: 'primary',
+      icon: 'fa-solid fa-magnifying-glass-chart',
+      title: 'Decisiones basadas en datos',
+      style: 'secondary',
+      text: 'Incluimos herramientas que facilitan y promueven toma de decisiones basadas en datos.',
+    },
+    {
+      icon: 'fa-solid fa-hand-holding-dollar',
+      title: 'Versátil y accesible',
+      style: 'secondary',
+      text: 'Ofrecemos suscripciones solo por el tiempo y para los usuarios que necesites.',
     },
   ];
+  // APP DETAILS CONTENT
+  const colsSoftware = 2;
 
-  // SERVICES CONTENT
-  const colsServices = 2;
-
-  const headingServices = {
+  const headingSoftware = {
     title: 'Desde la fase precontractual hasta el final de la construcción.',
-    text: 'Te acompañamos en las principales etapas de tu proyecto: precontractual, preconstrucción y construcción. Somos tu aliado en cada paso del camino.',
-    // title: 'Tu aliado estratégico para fortalecer la gestión.',
-    // text: 'Desde la ingeniería de costos hasta la planificación detallada y el monitoreo y control, somos tu aliado en cada paso del camino.',
+    text: 'Te acompañamos en las principales etapas de tu proyecto: precontractual, preconstrucción y construcción.',
   };
 
-  const firstFeatureIntroServices = {
+  const firstFeatureIntroSoftware = {
     title: {
       start: 'Precontractual:',
       middle: 'licitaciones y cotizaciones',
@@ -95,7 +61,7 @@ const Home = () => {
     accent: 'primary',
   };
 
-  const secondFeatureIntroServices = {
+  const secondFeatureIntroSoftware = {
     title: {
       start: 'Preconstrucción:',
       middle: 'inicio y planificación',
@@ -106,7 +72,7 @@ const Home = () => {
     accent: 'secondary',
   };
 
-  const thirdFeatureIntroServices = {
+  const thirdFeatureIntroSoftware = {
     title: {
       start: 'Construcción:',
       middle: 'monitoreo y control',
@@ -118,15 +84,15 @@ const Home = () => {
   };
 
   // Feature Box Headings
-  const firstBoxHeadingServices = {
+  const firstBoxHeadingSoftware = {
     title: 'Ofertas públicas o privadas',
     text: 'Todo lo que necesitas para presentar una oferta completa y competitiva.',
   };
-  const secondBoxHeadingServices = {
+  const secondBoxHeadingSoftware = {
     title: 'Línea Base del proyecto',
     text: 'Prepara fácilmente todo lo necesario para fijar tu línea base y empezar a construir.',
   };
-  const thirdBoxHeadingServices = {
+  const thirdBoxHeadingSoftware = {
     title: 'Gestión del valor ganado',
     text: 'Aplica la gestión del valor ganado para evaluar el desempeño de tu proyecto.',
   };
@@ -134,7 +100,7 @@ const Home = () => {
   // Features Content
 
   // prettier-ignore
-  const firstFeaturesServices = [
+  const firstFeaturesSoftware = [
     { name: 'Presupuesto', icon: 'fa-solid fa-sack-dollar' },
     { name: 'Cronograma', icon: 'fa-solid fa-bars-staggered' },
     { name: 'Desagregación tecnológica', icon: 'fa-solid fa-chart-pie' },
@@ -148,7 +114,7 @@ const Home = () => {
   ];
 
   // prettier-ignore
-  const secondFeaturesServices = [
+  const secondFeaturesSoftware = [
     { name: 'Centros de control', icon: 'fa-solid fa-file-invoice-dollar' },
     { name: 'Presupuesto meta', icon: 'fa-solid fa-bullseye' },
     { name: 'Programación ajustada', icon: 'fa-solid fa-calendar-check' },
@@ -160,7 +126,7 @@ const Home = () => {
   ];
 
   // prettier-ignore
-  const thirdFeaturesServices = [
+  const thirdFeaturesSoftware = [
     { name: 'Registro y control de avance de obra', icon:'fa-solid fa-chart-line'},
     { name: 'Registro y control de horas hombre', icon: 'fa-solid fa-address-card'},
     { name: 'Registro y control de horas máquina', icon: 'fa-solid fa-snowplow' },
@@ -173,61 +139,28 @@ const Home = () => {
     { name: 'Tableros de mando e informes gerenciales', icon: 'fa-regular fa-compass' },
   ];
 
-  // EXPLORE MORE CONTENT
-  const headingExplore = {
-    title: 'Explora más: sobre nosotros, comunidad y blog',
-    text: 'Conoce más sobre nosotros, apóyate en nuestra comunidad o descubre nuestro blog.',
-  };
-
-  const cardsListExplore = [
-    {
-      icon: 'fa-solid fa-dna',
-      title: 'Sobre nosotros',
-      style: 'primary',
-    },
-    {
-      icon: 'fa-solid fa-people-group',
-      title: 'Comunidad Pushana',
-      style: 'primary',
-    },
-    {
-      icon: 'fa-solid fa-blog',
-      title: 'Pushana Blog',
-      style: 'primary',
-    },
-  ];
-
   return (
-    <div className={styles.home}>
-      <Hero
-        heading={headingHero}
-        sequenceWords={sequenceWords}
-        primaryBtnOptions={primaryBtnOptions}
-        secondaryBtnOptions={secondaryBtnOptions}
-      />
+    <div className="software">
       <Introduction
-        id="section-introduction"
-        heading={headingIntroServices}
-        cardsList={cardsListIntroServices}
+        id="section-software"
+        heading={headingIntroSoftware}
+        cardsList={cardsListIntroSoftware}
       />
       <Product
-        id="section-services"
-        cols={colsServices}
-        heading={headingServices}
-        firstFeatureIntro={firstFeatureIntroServices}
-        secondFeatureIntro={secondFeatureIntroServices}
-        thirdFeatureIntro={thirdFeatureIntroServices}
-        firstBoxHeading={firstBoxHeadingServices}
-        secondBoxHeading={secondBoxHeadingServices}
-        thirdBoxHeading={thirdBoxHeadingServices}
-        firstFeatures={firstFeaturesServices}
-        secondFeatures={secondFeaturesServices}
-        thirdFeatures={thirdFeaturesServices}
+        cols={colsSoftware}
+        heading={headingSoftware}
+        firstFeatureIntro={firstFeatureIntroSoftware}
+        secondFeatureIntro={secondFeatureIntroSoftware}
+        thirdFeatureIntro={thirdFeatureIntroSoftware}
+        firstBoxHeading={firstBoxHeadingSoftware}
+        secondBoxHeading={secondBoxHeadingSoftware}
+        thirdBoxHeading={thirdBoxHeadingSoftware}
+        firstFeatures={firstFeaturesSoftware}
+        secondFeatures={secondFeaturesSoftware}
+        thirdFeatures={thirdFeaturesSoftware}
       />
-
-      <Explore heading={headingExplore} cardsList={cardsListExplore} />
     </div>
   );
 };
 
-export default Home;
+export default Software;
