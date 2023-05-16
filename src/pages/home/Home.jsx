@@ -76,9 +76,100 @@ const Home = () => {
     },
   ];
 
+  // SERVICES AND PRODUCTS DETAILS CONTENT
+  const cols = 2;
+
+  const headingServices = {
+    title: 'Desde el diseño hasta el final de la construcción.',
+    text: 'Te acompañamos en las principales etapas de tu proyecto: diseño, precontractual, preconstrucción y construcción. Somos tu aliado en cada paso del camino.',
+    // title: 'Tu aliado estratégico para fortalecer la gestión.',
+    // text: 'Desde la ingeniería de costos hasta la planificación detallada y el monitoreo y control, somos tu aliado en cada paso del camino.',
+  };
+
+  const featuresServices = [
+    {
+      featureName: 'Diseño',
+      featureIntro: {
+        title: {
+          start: 'Diseño:',
+          middle: 'ingeniería de costos',
+          end: 'para la evaluación económica de proyectos.',
+        },
+        text: 'Si eres el promotor de un proyecto de construcción o el consultor de los diseños finales, nosotros te apoyamos con la ingeniería de costos y la evaluación económica del proyecto de cara a una construcción exitosa.',
+        image: imagesArray.imgCostEng,
+        accent: 'primary',
+      },
+    },
+    {
+      featureName: 'Precontractual',
+      featureIntro: {
+        title: {
+          start: 'Precontractual:',
+          middle: 'licitaciones y cotizaciones',
+          end: 'para clientes públicos o privados.',
+        },
+        text: 'Te apoyamos en la elaboración de licitaciones y cotizaciones. Realizamos el análisis económico de tu oferta, nos enfocamos en determinar presupuesto, análisis de precios unitarios, cronograma y uso de recursos.',
+        image: imagesArray.imgBidAlt,
+        accent: 'secondary',
+      },
+    },
+    {
+      featureName: 'Preconstrucción',
+      featureIntro: {
+        title: {
+          start: 'Preconstrucción:',
+          middle: 'planificación detallada',
+          end: 'para prepararte de la mejor manera.',
+        },
+        text: 'De la licitación al inicio de la construcción sin problemas. Revisamos el alcance, realizamos el presupuesto meta, ajustamos la programación y preparamos toda la información que necesitas para empezar la ejecución.',
+        image: imagesArray.imgPlanning,
+        accent: 'primary',
+      },
+    },
+    {
+      featureName: 'Construcción',
+      featureIntro: {
+        title: {
+          start: 'Construcción:',
+          middle: 'monitoreo y control',
+          end: 'para una ejecución con conciencia.',
+        },
+        text: 'Simplificamos los procesos de registro y análisis de la información campo para mantener los reportes sobre el desempeño de tu proyecto actualizados en todo momento y permitir la toma de decisiones basadas en datos.',
+        image: imagesArray.imgControlAlt,
+        accent: 'secondary',
+      },
+    },
+    {
+      featureName: 'DesarrollosLowCode',
+      featureIntro: {
+        title: {
+          start: 'Automatización:',
+          middle: 'desarrollo low-code',
+          end: 'para mejorar la eficiencia de tus procesos.',
+        },
+        text: 'Desarrollamos soluciones low-code con las mejores plataformas disponibles, para optimizar los procesos críticos de la gestión de tus proyectos de forma rápida y ágil. Ideal para soluciones personalizadas a bajo costo.',
+        image: imagesArray.imgLowCode,
+        accent: 'primary',
+      },
+    },
+    {
+      featureName: 'SolucionesIntegrales',
+      featureIntro: {
+        title: {
+          start: 'Software:',
+          middle: 'solución integral',
+          end: 'para la gestión de tus proyectos de construcción.',
+        },
+        text: 'Ofrecemos una aplicación para la gestión integral de proyectos de construcción, desde la etapa precontractual hasta el cierre del proyecto. Nuestra aplicación está basada en los procesos y las buenas prácticas que hemos desarrollado a lo largo de los años con resultados comprobados.',
+        image: imagesArray.imgAppAlt,
+        accent: 'secondary',
+      },
+    },
+  ];
+
   // EXPLORE MORE CONTENT
   const headingExplore = {
-    title: 'Explora más: sobre nosotros, comunidad y blog',
+    title: 'Explora más: nosotros, comunidad y blog',
     text: 'Conoce más sobre nosotros, apóyate en nuestra comunidad o descubre nuestro blog.',
   };
 
@@ -113,6 +204,7 @@ const Home = () => {
         heading={headingIntroServices}
         cardsList={cardsListIntroServices}
       />
+      <Product heading={headingServices} features={featuresServices} />
       <Explore heading={headingExplore} cardsList={cardsListExplore} />
     </div>
   );

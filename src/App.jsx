@@ -7,6 +7,7 @@ import Header from './components/organisms/header/Header';
 import Footer from './components/organisms/footer/Footer';
 import Consulting from './pages/consulting/Consulting';
 import Software from './pages/software/Software';
+import ScrollToTop from './components/atoms/scroll-to-top/ScrollToTop';
 
 function App() {
   const linksList = [
@@ -14,11 +15,12 @@ function App() {
     { name: 'Consultoría', link: '/consulting' },
     { name: 'Pushana App', link: '/software' },
     { name: 'Comunidad', link: '/community' },
-    { name: 'Nosotros', link: '/about' },
+    { name: 'Blog', link: '/blog' },
   ];
 
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="App">
         <Header linksList={linksList} />
         <main>
