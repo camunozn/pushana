@@ -20,7 +20,7 @@ const Header = props => {
     <header className={`${styles.header} ${isSticky && styles.sticky}`}>
       <div className={styles['header__container']}>
         <LogoBox image={logoImg} text="Pushana" />
-        <Navbar linksList={linksList} openNav={openNav} />
+        <Navbar linksList={linksList} openNav={openNav} toggleNav={toggleNav} />
         <ButtonMobile buttonHandler={toggleNav} openNav={openNav} />
       </div>
     </header>

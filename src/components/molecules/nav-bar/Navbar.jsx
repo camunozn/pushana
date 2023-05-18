@@ -5,17 +5,6 @@ import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = props => {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
-  const scrollToSection = section => {
-    const element = document.getElementById(section);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className={styles.navbar}>
       <ul
@@ -25,7 +14,11 @@ const Navbar = props => {
       >
         {props.linksList.map(link => (
           <li key={link.name}>
-            <Link className={styles['navbar__link']} to={link.link}>
+            <Link
+              className={styles['navbar__link']}
+              to={link.link}
+              onClick={props.toggleNav}
+            >
               {link.name}
             </Link>
           </li>
