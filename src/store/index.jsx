@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import isStickySlice from './slices/isSticky.slice';
+import isLoadingSlice from './slices/isLoading.slice';
 
 export default configureStore({
   reducer: {
-    isSticky: isStickySlice,
+    isLoading: isLoadingSlice,
   },
 });

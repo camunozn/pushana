@@ -1,17 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Introduction from '../../modules/section-intro/Introduction';
 import Product from '../../modules/section-product/Product';
 import imagesArray from '../../assets';
-import { useDispatch } from 'react-redux';
-import { setIsSticky } from '../../store/slices/isSticky.slice';
 
 const Software = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(setIsSticky(true));
-  }, []);
-
   // INTRO APP CONTENT
   const headingIntroSoftware = {
     title:

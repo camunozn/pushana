@@ -1,28 +1,11 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { setIsSticky } from '../../store/slices/isSticky.slice';
-import imagesArray from '../../assets/index';
 import Button from '../../components/atoms/button/Button';
 import styles from './Hero.module.css';
 
 const Hero = props => {
-  const isSticky = useSelector(state => state.isSticky);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      const entry = entries[0];
-      dispatch(setIsSticky(!entry.isIntersecting));
-    });
-    observer.observe(document.getElementById('section-hero'));
-  }, []);
-
   return (
-    <section
-      id="section-hero"
-      className={`${styles['hero']} ${isSticky && styles.sticky}`}
-    >
+    <section id="section-hero" className={styles['hero']}>
       <div className={styles['hero__container']}>
         <div className={styles['hero__text-box']}>
           <h1 className={styles['hero__heading']}>

@@ -13,7 +13,7 @@ function App() {
   const linksList = [
     { name: 'Inicio', link: '/' },
     { name: 'Consultoría', link: '/consulting' },
-    { name: 'Pushana App', link: '/software' },
+    { name: 'Software', link: '/software' },
     { name: 'Comunidad', link: '/community' },
     { name: 'Blog', link: '/blog' },
   ];

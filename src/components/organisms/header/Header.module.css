@@ -2,14 +2,9 @@
   width: 100%;
   height: 8rem;
   border-bottom: solid 1px var(--color-shades-darker);
-}
-
-/* STICKY NAV */
-.header.sticky {
-  /* background-image: var(--linear-gradient-nav); */
   background-color: var(--color-bg-blur);
-  backdrop-filter: blur(10px) contrast(100%);
-  -webkit-backdrop-filter: blur(10px) contrast(100%);
+  backdrop-filter: blur(20px) contrast(100%);
+  -webkit-backdrop-filter: blur(20px) contrast(100%);
   position: fixed;
   top: 0;
   left: 0;
