@@ -157,10 +157,10 @@
     hyphens: auto;
   }
 
-  /* .feature-heading__img-box--primary,
+  .feature-heading__img-box--primary,
   .feature-heading__img-box--secondary {
     display: none;
-  } */
+  }
 
   .feature-heading__img-box--secondary {
     grid-column: auto;
