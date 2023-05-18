@@ -8,7 +8,8 @@
 .header.sticky {
   /* background-image: var(--linear-gradient-nav); */
   /* background-color: var(--color-bg-blur); */
-  backdrop-filter: blur(30px);
+  background-color: transparent;
+  backdrop-filter: blur(50px);
   position: fixed;
   top: 0;
   left: 0;
