@@ -9,6 +9,7 @@
   /* background-image: var(--linear-gradient-nav); */
   background-color: var(--color-bg-blur);
   backdrop-filter: blur(10px) contrast(100%);
+  -webkit-backdrop-filter: blur(10px) contrast(100%);
   position: fixed;
   top: 0;
   left: 0;
