@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Introduction from '../../modules/section-intro/Introduction';
 import Product from '../../modules/section-product/Product';
 import imagesArray from '../../assets';
@@ -7,7 +7,10 @@ import { setIsSticky } from '../../store/slices/isSticky.slice';
 
 const Consulting = () => {
   const dispatch = useDispatch();
-  dispatch(setIsSticky(true));
+
+  useEffect(() => {
+    dispatch(setIsSticky(true));
+  }, []);
 
   // INTRO CONSULTING CONTENT
   const headingIntroConsulting = {
@@ -49,7 +52,7 @@ const Consulting = () => {
 
   const featuresConsulting = [
     {
-      featureName: '',
+      featureName: '1',
       featureIntro: {
         title: {
           start: 'Precontractual:',
@@ -82,7 +85,7 @@ const Consulting = () => {
       },
     },
     {
-      featureName: '',
+      featureName: '2',
       featureIntro: {
         title: {
           start: 'Preconstrucción:',
@@ -113,7 +116,7 @@ const Consulting = () => {
       },
     },
     {
-      featureName: '',
+      featureName: '3',
       featureIntro: {
         title: {
           start: 'Construcción:',

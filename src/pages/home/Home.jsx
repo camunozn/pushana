@@ -199,12 +199,12 @@ const Home = () => {
         primaryBtnOptions={primaryBtnOptions}
         secondaryBtnOptions={secondaryBtnOptions}
       />
-      <Introduction
+      {/* <Introduction
         id="section-introduction"
         heading={headingIntroServices}
         cardsList={cardsListIntroServices}
-      />
-      <Product heading={headingServices} features={featuresServices} />
+      /> */}
+      {/* <Product heading={headingServices} features={featuresServices} /> */}
       <Explore heading={headingExplore} cardsList={cardsListExplore} />
     </div>
   );
