@@ -7,9 +7,8 @@
 /* STICKY NAV */
 .header.sticky {
   /* background-image: var(--linear-gradient-nav); */
-  /* background-color: var(--color-bg-blur); */
-  background-color: transparent;
-  backdrop-filter: blur(50px);
+  background-color: var(--color-bg-blur);
+  backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   left: 0;
