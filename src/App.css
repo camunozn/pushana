@@ -116,7 +116,7 @@ body {
   font-weight: 400;
   color: var(--color-white);
   background-image: var(--linear-gradient-bg);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .App {
