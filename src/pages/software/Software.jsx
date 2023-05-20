@@ -2,6 +2,7 @@ import React from 'react';
 import Introduction from '../../modules/section-intro/Introduction';
 import Product from '../../modules/section-product/Product';
 import imagesArray from '../../assets';
+import Explore from '../../modules/section-explore/Explore';
 
 const Software = () => {
   // INTRO APP CONTENT
@@ -145,6 +146,36 @@ const Software = () => {
     },
   ];
 
+  // EXPLORE MORE CONTENT
+  const headingExplore = {
+    title: 'Explora más: consultoría, comunidad y blog',
+    text: 'Conoce más sobre nuestros servicios de consultoría, apóyate en nuestra comunidad o descubre nuestro blog.',
+  };
+
+  const cardsListExplore = [
+    {
+      icon: 'fa-regular fa-compass',
+      title: 'Pushana Consulting',
+      style: 'primary',
+      type: 'page',
+      element: '/consulting',
+    },
+    {
+      icon: 'fa-solid fa-people-group',
+      title: 'Comunidad Pushana',
+      style: 'primary',
+      type: 'page',
+      element: '/community',
+    },
+    {
+      icon: 'fa-solid fa-blog',
+      title: 'Pushana Blog',
+      style: 'primary',
+      type: 'page',
+      element: '/blog',
+    },
+  ];
+
   return (
     <div className="software">
       <Introduction
@@ -152,6 +183,7 @@ const Software = () => {
         cardsList={cardsListIntroSoftware}
       />
       <Product heading={headingSoftware} features={featuresSoftware} />
+      <Explore heading={headingExplore} cardsList={cardsListExplore} />
     </div>
   );
 };

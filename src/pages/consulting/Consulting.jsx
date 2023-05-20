@@ -2,6 +2,7 @@ import React from 'react';
 import Introduction from '../../modules/section-intro/Introduction';
 import Product from '../../modules/section-product/Product';
 import imagesArray from '../../assets';
+import Explore from '../../modules/section-explore/Explore';
 
 const Consulting = () => {
   // INTRO CONSULTING CONTENT
@@ -142,6 +143,36 @@ const Consulting = () => {
     },
   ];
 
+  // EXPLORE MORE CONTENT
+  const headingExplore = {
+    title: 'Explora más: nuestro software, comunidad y blog',
+    text: 'Conoce más sobre nuestro software, apóyate en nuestra comunidad o descubre nuestro blog.',
+  };
+
+  const cardsListExplore = [
+    {
+      icon: 'fa-solid fa-laptop-code',
+      title: 'Pushana CPMS',
+      style: 'primary',
+      type: 'page',
+      element: '/software',
+    },
+    {
+      icon: 'fa-solid fa-people-group',
+      title: 'Comunidad Pushana',
+      style: 'primary',
+      type: 'page',
+      element: '/community',
+    },
+    {
+      icon: 'fa-solid fa-blog',
+      title: 'Pushana Blog',
+      style: 'primary',
+      type: 'page',
+      element: '/blog',
+    },
+  ];
+
   return (
     <div className="consulting">
       <Introduction
@@ -149,6 +180,7 @@ const Consulting = () => {
         cardsList={cardsListIntroConsulting}
       />
       <Product heading={headingConsulting} features={featuresConsulting} />
+      <Explore heading={headingExplore} cardsList={cardsListExplore} />
     </div>
   );
 };

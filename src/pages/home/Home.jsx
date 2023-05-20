@@ -57,16 +57,22 @@ const Home = () => {
       icon: 'fa-regular fa-compass',
       title: 'Pushana Consulting',
       style: 'primary',
+      type: 'page',
+      element: '/consulting',
     },
     {
       icon: 'fa-solid fa-laptop-code',
       title: 'Pushana CPMS',
       style: 'primary',
+      type: 'page',
+      element: '/software',
     },
     {
       icon: 'fa-solid fa-people-group',
       title: 'Comunidad Pushana',
       style: 'primary',
+      type: 'page',
+      element: '/community',
     },
   ];
 
@@ -89,6 +95,7 @@ const Home = () => {
         image: imagesArray.imgCostEng,
         accent: 'primary',
       },
+      featureLink: '/consulting',
     },
     {
       featureName: 'Precontractual',
@@ -102,6 +109,7 @@ const Home = () => {
         image: imagesArray.imgBidAlt,
         accent: 'secondary',
       },
+      featureLink: '/consulting',
     },
     {
       featureName: 'Preconstrucción',
@@ -115,6 +123,7 @@ const Home = () => {
         image: imagesArray.imgPlanning,
         accent: 'primary',
       },
+      featureLink: '/consulting',
     },
     {
       featureName: 'Construcción',
@@ -128,6 +137,7 @@ const Home = () => {
         image: imagesArray.imgControlAlt,
         accent: 'secondary',
       },
+      featureLink: '/consulting',
     },
     {
       featureName: 'DesarrollosLowCode',
@@ -141,6 +151,7 @@ const Home = () => {
         image: imagesArray.imgLowCode,
         accent: 'primary',
       },
+      featureLink: '/software',
     },
     {
       featureName: 'SolucionesIntegrales',
@@ -154,30 +165,37 @@ const Home = () => {
         image: imagesArray.imgAppAlt,
         accent: 'secondary',
       },
+      featureLink: '/software',
     },
   ];
 
   // EXPLORE MORE CONTENT
   const headingExplore = {
-    title: 'Explora más: nosotros, comunidad y blog',
+    title: 'Explora más: sobre nosotros, comunidad y blog',
     text: 'Conoce más sobre nosotros, apóyate en nuestra comunidad o descubre nuestro blog.',
   };
 
   const cardsListExplore = [
     {
+      icon: 'fa-solid fa-dna',
+      title: 'Sobre nosotros',
+      style: 'primary',
+      type: 'page',
+      element: '/about',
+    },
+    {
       icon: 'fa-solid fa-people-group',
       title: 'Comunidad Pushana',
       style: 'primary',
+      type: 'page',
+      element: '/community',
     },
     {
       icon: 'fa-solid fa-blog',
       title: 'Pushana Blog',
       style: 'primary',
-    },
-    {
-      icon: 'fa-solid fa-dna',
-      title: 'Sobre nosotros',
-      style: 'primary',
+      type: 'page',
+      element: '/blog',
     },
   ];
 
