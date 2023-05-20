@@ -64,25 +64,10 @@ Medium: 11px
   --color-bg-dark: #11021d;
   --color-bg-darker: #0d0117;
   --color-bg-blur: transparent /*rgb(13, 1, 23, 0.3)*/;
-  --linear-gradient-bg: linear-gradient(
-    to bottom right,
-    #170229,
-    #1a022e,
-    #1e0334,
-    #21033a
-  );
-  --linear-gradient-nav: linear-gradient(
-    to bottom right,
-    rgba(23, 2, 41, 0.97),
-    rgba(26, 2, 46, 0.97),
-    rgba(30, 3, 52, 0.97),
-    rgba(33, 3, 58, 0.97)
-  );
+  --linear-gradient-bg: linear-gradient(to bottom right, #170229, #21033a);
   --linear-gradient-hero: linear-gradient(
     to bottom right,
     rgba(23, 2, 41, 0.85),
-    rgba(26, 2, 46, 0.85),
-    rgba(30, 3, 52, 0.85),
     rgba(33, 3, 58, 0.85)
   );
   --linear-gradient-accent: linear-gradient(to right, #1b93c2, #c91668);

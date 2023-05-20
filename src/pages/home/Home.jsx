@@ -3,8 +3,8 @@ import styles from './Home.module.css';
 import Hero from '../../modules/section-hero/Hero';
 import Introduction from '../../modules/section-intro/Introduction';
 import Explore from '../../modules/section-explore/Explore';
+import Services from '../../modules/section-services/Services';
 import imagesArray from '../../assets';
-import Product from '../../modules/section-product/Product';
 
 const Home = () => {
   //HERO CONTENT
@@ -46,44 +46,34 @@ const Home = () => {
   };
 
   // INTRO SERVICES CONTENT
-  const headingIntroServices = {
+  const headingIntro = {
     title:
       'Potenciamos los procesos de planificación y control de tus proyectos de construcción.',
     text: 'Impulsamos la gestión de tus proyectos a través de servicios de consultoría especializados y soluciones de software intuitivas que generan resultados. Además, tenemos una gran comunidad en la que te puedes apoyar!',
   };
 
-  const cardsListIntroServices = [
+  const cardsListIntro = [
     {
       icon: 'fa-regular fa-compass',
       title: 'Pushana Consulting',
       style: 'primary',
-      type: 'page',
-      element: '/consulting',
     },
     {
       icon: 'fa-solid fa-laptop-code',
       title: 'Pushana CPMS',
       style: 'primary',
-      type: 'page',
-      element: '/software',
     },
     {
       icon: 'fa-solid fa-people-group',
       title: 'Comunidad Pushana',
       style: 'primary',
-      type: 'page',
-      element: '/community',
     },
   ];
 
   // SERVICES AND PRODUCTS DETAILS CONTENT
-  const cols = 2;
-
   const headingServices = {
     title: 'Desde el diseño hasta el final de la construcción.',
-    text: 'Te acompañamos en las principales etapas de tu proyecto: diseño, precontractual, preconstrucción y construcción. Somos tu aliado en cada paso del camino.',
-    // title: 'Tu aliado estratégico para fortalecer la gestión.',
-    // text: 'Desde la ingeniería de costos hasta la planificación detallada y el monitoreo y control, somos tu aliado en cada paso del camino.',
+    text: 'Te acompañamos en las principales etapas de tu proyecto. Somos tu aliado en cada paso del camino.',
   };
 
   const featuresServices = [
@@ -175,11 +165,6 @@ const Home = () => {
 
   const cardsListExplore = [
     {
-      icon: 'fa-solid fa-dna',
-      title: 'Sobre nosotros',
-      style: 'primary',
-    },
-    {
       icon: 'fa-solid fa-people-group',
       title: 'Comunidad Pushana',
       style: 'primary',
@@ -187,6 +172,11 @@ const Home = () => {
     {
       icon: 'fa-solid fa-blog',
       title: 'Pushana Blog',
+      style: 'primary',
+    },
+    {
+      icon: 'fa-solid fa-dna',
+      title: 'Sobre nosotros',
       style: 'primary',
     },
   ];
@@ -198,6 +188,16 @@ const Home = () => {
         sequenceWords={sequenceWords}
         primaryBtnOptions={primaryBtnOptions}
         secondaryBtnOptions={secondaryBtnOptions}
+      />
+      <Introduction
+        id="section-introduction"
+        heading={headingIntro}
+        cardsList={cardsListIntro}
+      />
+      <Services
+        id="section-services"
+        heading={headingServices}
+        features={featuresServices}
       />
       <Explore heading={headingExplore} cardsList={cardsListExplore} />
     </div>
