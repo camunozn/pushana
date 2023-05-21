@@ -8,39 +8,42 @@ const Consulting = () => {
   // INTRO CONSULTING CONTENT
   const headingIntroConsulting = {
     title:
-      'Potenciamos los procesos de planificación y control de tus proyectos de construcción.',
-    text: 'Impulsamos la gestión de tus proyectos a través de servicios de consultoría especializados y soluciones de software intuitivas que generan resultados. Además, tenemos una gran comunidad en la que te puedes apoyar!',
+      'Tu aliado estratégico para fortalecer la gestión tus proyectos de construcción',
+    text: 'Desde la ingeniería de costos pasando por la planificación detallada hasta el monitoreo y control de proyectos, somos tu aliado en cada paso del camino.',
   };
 
   const cardsListIntroConsulting = [
     {
-      icon: 'fa-regular fa-compass',
-      title: 'Consultoría',
-      style: 'primary',
-      type: 'section',
-      element: 'section-consulting',
+      icon: 'fa-solid fa-wand-magic-sparkles',
+      title: 'Ingeniería de costos',
+      style: 'secondary',
+      text: '',
     },
     {
-      icon: 'fa-solid fa-laptop-code',
-      title: 'Pushana App',
-      style: 'primary',
-      type: 'section',
-      element: 'section-software',
+      icon: 'fa-solid fa-gauge-high',
+      title: 'Planificación detallada',
+      style: 'secondary',
+      text: '',
     },
     {
-      icon: 'fa-solid fa-people-group',
-      title: 'Comunidad',
-      style: 'primary',
+      icon: 'fa-solid fa-magnifying-glass-chart',
+      title: 'Monitoreo y control',
+      style: 'secondary',
+      text: '',
+    },
+    {
+      icon: 'fa-solid fa-hand-holding-dollar',
+      title: 'Automatización de procesos',
+      style: 'secondary',
+      text: '',
     },
   ];
   // CONSULTING DETAILS CONTENT
   const cols = 2;
 
   const headingConsulting = {
-    title: 'Desde la fase precontractual hasta el final de la construcción.',
-    text: 'Te acompañamos en las principales etapas de tu proyecto: precontractual, preconstrucción y construcción. Somos tu aliado en cada paso del camino.',
-    // title: 'Tu aliado estratégico para fortalecer la gestión.',
-    // text: 'Desde la ingeniería de costos hasta la planificación detallada y el monitoreo y control, somos tu aliado en cada paso del camino.',
+    title: '',
+    text: '',
   };
 
   const featuresConsulting = [
@@ -48,18 +51,18 @@ const Consulting = () => {
       featureName: '1',
       featureIntro: {
         title: {
-          start: 'Precontractual:',
-          middle: 'licitaciones y cotizaciones',
-          end: 'para clientes públicos o privados.',
+          start: 'Ingeniería de costos:',
+          middle: '',
+          end: '',
         },
-        text: 'Hacemos fácil el proceso de elaboración de licitaciones y cotizaciones, optimizamos nuestra app para brindar una experiencia ágil y eficiente. Además incluimos herramientas para ayudarte con el análisis de tu oferta.',
+        text: '',
         image: imagesArray.imgBid,
         accent: 'primary',
       },
       featureBox: {
         boxHeading: {
-          title: 'Ofertas públicas o privadas',
-          text: 'Todo lo que necesitas para presentar una oferta completa y competitiva.',
+          title: 'Evaluación económica de proyectos',
+          text: '',
         },
         // prettier-ignore
         boxList: [
@@ -81,18 +84,18 @@ const Consulting = () => {
       featureName: '2',
       featureIntro: {
         title: {
-          start: 'Preconstrucción:',
-          middle: 'inicio y planificación',
-          end: 'para prepararte de la mejor manera.',
+          start: 'Planificación detallada:',
+          middle: '',
+          end: '',
         },
-        text: 'Pasa de la licitación al inicio de la construcción sin problemas. Revisa el alcance, realiza el presupuesto meta, ajusta la programación y prepara toda la información que necesitas para empezar la ejecución de tu proyecto.',
-        image: imagesArray.imgPlanning,
+        text: '',
+        image: imagesArray.imgPlanningAlt,
         accent: 'secondary',
       },
       featureBox: {
         boxHeading: {
-          title: 'Línea Base del proyecto',
-          text: 'Prepara fácilmente todo lo necesario para fijar tu línea base y empezar a construir.',
+          title: 'Línea base del proyecto',
+          text: '',
         },
         // prettier-ignore
         boxList: [
@@ -112,18 +115,18 @@ const Consulting = () => {
       featureName: '3',
       featureIntro: {
         title: {
-          start: 'Construcción:',
-          middle: 'monitoreo y control',
-          end: 'para una ejecución con conciencia.',
+          start: 'Monitoreo y control:',
+          middle: '',
+          end: '',
         },
-        text: 'Simplificamos los procesos de registro y análisis de la información campo para mantener los reportes sobre el desempeño de tu proyecto actualizados en todo momento y permitir la toma de decisiones basadas en datos.',
+        text: '',
         image: imagesArray.imgControl,
         accent: 'primary',
       },
       featureBox: {
         boxHeading: {
           title: 'Gestión del valor ganado',
-          text: 'Aplica la gestión del valor ganado para evaluar el desempeño de tu proyecto.',
+          text: '',
         },
         // prettier-ignore
         boxList: [
@@ -141,11 +144,44 @@ const Consulting = () => {
         listCols: cols,
       },
     },
+    {
+      featureName: '4',
+      featureIntro: {
+        title: {
+          start: 'Automatización de procesos:',
+          middle: '',
+          end: '',
+        },
+        text: '',
+        image: imagesArray.imgLowCode,
+        accent: 'primary',
+      },
+      featureBox: {
+        boxHeading: {
+          title: 'Procesos eficientes y efectivos',
+          text: '',
+        },
+        // prettier-ignore
+        boxList: [
+          { name: '', icon:'fa-solid fa-chart-line'},
+          { name: '', icon: 'fa-solid fa-address-card'},
+          { name: '', icon: 'fa-solid fa-snowplow' },
+          { name: '', icon: 'fa-solid fa-warehouse' },
+          { name: '', icon: 'fa-solid fa-helmet-safety' },
+          { name: '', icon: 'fa-solid fa-gauge-simple-high' },
+          { name: '', icon: 'fa-solid fa-code-compare' },
+          { name: '', icon: 'fa-solid fa-money-bill-trend-up' },
+          { name: '', icon: 'fa-solid fa-diagram-successor' },
+          { name: '', icon: 'fa-regular fa-compass' },
+        ],
+        listCols: cols,
+      },
+    },
   ];
 
   // EXPLORE MORE CONTENT
   const headingExplore = {
-    title: 'Explora más: nuestro software, comunidad y blog',
+    title: 'Explora más: software, comunidad y blog',
     text: 'Conoce más sobre nuestro software, apóyate en nuestra comunidad o descubre nuestro blog.',
   };
 

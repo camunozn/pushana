@@ -84,7 +84,7 @@ const Home = () => {
 
   const featuresServices = [
     {
-      featureName: 'Diseño',
+      featureName: '1',
       featureIntro: {
         title: {
           start: 'Diseño:',
@@ -98,7 +98,7 @@ const Home = () => {
       featureLink: '/consulting',
     },
     {
-      featureName: 'Precontractual',
+      featureName: '2',
       featureIntro: {
         title: {
           start: 'Precontractual:',
@@ -112,7 +112,7 @@ const Home = () => {
       featureLink: '/consulting',
     },
     {
-      featureName: 'Preconstrucción',
+      featureName: '3',
       featureIntro: {
         title: {
           start: 'Preconstrucción:',
@@ -126,7 +126,7 @@ const Home = () => {
       featureLink: '/consulting',
     },
     {
-      featureName: 'Construcción',
+      featureName: '4',
       featureIntro: {
         title: {
           start: 'Construcción:',
@@ -140,7 +140,7 @@ const Home = () => {
       featureLink: '/consulting',
     },
     {
-      featureName: 'DesarrollosLowCode',
+      featureName: '5',
       featureIntro: {
         title: {
           start: 'Automatización:',
@@ -154,7 +154,7 @@ const Home = () => {
       featureLink: '/software',
     },
     {
-      featureName: 'SolucionesIntegrales',
+      featureName: '6',
       featureIntro: {
         title: {
           start: 'Software:',
