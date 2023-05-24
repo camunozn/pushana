@@ -2,7 +2,7 @@
 /* SECTION HERO */
 /**************************/
 .hero {
-  max-height: 75rem;
+  max-height: 90rem;
   min-height: 60rem;
   width: 100%;
   height: calc(100vh - 8rem);
