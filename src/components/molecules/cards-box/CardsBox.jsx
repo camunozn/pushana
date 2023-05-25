@@ -4,13 +4,9 @@ import styles from './CardsBox.module.css';
 
 const CardsBox = props => {
   const cardsList = props.cardsList;
-  const boxCols = cardsList.length;
 
   return (
-    <div
-      // className={`${styles['cards-box']} ${styles[`grid--${boxCols}-cols`]}`}
-      className={styles['cards-box']}
-    >
+    <div className={styles['cards-box']}>
       {cardsList.map(card => (
         <div className={styles['card-item']} key={card.title}>
           <Card
