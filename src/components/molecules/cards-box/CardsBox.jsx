@@ -8,18 +8,20 @@ const CardsBox = props => {
 
   return (
     <div
-      className={`${styles['cards-box']} ${styles[`grid--${boxCols}-cols`]}`}
+      // className={`${styles['cards-box']} ${styles[`grid--${boxCols}-cols`]}`}
+      className={styles['cards-box']}
     >
       {cardsList.map(card => (
-        <Card
-          key={card.title}
-          icon={card.icon}
-          title={card.title}
-          style={card.style}
-          text={card.text}
-          type={card.type}
-          element={card.element}
-        />
+        <div className={styles['card-item']} key={card.title}>
+          <Card
+            icon={card.icon}
+            title={card.title}
+            style={card.style}
+            text={card.text}
+            type={card.type}
+            element={card.element}
+          />
+        </div>
       ))}
     </div>
   );

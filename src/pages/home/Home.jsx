@@ -133,7 +133,7 @@ const Home = () => {
           middle: 'monitoreo y control',
           end: 'para una ejecución con conciencia.',
         },
-        text: 'Simplificamos los procesos de registro y análisis de la información campo para mantener los reportes sobre el desempeño de tu proyecto actualizados en todo momento y permitir la toma de decisiones basadas en datos.',
+        text: 'Simplificamos los procesos de registro y análisis de la información campo para mantener los reportes sobre el desempeño de tu proyecto actualizados en todo momento y permitir la toma de decisiones basada en datos.',
         image: imagesArray.imgControlAlt,
         accent: 'secondary',
       },
