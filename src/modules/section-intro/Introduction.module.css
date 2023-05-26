@@ -9,8 +9,9 @@
 
 .intro__container {
   text-align: center;
+  min-height: 98rem;
   max-width: 140rem;
-  padding: 8rem 6.4rem;
+  padding: 12.8rem 6.4rem;
   margin: 0 auto;
 }
 
