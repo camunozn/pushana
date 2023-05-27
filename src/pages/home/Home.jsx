@@ -62,7 +62,7 @@ const Home = () => {
     },
     {
       icon: 'fa-solid fa-laptop-code',
-      title: 'Pushana CPMS',
+      title: 'CPM Software',
       style: 'primary',
       type: 'page',
       element: '/software',
