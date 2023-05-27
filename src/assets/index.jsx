@@ -14,6 +14,7 @@ import imgControl from './images/img-control.png';
 import imgControlAlt from './images/img-control-alt.png';
 import imgCostEng from './images/img-cost-eng.png';
 import imgLowCode from './images/img-low-code.png';
+import imgLowCodeAlt from './images/img-low-code-alt.png';
 import imgAppAlt from './images/img-app-alt.png';
 
 const imagesArray = {
@@ -33,6 +34,7 @@ const imagesArray = {
   imgControlAlt,
   imgCostEng,
   imgLowCode,
+  imgLowCodeAlt,
   imgAppAlt,
 };
 

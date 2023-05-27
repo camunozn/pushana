@@ -153,8 +153,8 @@ const Consulting = () => {
           end: 'hecha realidad.',
         },
         text: 'Aprovechamos el poder de la tecnología para promover la eficiencia y efectividad en tus proyectos. Te ayudamos a automatizar tus procesos con tecnología low-code para implementaciones rápidas y ágiles.',
-        image: imagesArray.imgLowCode,
-        accent: 'primary',
+        image: imagesArray.imgLowCodeAlt,
+        accent: 'secondary',
       },
       featureBox: {
         boxHeading: {
