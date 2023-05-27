@@ -42,8 +42,8 @@ const Consulting = () => {
   const cols = 2;
 
   const headingConsulting = {
-    title: '',
-    text: '',
+    title: 'Consultoría eficiente y efectiva en todas las etapas.',
+    text: 'Nuestros servicios se basan en la generación de valor constante. Utilizamos la filosofía ágil en todo lo que hacemos',
   };
 
   const featuresConsulting = [
