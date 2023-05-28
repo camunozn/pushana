@@ -43,7 +43,7 @@ const Consulting = () => {
 
   const headingConsulting = {
     title: 'Consultoría eficiente y efectiva en todas las etapas.',
-    text: 'Nuestros servicios se basan en la generación de valor constante. Utilizamos la filosofía ágil en todo lo que hacemos',
+    text: 'Nuestros servicios de consultoría se basan en la generación de valor constante. Utilizamos la filosofía ágil en todo lo que hacemos para generar resultados tangibles.',
   };
 
   const featuresConsulting = [
@@ -52,30 +52,30 @@ const Consulting = () => {
       featureIntro: {
         title: {
           start: 'Ingeniería de costos:',
-          middle: 'evaluación económica',
-          end: 'para proyectos exitosos.',
+          middle: 'estimación de costos',
+          end: 'y análisis financiero para proyectos exitosos.',
         },
-        text: 'Si eres el promotor de un proyecto de construcción o el consultor de los diseños finales, nosotros te apoyamos con la estimación de costos y la evaluación económica y financiera del proyecto de cara a una construcción exitosa.',
-        image: imagesArray.imgBid,
+        text: 'Si eres el promotor de un proyecto de construcción o el consultor de los diseños finales, nosotros te apoyamos con la estimación de costos y la evaluación económica-financiera del proyecto de cara a una construcción exitosa.',
+        image: imagesArray.imgCostEng,
         accent: 'primary',
       },
       featureBox: {
         boxHeading: {
           title: 'Evaluación económica y financiera de proyectos',
-          text: '',
+          text: 'Conoce el verdadero valor de tu proyecto antes de construirlo.',
         },
         // prettier-ignore
         boxList: [
-          { name: '', icon: 'fa-solid fa-sack-dollar' },
-          { name: '', icon: 'fa-solid fa-bars-staggered' },
-          { name: '', icon: 'fa-solid fa-chart-pie' },
-          { name: '', icon: 'fa-solid fa-superscript' },
-          { name: '', icon: 'fa-solid fa-helmet-safety' },
-          { name: '', icon: 'fa-solid fa-briefcase' },
-          { name: '', icon: 'fa-solid fa-calendar-days' },
-          { name: '', icon: 'fa-solid fa-chart-bar' },
-          { name: '', icon: 'fa-solid fa-code-compare' },
-          { name: '', icon: 'fa-solid fa-award' },
+          { name: 'Estructura desglosada de trabajo', icon: 'fa-solid fa-diagram-project' },
+          { name: 'Estimación de costos directos', icon: 'fa-solid fa-helmet-safety' },
+          { name: 'Estimación de costos indirectos', icon: 'fa-solid fa-building' },
+          { name: 'Cronograma de trabajos y flujo', icon: 'fa-solid fa-chart-gantt' },
+          { name: 'Estimación de costos financieros', icon: 'fa-solid fa-sack-dollar' },
+          { name: 'Desarrollo de modelo financiero', icon: 'fa-solid fa-chart-column' },
+          { name: 'Estados financieros proforma', icon: 'fa-solid fa-file-invoice-dollar' },
+          { name: 'Definición de tasas de descuento', icon: 'fa-solid fa-percent' },
+          { name: 'Flujo libre de efectivo del proyecto', icon: 'fa-solid fa-money-bill-trend-up' },
+          { name: 'Evaluación económica y financiera', icon: 'fa-solid fa-magnifying-glass-dollar' },
         ],
         listCols: cols,
       },
@@ -86,27 +86,29 @@ const Consulting = () => {
         title: {
           start: 'Licitaciones y cotizaciones:',
           middle: 'análisis económico',
-          end: 'que gana contratos.',
+          end: 'de ofertas que gana contratos.',
         },
-        text: 'Te apoyamos en la elaboración de licitaciones y cotizaciones. Realizamos el análisis económico de tu oferta, nos enfocamos en determinar presupuesto, análisis de precios unitarios, cronograma y uso de recursos.',
-        image: imagesArray.imgPlanningAlt,
+        text: 'Te apoyamos en la elaboración de licitaciones y cotizaciones. Realizamos el análisis económico de tu oferta, nos enfocamos en determinar presupuesto, análisis de precios unitarios, cronogramas y uso de recursos.',
+        image: imagesArray.imgBidAlt,
         accent: 'secondary',
       },
       featureBox: {
         boxHeading: {
-          title: 'Línea base del proyecto',
-          text: '',
+          title: 'Ofertas públicas o privadas',
+          text: 'Todo lo que necesitas para presentar una oferta competitiva.',
         },
         // prettier-ignore
         boxList: [
-          { name: '', icon: 'fa-solid fa-file-invoice-dollar' },
-          { name: '', icon: 'fa-solid fa-bullseye' },
-          { name: '', icon: 'fa-solid fa-calendar-check' },
-          { name: '', icon: 'fa-solid fa-person-digging' },
-          { name: '', icon: 'fa-solid fa-dolly' },
-          { name: '', icon: 'fa-solid fa-helmet-safety' },
-          { name: '', icon: 'fa-solid fa-list-check' },
-          { name: '', icon: 'fa-solid fa-triangle-exclamation' },
+          { name: 'Presupuesto', icon: 'fa-solid fa-sack-dollar' },
+          { name: 'Cronograma', icon: 'fa-solid fa-bars-staggered' },
+          { name: 'Desagregación tecnológica', icon: 'fa-solid fa-chart-pie' },
+          { name: 'Fórmula polinómica', icon: 'fa-solid fa-superscript' },
+          { name: 'Análisis de costos directos', icon: 'fa-solid fa-helmet-safety' },
+          { name: 'Análisis de costos indirectos', icon: 'fa-solid fa-briefcase' },
+          { name: 'Análisis por permanencia', icon: 'fa-solid fa-calendar-days' },
+          { name: 'Análisis de Pareto', icon: 'fa-solid fa-chart-bar' },
+          { name: 'Análisis comparativo', icon: 'fa-solid fa-code-compare' },
+          { name: 'Ficha para cierre de oferta', icon: 'fa-solid fa-award' },
         ],
         listCols: cols,
       },
@@ -116,7 +118,7 @@ const Consulting = () => {
       featureIntro: {
         title: {
           start: 'Monitoreo y control:',
-          middle: 'datos actualizados',
+          middle: 'información actualizada',
           end: 'para decisiones oportunas.',
         },
         text: 'Realizamos el registro, procesamiento y análisis de la información de campo para monitorear y controlar el desempeño de tus proyectos. Promovemos un cultura de toma de decisiones basadas en datos.',
@@ -126,20 +128,20 @@ const Consulting = () => {
       featureBox: {
         boxHeading: {
           title: 'Gestión del valor ganado',
-          text: '',
+          text: 'Análisis de valor ganado para el monitoreo y control de tus proyectos.',
         },
         // prettier-ignore
         boxList: [
-          { name: '', icon:'fa-solid fa-chart-line'},
-          { name: '', icon: 'fa-solid fa-address-card'},
-          { name: '', icon: 'fa-solid fa-snowplow' },
-          { name: '', icon: 'fa-solid fa-warehouse' },
-          { name: '', icon: 'fa-solid fa-helmet-safety' },
-          { name: '', icon: 'fa-solid fa-gauge-simple-high' },
-          { name: '', icon: 'fa-solid fa-code-compare' },
-          { name: '', icon: 'fa-solid fa-money-bill-trend-up' },
-          { name: '', icon: 'fa-solid fa-diagram-successor' },
-          { name: '', icon: 'fa-regular fa-compass' },
+          { name: 'Registro y control de avance de obra', icon:'fa-solid fa-chart-line'},
+          { name: 'Registro y control de horas hombre', icon: 'fa-solid fa-address-card'},
+          { name: 'Registro y control de horas máquina', icon: 'fa-solid fa-snowplow' },
+          { name: 'Registro y control de inventario', icon: 'fa-solid fa-warehouse' },
+          { name: 'Registro y control de subcontratos', icon: 'fa-solid fa-helmet-safety' },
+          { name: 'Control de productividad', icon: 'fa-solid fa-gauge-simple-high' },
+          { name: 'Control de cambios', icon: 'fa-solid fa-code-compare' },
+          { name: 'Control de costos', icon: 'fa-solid fa-money-bill-trend-up' },
+          { name: 'Control de cronograma', icon: 'fa-solid fa-diagram-successor' },
+          { name: 'Tableros de control e informes gerenciales', icon: 'fa-regular fa-compass' },
         ],
         listCols: cols,
       },
@@ -159,17 +161,17 @@ const Consulting = () => {
       featureBox: {
         boxHeading: {
           title: 'Procesos eficientes y efectivos',
-          text: '',
+          text: 'Automatiza los procesos de gestión para generar más y mejores resultados.',
         },
         // prettier-ignore
         boxList: [
           { name: '', icon:'fa-solid fa-chart-line'},
-          { name: '', icon: 'fa-solid fa-address-card'},
+          { name: '', icon: 'fa-solid fa-warehouse'},
+          { name: '', icon: 'fa-solid fa-address-card' },
           { name: '', icon: 'fa-solid fa-snowplow' },
-          { name: '', icon: 'fa-solid fa-warehouse' },
-          { name: '', icon: 'fa-solid fa-helmet-safety' },
-          { name: '', icon: 'fa-solid fa-gauge-simple-high' },
           { name: '', icon: 'fa-solid fa-code-compare' },
+          { name: '', icon: 'fa-solid fa-folder-tree' },
+          { name: '', icon: 'fa-solid fa-helmet-safety' },
           { name: '', icon: 'fa-solid fa-money-bill-trend-up' },
           { name: '', icon: 'fa-solid fa-diagram-successor' },
           { name: '', icon: 'fa-regular fa-compass' },
@@ -188,7 +190,7 @@ const Consulting = () => {
   const cardsListExplore = [
     {
       icon: 'fa-solid fa-laptop-code',
-      title: 'Pushana CPMS',
+      title: 'CPM Software',
       style: 'primary',
       type: 'page',
       element: '/software',

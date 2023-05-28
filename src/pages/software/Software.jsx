@@ -139,7 +139,7 @@ const Software = () => {
           { name: 'Control de cambios', icon: 'fa-solid fa-code-compare' },
           { name: 'Control de costos', icon: 'fa-solid fa-money-bill-trend-up' },
           { name: 'Control de cronograma', icon: 'fa-solid fa-diagram-successor' },
-          { name: 'Tableros de mando e informes gerenciales', icon: 'fa-regular fa-compass' },
+          { name: 'Tableros de control e informes gerenciales', icon: 'fa-regular fa-compass' },
         ],
         listCols: cols,
       },

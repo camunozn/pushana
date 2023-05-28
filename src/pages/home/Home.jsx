@@ -151,7 +151,7 @@ const Home = () => {
         image: imagesArray.imgLowCode,
         accent: 'primary',
       },
-      featureLink: '/software',
+      featureLink: '/consulting',
     },
     {
       featureName: '6',
