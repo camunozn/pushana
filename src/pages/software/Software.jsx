@@ -38,6 +38,7 @@ const Software = () => {
       text: 'Ofrecemos suscripciones solo por el tiempo y para los usuarios que necesites.',
     },
   ];
+
   // APP DETAILS CONTENT
   const cols = 2;
 
