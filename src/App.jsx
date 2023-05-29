@@ -8,6 +8,7 @@ import Footer from './components/organisms/footer/Footer';
 import Consulting from './pages/consulting/Consulting';
 import Software from './pages/software/Software';
 import ScrollToTop from './components/atoms/scroll-to-top/ScrollToTop';
+import About from './pages/about/About';
 
 function App() {
   const linksList = [
@@ -30,6 +31,7 @@ function App() {
             <Route path="/software" element={<Software />} />
             <Route path="/community" element={<Community />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />

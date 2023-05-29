@@ -8,7 +8,7 @@ const Consulting = () => {
   // INTRO CONSULTING CONTENT
   const headingIntroConsulting = {
     title:
-      'Tu aliado estratégico para fortalecer la gestión tus proyectos de construcción.',
+      'Tu aliado estratégico para fortalecer la gestión de tus proyectos de construcción.',
     text: 'Desde la licitación hasta el monitoreo y control de proyectos, somos tu aliado en cada paso del camino.',
   };
 
@@ -86,7 +86,7 @@ const Consulting = () => {
         title: {
           start: 'Licitaciones y cotizaciones:',
           middle: 'análisis económico',
-          end: 'de ofertas que gana contratos.',
+          end: 'de ofertas que ganan contratos.',
         },
         text: 'Te apoyamos en la elaboración de licitaciones y cotizaciones. Realizamos el análisis económico de tu oferta, nos enfocamos en determinar presupuesto, análisis de precios unitarios, cronogramas y uso de recursos.',
         image: imagesArray.imgBidAlt,
@@ -165,16 +165,14 @@ const Consulting = () => {
         },
         // prettier-ignore
         boxList: [
-          { name: '', icon:'fa-solid fa-chart-line'},
-          { name: '', icon: 'fa-solid fa-warehouse'},
-          { name: '', icon: 'fa-solid fa-address-card' },
-          { name: '', icon: 'fa-solid fa-snowplow' },
-          { name: '', icon: 'fa-solid fa-code-compare' },
-          { name: '', icon: 'fa-solid fa-folder-tree' },
-          { name: '', icon: 'fa-solid fa-helmet-safety' },
-          { name: '', icon: 'fa-solid fa-money-bill-trend-up' },
-          { name: '', icon: 'fa-solid fa-diagram-successor' },
-          { name: '', icon: 'fa-regular fa-compass' },
+          { name: 'Procesos de gestión del cronograma', icon:'fa-solid fa-calendar-days'},
+          { name: 'Procesos de gestión de costos', icon: 'fa-solid fa-coins'},
+          { name: 'Procesos de gestión de adquisiciones', icon: 'fa-solid fa-cart-shopping' },
+          { name: 'Procesos de gestión de recursos', icon: 'fa-solid fa-snowplow' },
+          { name: 'Procesos de gestión de la calidad', icon: 'fa-solid fa-clipboard-check' },
+          { name: 'Procesos de gestión de riesgos', icon: 'fa-solid fa-triangle-exclamation' },
+          { name: 'Procesos de gestión de las comunicaciones', icon: 'fa-solid fa-phone' },
+          { name: 'Procesos de gestión de los interesados', icon: 'fa-solid fa-handshake' },
         ],
         listCols: cols,
       },

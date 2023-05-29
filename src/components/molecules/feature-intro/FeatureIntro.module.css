@@ -39,9 +39,9 @@
   color: var(--color-shades-lighter);
 }
 
-.feature-heading__container--secondary .feature-heading__text {
+/* .feature-heading__container--secondary .feature-heading__text {
   text-align: justify;
-}
+} */
 
 .feature-heading__img-box--primary,
 .feature-heading__img-box--secondary {
@@ -102,9 +102,9 @@
     margin-top: 2.4rem;
   }
 
-  .feature-heading__container--secondary .feature-heading__text {
+  /* .feature-heading__container--secondary .feature-heading__text {
     text-align: left;
-  }
+  } */
 
   .feature-heading__img-box--primary {
     grid-column: auto;

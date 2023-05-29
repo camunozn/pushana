@@ -5,7 +5,7 @@ const Blog = () => {
   const headingIntroBlog = {
     title:
       'Explora nuevas ideas, buenas prácticas y mucho más con nuestro blog.',
-    text: 'Artículos prácticos sobre gestión de proyectos, automatización de procesos y la industria de la construcción.',
+    text: 'Artículos prácticos sobre gestión de proyectos, transformación digital, la industria de la construcción y más.',
   };
 
   const cardsListIntroBlog = [
@@ -15,8 +15,8 @@ const Blog = () => {
       style: 'primary',
     },
     {
-      icon: 'fa-solid fa-gears',
-      title: 'Automatización de procesos',
+      icon: 'fa-solid fa-laptop-file',
+      title: 'Transformación digital',
       style: 'primary',
     },
     {

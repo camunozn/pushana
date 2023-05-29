@@ -171,18 +171,11 @@ const Home = () => {
 
   // EXPLORE MORE CONTENT
   const headingExplore = {
-    title: 'Explora más: sobre nosotros, comunidad y blog',
-    text: 'Conoce más sobre nosotros, apóyate en nuestra comunidad o descubre nuestro blog.',
+    title: 'Explora más sobre nuestra comunidad, blog o nosotros',
+    text: 'Apóyate en nuestra comunidad, descubre nuestro blog o conoce más sobre nosotros.',
   };
 
   const cardsListExplore = [
-    {
-      icon: 'fa-solid fa-dna',
-      title: 'Sobre nosotros',
-      style: 'primary',
-      type: 'page',
-      element: '/about',
-    },
     {
       icon: 'fa-solid fa-people-group',
       title: 'Comunidad Pushana',
@@ -196,6 +189,13 @@ const Home = () => {
       style: 'primary',
       type: 'page',
       element: '/blog',
+    },
+    {
+      icon: 'fa-solid fa-dna',
+      title: 'Sobre nosotros',
+      style: 'primary',
+      type: 'page',
+      element: '/about',
     },
   ];
 
