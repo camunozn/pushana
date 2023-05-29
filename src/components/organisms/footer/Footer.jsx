@@ -2,6 +2,7 @@ import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import imgBrand from '../../../assets/logo/logo-name-transparent-bg.png';
 import styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -63,27 +64,27 @@ const Footer = () => {
           </address>
         </div>
         <div className={styles['footer__account-col']}>
-          <p className={styles['footer__heading']}>Cuenta de usuario</p>
+          <p className={styles['footer__heading']}>Mapa del sitio</p>
           <ul className={styles['footer__nav-list']}>
             <li>
-              <a className={styles['footer__link']} href="#">
-                Crear una cuenta
-              </a>
+              <Link className={styles['footer__link']} to={'/software'}>
+                CPM Software
+              </Link>
             </li>
             <li>
-              <a className={styles['footer__link']} href="#">
-                Iniciar sesión
-              </a>
+              <Link className={styles['footer__link']} to={'/consulting'}>
+                Consultoría
+              </Link>
             </li>
             <li>
-              <a className={styles['footer__link']} href="#">
-                iOS App
-              </a>
+              <Link className={styles['footer__link']} to={'/community'}>
+                Comunidad
+              </Link>
             </li>
             <li>
-              <a className={styles['footer__link']} href="#">
-                Android App
-              </a>
+              <Link className={styles['footer__link']} to={'/blog'}>
+                Blog
+              </Link>
             </li>
           </ul>
         </div>
@@ -91,24 +92,24 @@ const Footer = () => {
           <p className={styles['footer__heading']}>Nuestra empresa</p>
           <ul className={styles['footer__nav-list']}>
             <li>
-              <a className={styles['footer__link']} href="#">
+              <Link className={styles['footer__link']} to={'/'}>
                 FAQ
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer__link']} href="#">
+              <Link className={styles['footer__link']} to={'/'}>
                 Socios
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer__link']} href="#">
+              <Link className={styles['footer__link']} to={'/about'}>
                 Sobre nosotros
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles['footer__link']} href="#">
-                Purple Technologies
-              </a>
+              <Link className={styles['footer__link']} to={'/'}>
+                Purple Sky Technologies
+              </Link>
             </li>
           </ul>
         </div>

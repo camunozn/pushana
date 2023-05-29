@@ -27,7 +27,7 @@ const Product = props => {
                 cols={feature.featureBox.listCols}
               />
               <Button
-                text="Contáctenos"
+                text={feature.featureCta.text}
                 style="primary"
                 align="right"
                 type="page"

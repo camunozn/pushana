@@ -40,6 +40,7 @@ const Consulting = () => {
   ];
   // CONSULTING DETAILS CONTENT
   const cols = 2;
+  const ctaText = 'Consultar';
 
   const headingConsulting = {
     title: 'Consultoría eficiente y efectiva en todas las etapas.',
@@ -79,6 +80,10 @@ const Consulting = () => {
         ],
         listCols: cols,
       },
+      featureLink: '/contact',
+      featureCta: {
+        text: ctaText,
+      },
     },
     {
       featureName: '2',
@@ -111,6 +116,10 @@ const Consulting = () => {
           { name: 'Ficha para cierre de oferta', icon: 'fa-solid fa-award' },
         ],
         listCols: cols,
+      },
+      featureLink: '/contact',
+      featureCta: {
+        text: ctaText,
       },
     },
     {
@@ -145,6 +154,10 @@ const Consulting = () => {
         ],
         listCols: cols,
       },
+      featureLink: '/contact',
+      featureCta: {
+        text: ctaText,
+      },
     },
     {
       featureName: '4',
@@ -175,6 +188,10 @@ const Consulting = () => {
           { name: 'Procesos de gestión de los interesados', icon: 'fa-solid fa-handshake' },
         ],
         listCols: cols,
+      },
+      featureLink: '/contact',
+      featureCta: {
+        text: ctaText,
       },
     },
   ];

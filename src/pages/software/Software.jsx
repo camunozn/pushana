@@ -41,6 +41,7 @@ const Software = () => {
 
   // APP DETAILS CONTENT
   const cols = 2;
+  const ctaText = 'Probar ahora';
 
   const headingSoftware = {
     title: 'Desde la fase precontractual hasta el final de la construcción.',
@@ -49,7 +50,7 @@ const Software = () => {
 
   const featuresSoftware = [
     {
-      featureName: 'Biding',
+      featureName: '1',
       featureIntro: {
         title: {
           start: 'Precontractual:',
@@ -80,9 +81,13 @@ const Software = () => {
         ],
         listCols: cols,
       },
+      featureLink: '/free-trial',
+      featureCta: {
+        text: ctaText,
+      },
     },
     {
-      featureName: 'Planning',
+      featureName: '2',
       featureIntro: {
         title: {
           start: 'Preconstrucción:',
@@ -111,9 +116,13 @@ const Software = () => {
         ],
         listCols: cols,
       },
+      featureLink: '/free-trial',
+      featureCta: {
+        text: ctaText,
+      },
     },
     {
-      featureName: 'Controlling',
+      featureName: '3',
       featureIntro: {
         title: {
           start: 'Construcción:',
@@ -143,6 +152,10 @@ const Software = () => {
           { name: 'Tableros de control e informes gerenciales', icon: 'fa-regular fa-compass' },
         ],
         listCols: cols,
+      },
+      featureLink: '/free-trial',
+      featureCta: {
+        text: ctaText,
       },
     },
   ];

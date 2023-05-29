@@ -34,7 +34,7 @@ const Home = () => {
     style: 'primary',
     align: 'center',
     type: 'page',
-    element: '/',
+    element: '/contact',
   };
 
   const secondaryBtnOptions = {
@@ -171,7 +171,7 @@ const Home = () => {
 
   // EXPLORE MORE CONTENT
   const headingExplore = {
-    title: 'Explora más sobre nuestra comunidad, blog o nosotros',
+    title: 'Explora más sobre nuestra comunidad, blog o nosotros.',
     text: 'Apóyate en nuestra comunidad, descubre nuestro blog o conoce más sobre nosotros.',
   };
 
