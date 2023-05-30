@@ -10,7 +10,7 @@ const Blog = () => {
 
   const cardsListIntroBlog = [
     {
-      icon: 'fa-solid fa-chart-gantt',
+      icon: 'fa-solid fa-chess',
       title: 'Gestión de proyectos',
       style: 'primary',
     },
