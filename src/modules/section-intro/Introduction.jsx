@@ -8,7 +8,7 @@ const Introduction = props => {
     <section id={props.id} className={styles['intro']}>
       <div className={styles['intro__container']}>
         <HeadingLarge title={props.heading.title} text={props.heading.text} />
-        <CardsBox cardsList={props.cardsList} />
+        {props.cardsList && <CardsBox cardsList={props.cardsList} />}
       </div>
     </section>
   );

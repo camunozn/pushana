@@ -56,7 +56,7 @@ const Footer = () => {
             <p className={styles['footer__contact']}>
               <a
                 className={styles['footer__link']}
-                href="mailto:contacto@pushana.com"
+                href="mailto:camunozn@pushana.com"
               >
                 camunozn@pushana.com
               </a>

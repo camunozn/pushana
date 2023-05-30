@@ -9,6 +9,8 @@ import Consulting from './pages/consulting/Consulting';
 import Software from './pages/software/Software';
 import ScrollToTop from './components/atoms/scroll-to-top/ScrollToTop';
 import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
+import FreeTrial from './pages/free-trial/FreeTrial';
 
 function App() {
   const linksList = [
@@ -32,6 +34,8 @@ function App() {
             <Route path="/community" element={<Community />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/free-trial" element={<FreeTrial />} />
           </Routes>
         </main>
         <Footer />
