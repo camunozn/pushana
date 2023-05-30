@@ -58,7 +58,7 @@ const Footer = () => {
                 className={styles['footer__link']}
                 href="mailto:contacto@pushana.com"
               >
-                contacto@pushana.com
+                camunozn@pushana.com
               </a>
             </p>
           </address>

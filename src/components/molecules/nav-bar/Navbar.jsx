@@ -24,7 +24,13 @@ const Navbar = props => {
           </li>
         ))}
         <li>
-          <Button text="Contáctenos" style="primary" align="center" />
+          <Button
+            text="Contáctenos"
+            style="primary"
+            align="center"
+            type="page"
+            element="/contact"
+          />
         </li>
       </ul>
     </div>

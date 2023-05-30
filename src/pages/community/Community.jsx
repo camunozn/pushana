@@ -3,7 +3,7 @@ import Introduction from '../../modules/section-intro/Introduction';
 
 const Community = () => {
   const headingIntroCommunity = {
-    title: 'Una comunidad de gestión de proyectos en la que te puedes apoyar.',
+    title: 'Una comunidad sobre gestión de proyectos en la que puedes confiar.',
     text: 'En nuestra comunidad podrás encontrar consejos prácticos y recursos para ayudarte con la gestión de tus proyectos.',
   };
 
