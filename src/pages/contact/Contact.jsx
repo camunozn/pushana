@@ -4,7 +4,8 @@ import Introduction from '../../modules/section-intro/Introduction';
 const Contact = () => {
   const headingIntroContact = {
     title:
-      'Contáctanos: llámanos, envíanos un correo o escríbenos por whatsapp.',
+      'Contáctanos: no importa el medio, estamos disponibles para atender tus consultas.',
+    text: 'Llámanos, envíanos un correo electrónico o escríbenos por Whatsapp.',
   };
 
   const cardsListIntroContact = [
@@ -28,7 +29,7 @@ const Contact = () => {
       style: 'primary',
       type: 'link',
       element:
-        'https://api.whatsapp.com/send?phone=593998043941&text=Hola,+quisiera+más+información+sobre+',
+        'https://api.whatsapp.com/send?phone=593998043941&text=Hola,+quisiera+más+información+sobre+sus+servicios',
     },
   ];
 

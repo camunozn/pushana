@@ -3,11 +3,9 @@ import Card from '../card/Card';
 import styles from './CardsBox.module.css';
 
 const CardsBox = props => {
-  const cardsList = props.cardsList;
-
   return (
     <div className={styles['cards-box']}>
-      {cardsList.map(card => (
+      {props.cardsList.map(card => (
         <div className={styles['card-item']} key={card.title}>
           <Card
             icon={card.icon}

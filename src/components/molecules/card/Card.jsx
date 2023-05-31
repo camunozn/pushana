@@ -16,10 +16,21 @@ const Card = props => {
     navigate(page);
   };
 
-  const clickHandler = props.type === 'page' ? navigateToPage : scrollToSection;
+  const openLink = link => {
+    window.open(link);
+  };
+
+  const clickHandler = (type, element) => {
+    if (type === 'section') return scrollToSection(element);
+    if (type === 'page') return navigateToPage(element);
+    if (type === 'link') return openLink(element);
+  };
 
   return (
-    <div className={styles.card} onClick={() => clickHandler(props.element)}>
+    <div
+      className={styles.card}
+      onClick={() => clickHandler(props.type, props.element)}
+    >
       <div>
         {props.image && (
           <div className={styles['card__img']}>
