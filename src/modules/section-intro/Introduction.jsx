@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import HeadingLarge from '../../components/molecules/heading-large/HeadingLarge';
 import CardsBox from '../../components/molecules/cards-box/CardsBox';
-import RegistrationForm from '../../components/organisms/registration-form/RegistrationForm';
+import Cta from '../../components/organisms/cta/Cta';
 import styles from './Introduction.module.css';
 
 const Introduction = props => {
@@ -10,7 +10,7 @@ const Introduction = props => {
       <div className={styles['intro__container']}>
         <HeadingLarge title={props.heading.title} text={props.heading.text} />
         {props.cardsList && <CardsBox cardsList={props.cardsList} />}
-        {props.formData && <RegistrationForm formData={props.formData} />}
+        {props.ctaData && <Cta ctaData={props.ctaData} />}
       </div>
     </section>
   );

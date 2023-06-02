@@ -1,6 +1,5 @@
 import React from 'react';
 import Introduction from '../../modules/section-intro/Introduction';
-import RegistrationForm from '../../components/organisms/registration-form/RegistrationForm';
 
 const FreeTrial = () => {
   const headingIntroTrial = {
@@ -9,19 +8,45 @@ const FreeTrial = () => {
     text: 'Déjanos tus datos y te notificaremos cuando puedas probar esta nueva experiencia en gestión de proyectos de construcción.',
   };
 
-  const registrationFormData = {
+  const ctaData = {
     heading: {
       title: 'Formulario de registro.',
       text: 'Regístrate para ser el primero en conocer cuando nuestra App esté disponible.',
+    },
+    form: {
+      formInputs: [
+        {
+          id: 'firstname',
+          type: 'text',
+          name: 'firstname',
+          label: 'Nombre: ',
+        },
+        {
+          id: 'lastname',
+          type: 'text',
+          name: 'lastname',
+          label: 'Apellido: ',
+        },
+        {
+          id: 'email',
+          type: 'email',
+          name: 'email',
+          label: 'Correo: ',
+        },
+        {
+          id: 'comment',
+          type: 'text',
+          name: 'comment',
+          label: 'Comentarios: ',
+        },
+      ],
+      formButton: {},
     },
   };
 
   return (
     <div className="free-trial">
-      <Introduction
-        heading={headingIntroTrial}
-        formData={registrationFormData}
-      />
+      <Introduction heading={headingIntroTrial} ctaData={ctaData} />
     </div>
   );
 };
