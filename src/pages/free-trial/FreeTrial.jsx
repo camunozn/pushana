@@ -20,27 +20,35 @@ const FreeTrial = () => {
           type: 'text',
           name: 'firstname',
           label: 'Nombre: ',
+          line: 'share',
         },
         {
           id: 'lastname',
           type: 'text',
           name: 'lastname',
           label: 'Apellido: ',
+          line: 'share',
         },
         {
           id: 'email',
           type: 'email',
           name: 'email',
           label: 'Correo: ',
+          line: 'fill',
         },
         {
           id: 'comment',
           type: 'text',
           name: 'comment',
-          label: 'Comentarios: ',
+          label: 'Comentario: ',
+          line: 'fill',
         },
       ],
-      formButton: {},
+      formButton: {
+        text: 'Enviar',
+        style: 'primary',
+        align: 'right',
+      },
     },
   };
 
