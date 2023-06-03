@@ -55,7 +55,7 @@ const Home = () => {
   const cardsListIntro = [
     {
       icon: 'fa-regular fa-compass',
-      title: 'Pushana Consulting',
+      title: 'Consultoría',
       style: 'primary',
       type: 'page',
       element: '/consulting',
@@ -69,7 +69,7 @@ const Home = () => {
     },
     {
       icon: 'fa-solid fa-people-group',
-      title: 'Comunidad Pushana',
+      title: 'Comunidad',
       style: 'primary',
       type: 'page',
       element: '/community',
@@ -178,21 +178,21 @@ const Home = () => {
   const cardsListExplore = [
     {
       icon: 'fa-solid fa-people-group',
-      title: 'Comunidad Pushana',
+      title: 'Comunidad',
       style: 'primary',
       type: 'page',
       element: '/community',
     },
     {
       icon: 'fa-solid fa-blog',
-      title: 'Pushana Blog',
+      title: 'Blog',
       style: 'primary',
       type: 'page',
       element: '/blog',
     },
     {
       icon: 'fa-solid fa-dna',
-      title: 'Sobre nosotros',
+      title: 'Nosotros',
       style: 'primary',
       type: 'page',
       element: '/about',
