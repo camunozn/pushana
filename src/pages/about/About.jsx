@@ -5,7 +5,7 @@ const About = () => {
   const headingIntroAbout = {
     title:
       'Pushana Construction Project Management: nuestro origen, filosofía y visión.',
-    text: 'En quichua, pushana significa guiar, dirigir. Para nosotros es una palabra que representa de donde venimos y, a la vez, hacia donde vamos: buscamos guiar a las empresas constructoras hacia una gestión de proyectos exitosa.',
+    text: 'En quichua, Pushana significa guiar, dirigir. Para nosotros es una palabra que representa nuestro principal objetivo: guiar a las empresas constructoras hacia una gestión de proyectos exitosa.',
   };
 
   const cardsListIntroAbout = [
@@ -31,6 +31,7 @@ const About = () => {
       <Introduction
         heading={headingIntroAbout}
         cardsList={cardsListIntroAbout}
+        background="normal"
       />
     </div>
   );
