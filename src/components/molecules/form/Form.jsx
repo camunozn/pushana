@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import styles from './Form.module.css';
 import InputGroup from '../../atoms/input-group/InputGroup';
@@ -7,9 +7,14 @@ import Button from '../../atoms/button/Button';
 const Form = props => {
   const { register, handleSubmit, reset } = useForm();
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   const submit = data => {
     console.log(data);
     reset();
+    scrollToTop();
   };
 
   return (
