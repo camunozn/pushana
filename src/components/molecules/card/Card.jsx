@@ -17,7 +17,7 @@ const Card = props => {
   };
 
   const openLink = link => {
-    window.open(link, '_blank', 'nonreferrer');
+    window.open(link);
   };
 
   const clickHandler = (type, element) => {

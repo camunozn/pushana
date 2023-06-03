@@ -1,5 +1,4 @@
 import React from 'react';
-import { animateScroll as scroll } from 'react-scroll';
 import Button from '../../atoms/button/Button';
 import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
@@ -30,6 +29,7 @@ const Navbar = props => {
             align="center"
             type="page"
             element="/contact"
+            toggleNav={props.toggleNav}
           />
         </li>
       </ul>

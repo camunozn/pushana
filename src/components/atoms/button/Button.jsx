@@ -4,8 +4,10 @@ import styles from './Button.module.css';
 
 const Button = props => {
   const navigate = useNavigate();
+  const toggleNav = props.toggleNav;
 
   const scrollToSection = section => {
+    if (toggleNav) toggleNav();
     const element = document.getElementById(section);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -13,6 +15,7 @@ const Button = props => {
   };
 
   const navigateToPage = page => {
+    if (toggleNav) toggleNav();
     navigate(page);
   };
 
