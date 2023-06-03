@@ -17,7 +17,12 @@ const Header = props => {
   return (
     <header className={styles.header}>
       <div className={styles['header__container']}>
-        <LogoBox image={logoImg} text="Pushana" link={'/'} />
+        <LogoBox
+          image={logoImg}
+          text="Pushana"
+          slogan="Construction Project Management"
+          link={'/'}
+        />
         <Navbar linksList={linksList} openNav={openNav} toggleNav={toggleNav} />
         <ButtonMobile buttonHandler={toggleNav} openNav={openNav} />
       </div>
