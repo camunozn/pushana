@@ -9,7 +9,6 @@
 }
 
 .box__container {
-  background-color: var(--color-bg-normal);
   border-radius: 15px;
   padding: 3.2rem 9.6rem 4.8rem 9.6rem;
 }

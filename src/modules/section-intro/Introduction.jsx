@@ -6,11 +6,16 @@ import styles from './Introduction.module.css';
 
 const Introduction = props => {
   return (
-    <section id={props.id} className={styles['intro']}>
+    <section
+      id={props.id}
+      className={`${styles.intro} ${`bg--${props.background}`}`}
+    >
       <div className={styles['intro__container']}>
         <HeadingLarge title={props.heading.title} text={props.heading.text} />
         {props.cardsList && <CardsBox cardsList={props.cardsList} />}
-        {props.ctaData && <Cta ctaData={props.ctaData} />}
+        {props.ctaData && (
+          <Cta ctaData={props.ctaData} background={props.background} />
+        )}
       </div>
     </section>
   );

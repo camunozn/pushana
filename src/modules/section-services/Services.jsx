@@ -7,11 +7,14 @@ import Button from '../../components/atoms/button/Button';
 
 const Services = props => {
   return (
-    <section id={props.id} className={styles.services}>
+    <section
+      id={props.id}
+      className={`${styles.services} ${`bg--${props.background}`}`}
+    >
       <div className={styles['services__container']}>
         <HeadingLarge title={props.heading.title} text={props.heading.text} />
         {props.features.map(feature => (
-          <MarginBox key={feature.featureName}>
+          <MarginBox key={feature.featureName} background={props.background}>
             <FeatureIntro
               title={feature.featureIntro.title}
               text={feature.featureIntro.text}

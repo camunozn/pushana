@@ -30,6 +30,7 @@ const Community = () => {
       <Introduction
         heading={headingIntroCommunity}
         cardsList={cardsListIntroCommunity}
+        background="normal"
       />
     </div>
   );

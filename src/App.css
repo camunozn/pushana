@@ -64,7 +64,7 @@ Medium: 11px
   --color-bg-dark: #11021d;
   --color-bg-darker: #0d0117;
   --color-bg-shapes: rgba(86, 41, 129, 0.1);
-  --color-bg-blur: transparent;
+  --color-bg-transparent: transparent;
   --linear-gradient-bg: linear-gradient(to bottom right, #170229, #21033a);
   --linear-gradient-hero: linear-gradient(
     to bottom right,
@@ -135,6 +135,18 @@ a:visited {
 a:hover,
 a:active {
   color: var(--color-accent-primary);
+}
+
+/*****************************/
+/* GENERAL STYLES*/
+/*****************************/
+
+.bg--normal {
+  background-color: var(--color-bg-normal);
+}
+
+.bg--dark {
+  background-color: var(--color-bg-dark);
 }
 
 /*****************************/

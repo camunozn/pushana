@@ -195,9 +195,18 @@ const Software = () => {
       <Introduction
         heading={headingIntroSoftware}
         cardsList={cardsListIntroSoftware}
+        background="dark"
       />
-      <Product heading={headingSoftware} features={featuresSoftware} />
-      <Explore heading={headingExplore} cardsList={cardsListExplore} />
+      <Product
+        heading={headingSoftware}
+        features={featuresSoftware}
+        background="normal"
+      />
+      <Explore
+        heading={headingExplore}
+        cardsList={cardsListExplore}
+        background="dark"
+      />
     </div>
   );
 };

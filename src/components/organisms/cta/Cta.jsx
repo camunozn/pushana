@@ -9,8 +9,8 @@ const Cta = props => {
   const formData = props.ctaData.form;
 
   return (
-    <div className="registration-form">
-      <MarginBox>
+    <div className={styles.cta}>
+      <MarginBox background={props.background}>
         <HeadingSmall title={heading.title} text={heading.text} />
         <Form
           formInputs={formData.formInputs}

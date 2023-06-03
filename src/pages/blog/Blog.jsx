@@ -27,7 +27,11 @@ const Blog = () => {
   ];
   return (
     <div className="blog">
-      <Introduction heading={headingIntroBlog} cardsList={cardsListIntroBlog} />
+      <Introduction
+        heading={headingIntroBlog}
+        cardsList={cardsListIntroBlog}
+        background="normal"
+      />
     </div>
   );
 };

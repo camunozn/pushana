@@ -8,7 +8,10 @@ import styles from './Product.module.css';
 
 const Product = props => {
   return (
-    <section id={props.id} className={styles.product}>
+    <section
+      id={props.id}
+      className={`${styles.product} ${`bg--${props.background}`}`}
+    >
       <div className={styles['product__container']}>
         <HeadingMedium title={props.heading.title} text={props.heading.text} />
         {props.features.map(feature => (
@@ -19,7 +22,7 @@ const Product = props => {
               image={feature.featureIntro.image}
               accent={feature.featureIntro.accent}
             />
-            <MarginBox>
+            <MarginBox background={props.background}>
               <FeatureBox
                 title={feature.featureBox.boxHeading.title}
                 text={feature.featureBox.boxHeading.text}

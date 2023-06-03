@@ -211,13 +211,19 @@ const Home = () => {
         id="section-introduction"
         heading={headingIntro}
         cardsList={cardsListIntro}
+        background="dark"
       />
       <Services
         id="section-services"
         heading={headingServices}
         features={featuresServices}
+        background="normal"
       />
-      <Explore heading={headingExplore} cardsList={cardsListExplore} />
+      <Explore
+        heading={headingExplore}
+        cardsList={cardsListExplore}
+        background="dark"
+      />
     </div>
   );
 };

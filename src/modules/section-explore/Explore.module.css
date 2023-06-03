@@ -4,7 +4,6 @@
 .explore {
   height: 100%;
   width: 100%;
-  background-color: var(--color-bg-dark);
 }
 
 .explore__container {

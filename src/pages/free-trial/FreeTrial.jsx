@@ -54,7 +54,11 @@ const FreeTrial = () => {
 
   return (
     <div className="free-trial">
-      <Introduction heading={headingIntroTrial} ctaData={ctaData} />
+      <Introduction
+        heading={headingIntroTrial}
+        ctaData={ctaData}
+        background="normal"
+      />
     </div>
   );
 };

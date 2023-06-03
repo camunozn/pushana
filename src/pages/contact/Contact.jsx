@@ -38,6 +38,7 @@ const Contact = () => {
       <Introduction
         heading={headingIntroContact}
         cardsList={cardsListIntroContact}
+        background="normal"
       />
     </div>
   );

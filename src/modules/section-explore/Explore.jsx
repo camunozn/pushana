@@ -5,7 +5,10 @@ import styles from './Explore.module.css';
 
 const Explore = props => {
   return (
-    <section id="section-explore" className={styles.explore}>
+    <section
+      id="section-explore"
+      className={`${styles.explore} ${`bg--${props.background}`}`}
+    >
       <div className={styles['explore__container']}>
         <HeadingMedium title={props.heading.title} text={props.heading.text} />
         <CardsBox cardsList={props.cardsList} />

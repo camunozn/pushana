@@ -231,9 +231,18 @@ const Consulting = () => {
       <Introduction
         heading={headingIntroConsulting}
         cardsList={cardsListIntroConsulting}
+        background="dark"
       />
-      <Product heading={headingConsulting} features={featuresConsulting} />
-      <Explore heading={headingExplore} cardsList={cardsListExplore} />
+      <Product
+        heading={headingConsulting}
+        features={featuresConsulting}
+        background="normal"
+      />
+      <Explore
+        heading={headingExplore}
+        cardsList={cardsListExplore}
+        background="dark"
+      />
     </div>
   );
 };
