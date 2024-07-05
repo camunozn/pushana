@@ -13,9 +13,9 @@ const FeatureIntro = props => {
           {props.title.end}
         </h3>
         <p className={styles['feature-heading__text']}>{props.text}</p>
-        <div className={styles[`feature-heading__img-box--${props.accent}`]}>
+        {/* <div className={styles[`feature-heading__img-box--${props.accent}`]}>
           <img src={props.image} alt="Feature image" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

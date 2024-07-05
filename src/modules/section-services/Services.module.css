@@ -12,9 +12,57 @@
   margin: 0 auto;
 }
 
+.services__items__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 4.8rem;
+  padding: 0;
+}
+
+.services__item {
+  flex-basis: 40rem;
+  max-width: 75rem;
+  flex-grow: 1;
+}
+
 /**************************/
 /* QUERIES*/
 /**************************/
+/**************************/
+/* BELOW 1232px (Small desktop) */
+/**************************/
+@media (max-width: 77em) {
+  .services__item {
+    flex-basis: 35rem;
+  }
+}
+
+/**************************/
+/* BELOW 1088px (Landscape tablets) */
+/**************************/
+@media (max-width: 68em) {
+}
+
+/**************************/
+/* BELOW 960px (Portrait tablets) */
+/**************************/
+@media (max-width: 59em) {
+  .services__item {
+    flex-basis: 30rem;
+  }
+}
+
+/**************************/
+/* BELOW 768px (Portrait small tablets) */
+/**************************/
+@media (max-width: 48em) {
+  .services__item {
+    flex-basis: 35rem;
+  }
+}
+
 /**************************/
 /* BELOW 592px (Phones) */
 /**************************/

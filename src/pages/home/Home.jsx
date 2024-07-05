@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './Home.module.css';
 import Hero from '../../modules/section-hero/Hero';
-import Introduction from '../../modules/section-intro/Introduction';
-import Explore from '../../modules/section-explore/Explore';
 import Services from '../../modules/section-services/Services';
 import imagesArray from '../../assets';
 
@@ -12,18 +10,16 @@ const Home = () => {
     start: 'Gestión de proyectos',
     middle: 'de construcción',
     end: 'hecha',
-    text: 'Simplifica la planificación, potencia el control, evita reprocesos, haz que la información fluya y en general, mejora el desempeño de tus proyectos.',
+    text: 'Implementamos y optimizamos tus procesos, desarrollamos soluciones a medida, y capacitamos a tu equipo... Todo para mejorar el desempeño de tus proyectos.',
     image: imagesArray.imgHero,
   };
 
   const sequenceWords = [
-    'fácil',
-    1000,
-    'eficiente',
+    'simple',
     1000,
     'clara',
     1000,
-    'accesible',
+    'eficiente',
     1000,
     'efectiva',
     1000,
@@ -42,39 +38,8 @@ const Home = () => {
     style: 'secondary',
     align: 'center',
     type: 'section',
-    element: 'section-introduction',
+    element: 'section-consulting',
   };
-
-  // INTRO SERVICES CONTENT
-  const headingIntro = {
-    title:
-      'Potenciamos los procesos de planificación y control de tus proyectos de construcción.',
-    text: 'Impulsamos la gestión de tus proyectos a través de servicios de consultoría especializados y soluciones de software intuitivas que generan resultados. Además, tenemos una gran comunidad en la que te puedes apoyar!',
-  };
-
-  const cardsListIntro = [
-    {
-      icon: 'fa-regular fa-compass',
-      title: 'Consultoría',
-      style: 'primary',
-      type: 'page',
-      element: '/consulting',
-    },
-    {
-      icon: 'fa-solid fa-laptop-code',
-      title: 'CPM Software',
-      style: 'primary',
-      type: 'page',
-      element: '/software',
-    },
-    {
-      icon: 'fa-solid fa-people-group',
-      title: 'Comunidad',
-      style: 'primary',
-      type: 'page',
-      element: '/community',
-    },
-  ];
 
   // SERVICES AND PRODUCTS DETAILS CONTENT
   const headingServices = {
@@ -95,7 +60,7 @@ const Home = () => {
         image: imagesArray.imgCostEng,
         accent: 'primary',
       },
-      featureLink: '/consulting',
+      featureLink: '/contact',
     },
     {
       featureName: '2',
@@ -109,7 +74,7 @@ const Home = () => {
         image: imagesArray.imgBidAlt,
         accent: 'secondary',
       },
-      featureLink: '/consulting',
+      featureLink: '/contact',
     },
     {
       featureName: '3',
@@ -123,7 +88,7 @@ const Home = () => {
         image: imagesArray.imgPlanning,
         accent: 'primary',
       },
-      featureLink: '/consulting',
+      featureLink: '/contact',
     },
     {
       featureName: '4',
@@ -137,7 +102,7 @@ const Home = () => {
         image: imagesArray.imgControlAlt,
         accent: 'secondary',
       },
-      featureLink: '/consulting',
+      featureLink: '/contact',
     },
     {
       featureName: '5',
@@ -151,7 +116,7 @@ const Home = () => {
         image: imagesArray.imgLowCode,
         accent: 'primary',
       },
-      featureLink: '/consulting',
+      featureLink: '/contact',
     },
     {
       featureName: '6',
@@ -165,37 +130,7 @@ const Home = () => {
         image: imagesArray.imgAppAlt,
         accent: 'secondary',
       },
-      featureLink: '/software',
-    },
-  ];
-
-  // EXPLORE MORE CONTENT
-  const headingExplore = {
-    title: 'Explora más sobre nuestra comunidad, nuestro blog o nosotros.',
-    text: 'Apóyate en nuestra comunidad, descubre nuestro blog o conoce más sobre nosotros.',
-  };
-
-  const cardsListExplore = [
-    {
-      icon: 'fa-solid fa-people-group',
-      title: 'Comunidad',
-      style: 'primary',
-      type: 'page',
-      element: '/community',
-    },
-    {
-      icon: 'fa-solid fa-blog',
-      title: 'Blog',
-      style: 'primary',
-      type: 'page',
-      element: '/blog',
-    },
-    {
-      icon: 'fa-solid fa-dna',
-      title: 'Nosotros',
-      style: 'primary',
-      type: 'page',
-      element: '/about',
+      featureLink: '/contact',
     },
   ];
 
@@ -207,21 +142,22 @@ const Home = () => {
         primaryBtnOptions={primaryBtnOptions}
         secondaryBtnOptions={secondaryBtnOptions}
       />
-      <Introduction
-        id="section-introduction"
-        heading={headingIntro}
-        cardsList={cardsListIntro}
+      <Services
+        id="section-consulting"
+        heading={headingServices}
+        features={featuresServices}
         background="dark"
       />
       <Services
-        id="section-services"
+        id="section-development"
         heading={headingServices}
         features={featuresServices}
-        background="normal"
+        background="dark"
       />
-      <Explore
-        heading={headingExplore}
-        cardsList={cardsListExplore}
+      <Services
+        id="section-training"
+        heading={headingServices}
+        features={featuresServices}
         background="dark"
       />
     </div>
