@@ -43,7 +43,7 @@ const Home = () => {
 
   // SERVICE CONSULTING DETAILS
   const headingConsulting = {
-    title: 'Ingeniería y Consultoría',
+    title: 'Ingeniería y consultoría',
     text: 'En procesos de la gestión de proyectos',
   };
 
@@ -52,11 +52,11 @@ const Home = () => {
       featureName: '1',
       featureIntro: {
         title: {
-          start: 'Procesos de la gestión de proyectos:',
-          middle: 'implementación y optimización',
+          start: 'Implementación y optimización de',
+          middle: 'procesos de la gestión de proyectos',
           end: 'en empresas constructoras.',
         },
-        text: 'Si eres el promotor de un proyecto de construcción o el consultor de los diseños finales, nosotros te apoyamos con la ingeniería de costos y la evaluación económica del proyecto de cara a una construcción exitosa.',
+        text: 'Te ayudamos a implementar y optimizar los procesos y buenas prácticas de la gestión de proyectos en tu empresa. Orientados específicamente para satisfacer las necesidades de la industria de la construcción.',
         image: imagesArray.imgCostEng,
         accent: 'primary',
       },
@@ -66,11 +66,11 @@ const Home = () => {
       featureName: '2',
       featureIntro: {
         title: {
-          start: 'Precontractual:',
-          middle: 'licitaciones y cotizaciones',
-          end: 'para clientes públicos o privados.',
+          start: 'Planificación de proyectos:',
+          middle: 'alcance, costos y tiempos;',
+          end: 'las principales restricciones.',
         },
-        text: 'Te apoyamos en la elaboración de licitaciones y cotizaciones. Realizamos el análisis económico de tu oferta, nos enfocamos en determinar presupuesto, análisis de precios unitarios, cronograma y uso de recursos.',
+        text: 'Te apoyamos con la planificación de las principales restricciones de tus proyectos: alcance, costos y tiempos. Plan para la gestión del alcance, presupuestos de construcción y cronogramas de trabajo.',
         image: imagesArray.imgBidAlt,
         accent: 'secondary',
       },
@@ -80,11 +80,11 @@ const Home = () => {
       featureName: '3',
       featureIntro: {
         title: {
-          start: 'Preconstrucción:',
-          middle: 'planificación detallada',
-          end: 'para prepararte de la mejor manera.',
+          start: 'Monitoreo y control de proyectos:',
+          middle: 'monitorea lo que quieres controlar,',
+          end: 'controla lo que importa.',
         },
-        text: 'De la licitación al inicio de la construcción sin problemas. Revisamos el alcance, realizamos el presupuesto meta, ajustamos la programación y preparamos toda la información que necesitas para empezar la ejecución.',
+        text: 'Ta ayudamos a implementar y aplicar la gestión del valor ganado para el control de tus proyectos. Desarrollamos el control integrado de cambios, el control de costos y el control de cronograma.',
         image: imagesArray.imgPlanning,
         accent: 'primary',
       },
@@ -94,8 +94,8 @@ const Home = () => {
 
   // SERVICE DEVELOPMENT DETAILS
   const headingDevelopment = {
-    title: 'Ingeniería y Consultoría',
-    text: 'En procesos de la gestión de proyectos',
+    title: 'Desarrollos a medida',
+    text: 'Soluciones operativas y de gestión',
   };
 
   const featuresDevelopment = [
