@@ -43,8 +43,8 @@ const Home = () => {
 
   // SERVICE CONSULTING DETAILS
   const headingConsulting = {
-    title: 'Ingeniería y consultoría',
-    text: 'En procesos de la gestión de proyectos',
+    title: 'Gestión de proyectos',
+    text: 'Procesos, planificación y control',
   };
 
   const featuresConsulting = [
@@ -52,7 +52,7 @@ const Home = () => {
       featureName: '1',
       featureIntro: {
         title: {
-          start: 'Implementación y optimización de',
+          start: 'Implementación y optimización de los',
           middle: 'procesos de la gestión de proyectos',
           end: 'en empresas constructoras.',
         },
@@ -66,11 +66,11 @@ const Home = () => {
       featureName: '2',
       featureIntro: {
         title: {
-          start: 'Planificación de proyectos:',
-          middle: 'alcance, costos y tiempos;',
+          start: 'Planificación de proyectos.',
+          middle: 'Alcance, costos y tiempos,',
           end: 'las principales restricciones.',
         },
-        text: 'Te apoyamos con la planificación de las principales restricciones de tus proyectos: alcance, costos y tiempos. Plan para la gestión del alcance, presupuestos de construcción y cronogramas de trabajo.',
+        text: 'Te apoyamos con la planificación de las principales restricciones de tus proyectos: alcance, costos y tiempos. Planificamos la gestión del alcance, analizamos el presupuesto de construcción y desarrollamos el cronograma de trabajo.',
         image: imagesArray.imgBidAlt,
         accent: 'secondary',
       },
@@ -84,7 +84,7 @@ const Home = () => {
           middle: 'monitorea lo que quieres controlar,',
           end: 'controla lo que importa.',
         },
-        text: 'Ta ayudamos a implementar y aplicar la gestión del valor ganado para el control de tus proyectos. Desarrollamos el control integrado de cambios, el control de costos y el control de cronograma.',
+        text: 'Ta ayudamos a implementar y aplicar la gestión del valor ganado para el control de tus proyectos. Realizamos el control integrado de cambios y llevamos el control de costos y de cronograma para evaluar el desempeño de tus proyectos.',
         image: imagesArray.imgPlanning,
         accent: 'primary',
       },
@@ -94,8 +94,8 @@ const Home = () => {
 
   // SERVICE DEVELOPMENT DETAILS
   const headingDevelopment = {
-    title: 'Desarrollos a medida',
-    text: 'Soluciones operativas y de gestión',
+    title: 'Claris FileMaker®',
+    text: 'Soluciones rápidas y a medida',
   };
 
   const featuresDevelopment = [
@@ -103,11 +103,11 @@ const Home = () => {
       featureName: '1',
       featureIntro: {
         title: {
-          start: 'Diseño:',
-          middle: 'ingeniería de costos',
-          end: 'para la evaluación económica de proyectos.',
+          start: 'Claris FileMaker®:',
+          middle: 'desarrollo rápido',
+          end: 'de aplicaciones personalizadas.',
         },
-        text: 'Si eres el promotor de un proyecto de construcción o el consultor de los diseños finales, nosotros te apoyamos con la ingeniería de costos y la evaluación económica del proyecto de cara a una construcción exitosa.',
+        text: 'No adaptes tu empresa y tus procesos para que encajen con una solución predeterminada, en su lugar, crea soluciones rápidamente y a la medida de tus necesidades con la plataforma de Claris, FileMaker Pro 2024.',
         image: imagesArray.imgCostEng,
         accent: 'primary',
       },
@@ -117,11 +117,11 @@ const Home = () => {
       featureName: '2',
       featureIntro: {
         title: {
-          start: 'Precontractual:',
-          middle: 'licitaciones y cotizaciones',
-          end: 'para clientes públicos o privados.',
+          start: 'Claris FileMaker®:',
+          middle: 'aplicaciones operativas',
+          end: 'para empresas constructoras.',
         },
-        text: 'Te apoyamos en la elaboración de licitaciones y cotizaciones. Realizamos el análisis económico de tu oferta, nos enfocamos en determinar presupuesto, análisis de precios unitarios, cronograma y uso de recursos.',
+        text: 'Desarrollamos y personalizamos aplicaciones que optimicen los procesos y mejoren la operación de tu empresa constructora. Aplicaciones para gestión y control de los principales recursos: Maquinaria, Mano de Obra, Materiales y Transporte.',
         image: imagesArray.imgBidAlt,
         accent: 'secondary',
       },
@@ -131,11 +131,11 @@ const Home = () => {
       featureName: '3',
       featureIntro: {
         title: {
-          start: 'Preconstrucción:',
-          middle: 'planificación detallada',
-          end: 'para prepararte de la mejor manera.',
+          start: 'Claris FileMaker®:',
+          middle: 'soluciones útiles y confiables',
+          end: 'para resolver cualquier problema.',
         },
-        text: 'De la licitación al inicio de la construcción sin problemas. Revisamos el alcance, realizamos el presupuesto meta, ajustamos la programación y preparamos toda la información que necesitas para empezar la ejecución.',
+        text: 'Ya sea que necesites una solución para manejar el inventario de tus obras, controlar horas-hombre y horas-máquina, optimizar el proceso de compras, desarrollar presupuestos de construcción, mejorar la gestión documental o aplicar la gestión del valor ganado para controlar tu proyecto. Nosotros desarrollamos una solución para cualquier problema.',
         image: imagesArray.imgPlanning,
         accent: 'primary',
       },
@@ -145,8 +145,8 @@ const Home = () => {
 
   // SERVICE TRAINING DETAILS
   const headingTraining = {
-    title: 'Ingeniería y Consultoría',
-    text: 'En procesos de la gestión de proyectos',
+    title: 'Capacitaciones',
+    text: 'Equipos de ingeniería y PMOs',
   };
 
   const featuresTraining = [
