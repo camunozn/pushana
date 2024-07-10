@@ -38,7 +38,7 @@ const Home = () => {
     style: 'secondary',
     align: 'center',
     type: 'section',
-    element: 'section-consulting',
+    element: 'service-consulting',
   };
 
   // SERVICE CONSULTING DETAILS
@@ -84,7 +84,7 @@ const Home = () => {
           middle: 'monitorea lo que quieres controlar,',
           end: 'controla lo que importa.',
         },
-        text: 'Ta ayudamos a implementar y aplicar la gestión del valor ganado para el control de tus proyectos. Realizamos el control integrado de cambios y llevamos el control de costos y de cronograma para evaluar el desempeño de tus proyectos.',
+        text: 'Te ayudamos a implementar y aplicar la gestión del valor ganado para el control de tus proyectos. Realizamos el control integrado de cambios y llevamos el control de costos y de cronograma para evaluar el desempeño de tus proyectos.',
         image: imagesArray.imgPlanning,
         accent: 'primary',
       },
@@ -107,7 +107,7 @@ const Home = () => {
           middle: 'desarrollo rápido',
           end: 'de aplicaciones personalizadas.',
         },
-        text: 'No adaptes tu empresa y tus procesos para que encajen con una solución predeterminada, en su lugar, crea soluciones rápidamente y a la medida de tus necesidades con la plataforma de Claris, FileMaker Pro 2024.',
+        text: 'No adaptes tu empresa y tus procesos para que encajen con una solución predeterminada, en su lugar, crea soluciones rápidamente y a la medida de tus necesidades con la plataforma Claris FileMaker Pro 2024.',
         image: imagesArray.imgCostEng,
         accent: 'primary',
       },
@@ -121,7 +121,7 @@ const Home = () => {
           middle: 'aplicaciones operativas',
           end: 'para empresas constructoras.',
         },
-        text: 'Desarrollamos y personalizamos aplicaciones que optimicen los procesos y mejoren la operación de tu empresa constructora. Aplicaciones para gestión y control de los principales recursos: Maquinaria, Mano de Obra, Materiales y Transporte.',
+        text: 'Desarrollamos y personalizamos aplicaciones que optimicen los procesos y mejoren la operación de tu empresa constructora. Aplicaciones que te ayuden a ejecutar los procesos y administrar los recursos de forma efectiva y eficiente.',
         image: imagesArray.imgBidAlt,
         accent: 'secondary',
       },
@@ -135,7 +135,7 @@ const Home = () => {
           middle: 'soluciones útiles y confiables',
           end: 'para resolver cualquier problema.',
         },
-        text: 'Ya sea que necesites una solución para manejar el inventario de tus obras, controlar horas-hombre y horas-máquina, optimizar el proceso de compras, desarrollar presupuestos de construcción, mejorar la gestión documental o aplicar la gestión del valor ganado para controlar tu proyecto. Nosotros desarrollamos una solución para cualquier problema.',
+        text: 'Ya sea que necesites una solución para manejar el inventario de tus obras, controlar horas-hombre y horas-máquina, optimizar el proceso de compras, desarrollar presupuestos de construcción, mejorar la gestión documental, aplicar la gestión del valor ganado, o lo que sea que se te ocurra para mejorar la gestión de tus proyectos; nosotros lo desarrollamos.',
         image: imagesArray.imgPlanning,
         accent: 'primary',
       },
@@ -154,9 +154,9 @@ const Home = () => {
       featureName: '1',
       featureIntro: {
         title: {
-          start: 'Diseño:',
-          middle: 'ingeniería de costos',
-          end: 'para la evaluación económica de proyectos.',
+          start: 'Capacitación y desarrollo de',
+          middle: 'equipos de licitaciones',
+          end: 'para ganar más y mejores contratos.',
         },
         text: 'Si eres el promotor de un proyecto de construcción o el consultor de los diseños finales, nosotros te apoyamos con la ingeniería de costos y la evaluación económica del proyecto de cara a una construcción exitosa.',
         image: imagesArray.imgCostEng,
@@ -168,27 +168,13 @@ const Home = () => {
       featureName: '2',
       featureIntro: {
         title: {
-          start: 'Precontractual:',
-          middle: 'licitaciones y cotizaciones',
-          end: 'para clientes públicos o privados.',
+          start: 'Implementación y capacitación de',
+          middle: 'oficinas de gestión de proyectos',
+          end: 'en empresas constructoras.',
         },
         text: 'Te apoyamos en la elaboración de licitaciones y cotizaciones. Realizamos el análisis económico de tu oferta, nos enfocamos en determinar presupuesto, análisis de precios unitarios, cronograma y uso de recursos.',
         image: imagesArray.imgBidAlt,
         accent: 'secondary',
-      },
-      featureLink: '/contact',
-    },
-    {
-      featureName: '3',
-      featureIntro: {
-        title: {
-          start: 'Preconstrucción:',
-          middle: 'planificación detallada',
-          end: 'para prepararte de la mejor manera.',
-        },
-        text: 'De la licitación al inicio de la construcción sin problemas. Revisamos el alcance, realizamos el presupuesto meta, ajustamos la programación y preparamos toda la información que necesitas para empezar la ejecución.',
-        image: imagesArray.imgPlanning,
-        accent: 'primary',
       },
       featureLink: '/contact',
     },
@@ -202,24 +188,26 @@ const Home = () => {
         primaryBtnOptions={primaryBtnOptions}
         secondaryBtnOptions={secondaryBtnOptions}
       />
-      <Services
-        id="section-consulting"
-        heading={headingConsulting}
-        features={featuresConsulting}
-        background="dark"
-      />
-      <Services
-        id="section-development"
-        heading={headingDevelopment}
-        features={featuresDevelopment}
-        background="dark"
-      />
-      <Services
-        id="section-training"
-        heading={headingTraining}
-        features={featuresTraining}
-        background="dark"
-      />
+      <div className={`${styles['section-services']} ${'bg--dark'}`}>
+        <Services
+          id="service-consulting"
+          heading={headingConsulting}
+          features={featuresConsulting}
+          background="dark"
+        />
+        <Services
+          id="service-development"
+          heading={headingDevelopment}
+          features={featuresDevelopment}
+          background="dark"
+        />
+        <Services
+          id="service-training"
+          heading={headingTraining}
+          features={featuresTraining}
+          background="dark"
+        />
+      </div>
     </div>
   );
 };

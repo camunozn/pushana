@@ -23,7 +23,7 @@ const Hero = props => {
           </h1>
           <p className={styles['hero__text']}>{props.heading.text}</p>
         </div>
-        <div className={`${styles['hero__img-box']}`}>
+        <div className={styles['hero__img-box']}>
           <img src={props.heading.image} alt="Hero image" />
         </div>
         <div className={styles['hero__btn-box']}>
