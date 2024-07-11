@@ -67,23 +67,23 @@ const Footer = () => {
           <p className={styles['footer__heading']}>Mapa del sitio</p>
           <ul className={styles['footer__nav-list']}>
             <li>
-              <Link className={styles['footer__link']} to={'/software'}>
-                CPM Software
-              </Link>
-            </li>
-            <li>
-              <Link className={styles['footer__link']} to={'/consulting'}>
-                Consultoría
+              <Link className={styles['footer__link']} to={'/'}>
+                Servicios
               </Link>
             </li>
             <li>
               <Link className={styles['footer__link']} to={'/community'}>
-                Comunidad
+                Recursos
               </Link>
             </li>
             <li>
-              <Link className={styles['footer__link']} to={'/blog'}>
-                Blog
+              <Link className={styles['footer__link']} to={'/about'}>
+                Nosotros
+              </Link>
+            </li>
+            <li>
+              <Link className={styles['footer__link']} to={'/contact'}>
+                Contacto
               </Link>
             </li>
           </ul>
@@ -93,7 +93,12 @@ const Footer = () => {
           <ul className={styles['footer__nav-list']}>
             <li>
               <Link className={styles['footer__link']} to={'/'}>
-                FAQ
+                Purple Sky Tech
+              </Link>
+            </li>
+            <li>
+              <Link className={styles['footer__link']} to={'/about'}>
+                Nosotros
               </Link>
             </li>
             <li>
@@ -102,13 +107,8 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link className={styles['footer__link']} to={'/about'}>
-                Sobre nosotros
-              </Link>
-            </li>
-            <li>
               <Link className={styles['footer__link']} to={'/'}>
-                Purple Sky Technologies
+                FAQ
               </Link>
             </li>
           </ul>

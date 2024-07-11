@@ -52,9 +52,9 @@ const Home = () => {
       featureName: '1',
       featureIntro: {
         title: {
-          start: 'Implementación y optimización de los',
+          start: 'Implementamos y optimizamos los',
           middle: 'procesos de la gestión de proyectos',
-          end: 'en empresas constructoras.',
+          end: 'en empresas constructoras e inmobiliarias.',
         },
         text: 'Te ayudamos a implementar y optimizar los procesos y buenas prácticas de la gestión de proyectos en tu empresa. Orientados específicamente para satisfacer las necesidades de la industria de la construcción.',
         image: imagesArray.imgCostEng,
@@ -66,12 +66,12 @@ const Home = () => {
       featureName: '2',
       featureIntro: {
         title: {
-          start: 'Planificación de proyectos.',
-          middle: 'Alcance, costos y tiempos,',
-          end: 'las principales restricciones.',
+          start: 'Planificación de proyectos:',
+          middle: 'alcance, costos y tiempos,',
+          end: 'nos encargamos de las principales restricciones.',
         },
-        text: 'Te apoyamos con la planificación de las principales restricciones de tus proyectos: alcance, costos y tiempos. Planificamos la gestión del alcance, analizamos el presupuesto de construcción y desarrollamos el cronograma de trabajo.',
-        image: imagesArray.imgBidAlt,
+        text: 'Te apoyamos con la planificación de las principales restricciones de tus proyectos: alcance, costos y tiempos. Planificamos la gestión del alcance, analizamos el presupuesto de construcción y desarrollamos el cronograma de trabajo de tu proyecto.',
+        image: imagesArray.imgPlanningAlt,
         accent: 'secondary',
       },
       featureLink: '/contact',
@@ -85,7 +85,7 @@ const Home = () => {
           end: 'controla lo que importa.',
         },
         text: 'Te ayudamos a implementar y aplicar la gestión del valor ganado para el control de tus proyectos. Realizamos el control integrado de cambios y llevamos el control de costos y de cronograma para evaluar el desempeño de tus proyectos.',
-        image: imagesArray.imgPlanning,
+        image: imagesArray.imgControl,
         accent: 'primary',
       },
       featureLink: '/contact',
@@ -94,8 +94,8 @@ const Home = () => {
 
   // SERVICE DEVELOPMENT DETAILS
   const headingDevelopment = {
-    title: 'Claris FileMaker®',
-    text: 'Soluciones rápidas y a medida',
+    title: 'Somos Claris Partner',
+    text: 'Desarrollo de soluciones rápidas y a medida',
   };
 
   const featuresDevelopment = [
@@ -108,7 +108,7 @@ const Home = () => {
           end: 'de aplicaciones personalizadas.',
         },
         text: 'No adaptes tu empresa y tus procesos para que encajen con una solución predeterminada, en su lugar, crea soluciones rápidamente y a la medida de tus necesidades con la plataforma Claris FileMaker Pro 2024.',
-        image: imagesArray.imgCostEng,
+        image: imagesArray.imgLowCode,
         accent: 'primary',
       },
       featureLink: '/contact',
@@ -122,7 +122,7 @@ const Home = () => {
           end: 'para empresas constructoras.',
         },
         text: 'Desarrollamos y personalizamos aplicaciones que optimicen los procesos y mejoren la operación de tu empresa constructora. Aplicaciones que te ayuden a ejecutar los procesos y administrar los recursos de forma efectiva y eficiente.',
-        image: imagesArray.imgBidAlt,
+        image: imagesArray.imgLowCodeAlt,
         accent: 'secondary',
       },
       featureLink: '/contact',
@@ -136,7 +136,7 @@ const Home = () => {
           end: 'para resolver cualquier problema.',
         },
         text: 'Ya sea que necesites una solución para manejar el inventario de tus obras, controlar horas-hombre y horas-máquina, optimizar el proceso de compras, desarrollar presupuestos de construcción, mejorar la gestión documental, aplicar la gestión del valor ganado, o lo que sea que se te ocurra para mejorar la gestión de tus proyectos; nosotros lo desarrollamos.',
-        image: imagesArray.imgPlanning,
+        image: imagesArray.imgLowCode,
         accent: 'primary',
       },
       featureLink: '/contact',
@@ -158,8 +158,8 @@ const Home = () => {
           middle: 'equipos de licitaciones',
           end: 'para ganar más y mejores contratos.',
         },
-        text: 'Si eres el promotor de un proyecto de construcción o el consultor de los diseños finales, nosotros te apoyamos con la ingeniería de costos y la evaluación económica del proyecto de cara a una construcción exitosa.',
-        image: imagesArray.imgCostEng,
+        text: 'Si necesitas potenciar tu equipo de licitaciones o estás formando un equipo de trabajo ganador, nosotros te apoyamos con la transferencia de conocimiento y el desarrollo de habilidades en temas como ingeniería de costos, evaluación financiera de proyectos, programación de obra, diagramas tiempo-espacio y más.',
+        image: imagesArray.imgBid,
         accent: 'primary',
       },
       featureLink: '/contact',
@@ -172,8 +172,8 @@ const Home = () => {
           middle: 'oficinas de gestión de proyectos',
           end: 'en empresas constructoras.',
         },
-        text: 'Te apoyamos en la elaboración de licitaciones y cotizaciones. Realizamos el análisis económico de tu oferta, nos enfocamos en determinar presupuesto, análisis de precios unitarios, cronograma y uso de recursos.',
-        image: imagesArray.imgBidAlt,
+        text: 'Te ayudamos a establecer y capacitar tu PMO, ya sea una PMO de Soporte con funciones meramente consultativas, una PMO de Control encargada de evaluar e informar el desempeño de los proyectos, o un PMO Directiva encargada de gestionar integralmente los proyectos de manera directa.',
+        image: imagesArray.imgAppAlt,
         accent: 'secondary',
       },
       featureLink: '/contact',
