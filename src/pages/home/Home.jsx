@@ -95,7 +95,7 @@ const Home = () => {
   // SERVICE DEVELOPMENT DETAILS
   const headingDevelopment = {
     title: 'Somos Claris Partner',
-    text: 'Desarrollo de soluciones rápidas y a medida',
+    text: 'Desarrollo de soluciones a medida',
   };
 
   const featuresDevelopment = [
