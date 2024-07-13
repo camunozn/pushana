@@ -172,7 +172,7 @@ const Home = () => {
           middle: 'oficinas de gestión de proyectos',
           end: 'en empresas constructoras.',
         },
-        text: 'Te ayudamos a establecer y capacitar tu PMO, ya sea una PMO de Soporte con funciones consultativas, una PMO de Control encargada del cumplimiento de los procesos y de la evaluación y reporte del desempeño de los proyectos, o una PMO Directiva encargada de la gestión de los proyectos directamente.',
+        text: 'Te ayudamos a establecer y capacitar tu PMO, ya sea una PMO de Soporte con funciones consultativas, una PMO de Control encargada del cumplimiento de los procesos y de la evaluación y reporte del desempeño de los proyectos, o una PMO Directiva encargada directamente de la gestión de los proyectos.',
         image: imagesArray.imgAppAlt,
         accent: 'secondary',
       },
