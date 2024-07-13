@@ -20,8 +20,8 @@ const About = () => {
       style: 'primary',
     },
     {
-      icon: 'fa-solid fa-rainbow',
-      title: 'Visión',
+      icon: 'fa-solid fa-clipboard-question',
+      title: 'FAQ',
       style: 'primary',
     },
   ];
