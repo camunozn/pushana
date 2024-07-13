@@ -135,7 +135,7 @@ const Home = () => {
           middle: 'soluciones útiles y confiables',
           end: 'para resolver cualquier problema.',
         },
-        text: 'Ya sea que necesites una solución para manejar el inventario de tus obras, controlar horas-hombre y horas-máquina, optimizar el proceso de compras, desarrollar presupuestos de construcción, mejorar la gestión documental, aplicar la gestión del valor ganado, o lo que sea que necesites para mejorar la gestión de tus proyectos; nosotros lo desarrollamos.',
+        text: 'Ya sea una solución para manejar el inventario de tus obras, controlar horas-hombre y horas-máquina, optimizar el proceso de compras, desarrollar presupuestos de construcción, mejorar la gestión documental, aplicar la gestión del valor ganado, o lo que sea que necesites para mejorar la gestión de tus proyectos; nosotros lo desarrollamos.',
         image: imagesArray.imgLowCode,
         accent: 'primary',
       },
