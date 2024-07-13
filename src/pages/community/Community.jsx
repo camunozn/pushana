@@ -3,25 +3,20 @@ import Introduction from '../../modules/section-intro/Introduction';
 
 const Community = () => {
   const headingIntroCommunity = {
-    title: 'Una comunidad sobre gestión de proyectos en la que puedes confiar.',
-    text: 'En nuestra comunidad podrás encontrar consejos prácticos y recursos para ayudarte con la gestión de tus proyectos.',
+    title: 'Recursos para la gestión de proyectos de construcción.',
+    text: 'Te compartimos ideas, consejos, herramientas y plantillas para ayudarte con la gestión de tus proyectos de ingeniería y construcción.',
   };
 
   const cardsListIntroCommunity = [
     {
       icon: 'fa-solid fa-comments',
-      title: 'Consejos prácticos',
-      style: 'primary',
-    },
-    {
-      icon: 'fa-solid fa-clipboard-question',
-      title: 'Preguntas frecuentes',
+      title: 'Ideas y consejos',
       style: 'primary',
     },
     {
       icon: 'fa-solid fa-file-circle-check',
       title: 'Recursos y plantillas',
-      style: 'primary',
+      style: 'secondary',
     },
   ];
 
