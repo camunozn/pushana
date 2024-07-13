@@ -5,7 +5,7 @@ const About = () => {
   const headingIntroAbout = {
     title:
       'Pushana Construction Project Management: nuestro origen, filosofía y visión.',
-    text: 'En quichua, Pushana significa guiar, dirigir. Para nosotros es una palabra que representa nuestro principal objetivo: guiar a las empresas constructoras hacia una gestión de proyectos exitosa.',
+    text: 'En quichua, Pushana significa guiar, dirigir. Para nosotros es una palabra que representa nuestras raíces y, al mismo tiempo, nuestro objetivo fundental: guiar a las empresas constructoras del Ecuador y América Latina hacia una gestión de proyectos exitosa.',
   };
 
   const cardsListIntroAbout = [
