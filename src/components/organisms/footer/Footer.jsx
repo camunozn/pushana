@@ -98,16 +98,16 @@ const Footer = () => {
             </li>
             <li>
               <Link className={styles['footer__link']} to={'/about'}>
-                Nosotros
+                Origen
               </Link>
             </li>
             <li>
-              <Link className={styles['footer__link']} to={'/'}>
-                Socios
+              <Link className={styles['footer__link']} to={'/about'}>
+                Filosofía
               </Link>
             </li>
             <li>
-              <Link className={styles['footer__link']} to={'/'}>
+              <Link className={styles['footer__link']} to={'/about'}>
                 FAQ
               </Link>
             </li>
