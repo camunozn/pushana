@@ -15,11 +15,8 @@ const Services = props => {
         <HeadingMedium title={props.heading.title} text={props.heading.text} />
         <div className={styles['services__items__container']}>
           {props.features.map(feature => (
-            <div className={styles['services__item']}>
-              <MarginBox
-                key={feature.featureName}
-                background={props.background}
-              >
+            <div key={feature.featureName} className={styles['services__item']}>
+              <MarginBox background={props.background}>
                 <FeatureIntro
                   title={feature.featureIntro.title}
                   text={feature.featureIntro.text}

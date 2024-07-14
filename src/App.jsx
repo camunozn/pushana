@@ -10,7 +10,7 @@ import Contact from './pages/contact/Contact';
 
 function App() {
   const linksList = [
-    { name: 'Servicios', link: '/' },
+    { name: 'Inicio', link: '/' },
     { name: 'Recursos', link: '/community' },
     { name: 'Nosotros', link: '/about' },
   ];

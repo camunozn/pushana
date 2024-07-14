@@ -45,6 +45,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: flex-start;
   justify-content: space-between;
+  column-gap: 4.8rem;
   padding: 0 6.4rem 8rem 6.4rem;
   margin: 0 auto;
 }
@@ -52,7 +53,6 @@
 .hero__text-box {
   width: 100%;
   overflow: hidden;
-  padding-right: 3.2rem;
 }
 
 .hero__heading {
@@ -65,7 +65,7 @@
 
 .hero__heading span {
   color: var(--color-accent-primary);
-  margin-left: 2rem;
+  margin-left: 1.2rem;
 }
 
 .hero__text {
@@ -80,7 +80,7 @@
 }
 
 .hero__img-box {
-  width: 100%;
+  width: 95%;
   grid-column: 2;
   grid-row: 1 / 3;
   text-align: center;
@@ -93,6 +93,7 @@
   border-radius: 3.2rem;
   animation: moveInRight 1s ease-out 0.5s;
   animation-fill-mode: backwards;
+  box-shadow: 1.2rem 1.2rem 2rem var(--color-shades-darker);
 }
 
 .hero__btn-box {

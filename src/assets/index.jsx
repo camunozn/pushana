@@ -13,10 +13,18 @@ import imgPlanning from './images/img-planning.png';
 import imgPlanningAlt from './images/img-planning-alt.png';
 import imgControl from './images/img-control.png';
 import imgControlAlt from './images/img-control-alt.png';
-import imgCostEng from './images/img-cost-eng.png';
 import imgLowCode from './images/img-low-code.png';
 import imgLowCodeAlt from './images/img-low-code-alt.png';
+import imgApp from './images/img-app.png';
 import imgAppAlt from './images/img-app-alt.png';
+import imgProcess from './images/img-process.png';
+import imgProcessAlt from './images/img-process-alt.png';
+import imgTraining from './images/img-training.png';
+import imgTrainingAlt from './images/img-training-alt.png';
+import imgOffice from './images/img-office.png';
+import imgOfficeAlt from './images/img-office-alt.png';
+import imgOps from './images/img-ops.png';
+import imgOpsAlt from './images/img-ops-alt.png';
 
 const imagesArray = {
   imgConstruction,
@@ -34,10 +42,18 @@ const imagesArray = {
   imgPlanningAlt,
   imgControl,
   imgControlAlt,
-  imgCostEng,
   imgLowCode,
   imgLowCodeAlt,
+  imgApp,
   imgAppAlt,
+  imgProcess,
+  imgProcessAlt,
+  imgTraining,
+  imgTrainingAlt,
+  imgOffice,
+  imgOfficeAlt,
+  imgOps,
+  imgOpsAlt,
 };
 
 export default imagesArray;

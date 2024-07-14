@@ -68,7 +68,7 @@ const Footer = () => {
           <ul className={styles['footer__nav-list']}>
             <li>
               <Link className={styles['footer__link']} to={'/'}>
-                Servicios
+                Que Hacemos
               </Link>
             </li>
             <li>
@@ -78,7 +78,7 @@ const Footer = () => {
             </li>
             <li>
               <Link className={styles['footer__link']} to={'/about'}>
-                Nosotros
+                Sobre Nosotros
               </Link>
             </li>
             <li>
