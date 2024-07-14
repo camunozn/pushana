@@ -11,7 +11,7 @@ const Home = () => {
     middle: 'de construcción',
     end: 'hecha',
     text: 'Implementamos y optimizamos procesos, desarrollamos soluciones a medida, capacitamos equipos de trabajo... Todo para mejorar el desempeño de tus proyectos.',
-    image: imagesArray.imgHero,
+    image: imagesArray.imgHeroGif,
   };
 
   const sequenceWords = [
@@ -121,7 +121,7 @@ const Home = () => {
           middle: 'aplicaciones operativas',
           end: 'para empresas constructoras.',
         },
-        text: 'Desarrollamos y personalizamos aplicaciones que optimicen los procesos y mejoren la operación de tu empresa constructora. Aplicaciones que te ayuden a ejecutar los procesos y administrar los recursos de forma efectiva y eficiente.',
+        text: 'Desarrollamos y personalizamos aplicaciones que optimizan los procesos y mejoran la operación de tu empresa constructora. Aplicaciones que te ayudan a ejecutar los procesos y administrar los recursos de forma efectiva y eficiente.',
         image: imagesArray.imgLowCodeAlt,
         accent: 'secondary',
       },
@@ -172,7 +172,7 @@ const Home = () => {
           middle: 'oficinas de gestión de proyectos',
           end: 'en empresas constructoras.',
         },
-        text: 'Te ayudamos a establecer y capacitar tu PMO, ya sea una PMO de Soporte con funciones consultativas, una PMO de Control encargada del cumplimiento de los procesos y de la evaluación y reporte del desempeño de los proyectos, o una PMO Directiva encargada directamente de la gestión de los proyectos.',
+        text: 'Te ayudamos a establecer y capacitar todos los tipo de oficinas de gestión de proyectos: PMOs de Soporte con funciones meramente consultativas, PMOs de Control encargadas del cumplimiento de los procesos y la evaluación y reporte del desempeño de los proyectos, o PMOs Directivas encargadas totalmente de la gestión de los proyectos.',
         image: imagesArray.imgAppAlt,
         accent: 'secondary',
       },

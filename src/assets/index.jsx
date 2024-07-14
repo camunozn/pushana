@@ -6,6 +6,7 @@ import imgCommunity from './images/img-community.png';
 import imgBlog from './images/img-blog.png';
 import imgClear from './images/img-clear.png';
 import imgHero from './images/img-hero.png';
+import imgHeroGif from './images/gif-building.gif';
 import imgBid from './images/img-bid.png';
 import imgBidAlt from './images/img-bid-alt.png';
 import imgPlanning from './images/img-planning.png';
@@ -26,6 +27,7 @@ const imagesArray = {
   imgBlog,
   imgClear,
   imgHero,
+  imgHeroGif,
   imgBid,
   imgBidAlt,
   imgPlanning,
