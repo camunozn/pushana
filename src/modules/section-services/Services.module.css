@@ -25,6 +25,7 @@
   flex-basis: 40rem;
   flex-grow: 1;
   max-width: 80rem;
+  min-width: 40rem;
 }
 
 /**************************/
@@ -34,9 +35,6 @@
 /* BELOW 1232px (Small desktop) */
 /**************************/
 @media (max-width: 77em) {
-  .services__item {
-    flex-basis: 35rem;
-  }
 }
 
 /**************************/
@@ -49,18 +47,12 @@
 /* BELOW 960px (Portrait tablets) */
 /**************************/
 @media (max-width: 59em) {
-  .services__item {
-    flex-basis: 30rem;
-  }
 }
 
 /**************************/
 /* BELOW 768px (Portrait small tablets) */
 /**************************/
 @media (max-width: 48em) {
-  .services__item {
-    flex-basis: 35rem;
-  }
 }
 
 /**************************/

@@ -2,15 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 3.2rem;
   padding: 3.2rem 0;
 }
 
 .card-item {
-  flex-basis: 25rem;
-  max-width: 35rem;
+  flex-basis: 30rem;
   flex-grow: 1;
+  max-width: 38rem;
 }
 
 /**************************/
