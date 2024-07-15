@@ -186,7 +186,7 @@ const Home = () => {
           middle: 'equipos de innovación',
           end: 'para desarrollar y mantener aplicativos.',
         },
-        text: 'No solo te ofrecemos licencias y desarrollo rápido de aplicaciones personalizadas para la plataforma Claris FileMaker Pro, también podemos capacitar a tu personal para formar un equipo de innovación al interior de tu empresa, que se encargue de mantener los aplicativos desarrollados y, porque no, crear nuevas soluciones innovadoras.',
+        text: 'No solo te ofrecemos licencias y desarrollo rápido de aplicaciones personalizadas con la plataforma Claris FileMaker Pro, también podemos capacitar a tu personal para formar un equipo de innovación al interior de tu empresa, que se encargue de mantener los aplicativos desarrollados y, porque no, crear nuevas soluciones innovadoras.',
         image: imagesArray.imgLowCode,
         accent: 'primary',
       },
