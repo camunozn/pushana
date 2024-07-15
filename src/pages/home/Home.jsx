@@ -94,7 +94,7 @@ const Home = () => {
 
   // SERVICE DEVELOPMENT DETAILS
   const headingDevelopment = {
-    title: 'Somos Claris Partner',
+    title: 'Soluciones innovadoras',
     text: 'Desarrollo de soluciones a medida',
   };
 
@@ -107,7 +107,7 @@ const Home = () => {
           middle: 'desarrollo rápido',
           end: 'de aplicaciones personalizadas.',
         },
-        text: 'No adaptes tu empresa y tus procesos para que encajen con una solución predeterminada, en su lugar, crea soluciones rápidamente y a la medida de tus necesidades con la plataforma Claris FileMaker Pro 2024.',
+        text: 'No adaptes tu empresa ni tus procesos para que encajen con una aplicación predeterminada, en su lugar, crea aplicaciones rápidamente y a la medida de tus necesidades con la plataforma Claris FileMaker Pro. Nosotros te ofrecemos los paquetes de licencias y el servicio de desarrollo para brindarte una solución integral a tus problemas.',
         image: imagesArray.imgLowCode,
         accent: 'primary',
       },
@@ -121,7 +121,7 @@ const Home = () => {
           middle: 'aplicaciones operativas',
           end: 'para empresas constructoras.',
         },
-        text: 'Desarrollamos y personalizamos aplicaciones que optimizan los procesos y mejoran la operación de tu empresa constructora. Aplicaciones que te ayudan a ejecutar los procesos y administrar los recursos de forma efectiva y eficiente.',
+        text: 'Desarrollamos y personalizamos aplicaciones que optimizan los procesos y mejoran la operación de tu empresa. Nuestras soluciones te ayudan a ejecutar procesos y administrar recursos de forma efectiva y eficiente, enfocadas específicamente a la industria de la construcción, te ayudamos a mejorar la rentabilidad de tus proyectos.',
         image: imagesArray.imgOpsAlt,
         accent: 'secondary',
       },
@@ -135,7 +135,7 @@ const Home = () => {
           middle: 'soluciones útiles y confiables',
           end: 'para resolver cualquier problema.',
         },
-        text: 'Ya sea una solución para manejar el inventario de tus obras, controlar horas-hombre y horas-máquina, optimizar el proceso de compras, desarrollar presupuestos de construcción, mejorar la gestión documental, aplicar la gestión del valor ganado, o lo que sea que necesites para mejorar la gestión de tus proyectos; nosotros lo desarrollamos.',
+        text: 'Manejar el inventario de obra, controlar horas-hombre y horas-máquina, optimizar el proceso de compras, mejorar la gestión documental, desarrollar presupuestos de construcción, aplicar la gestión del valor ganado... Lo que necesites para mejorar la gestión de tus proyectos, nosotros lo desarrollamos con Claris FileMaker Pro.',
         image: imagesArray.imgApp,
         accent: 'primary',
       },
@@ -145,8 +145,8 @@ const Home = () => {
 
   // SERVICE TRAINING DETAILS
   const headingTraining = {
-    title: 'Capacitaciones',
-    text: 'Equipos de ingeniería y PMOs',
+    title: 'Formación de equipos',
+    text: 'PMOs, licitaciones e innovación',
   };
 
   const featuresTraining = [
@@ -154,12 +154,12 @@ const Home = () => {
       featureName: '1',
       featureIntro: {
         title: {
-          start: 'Capacitación y desarrollo de',
-          middle: 'equipos de licitaciones',
-          end: 'para ganar más y mejores contratos.',
+          start: 'Formación y desarrollo de',
+          middle: 'oficinas de gestión de proyectos',
+          end: 'en empresas.',
         },
-        text: 'Si necesitas potenciar tu equipo de licitaciones o estás formando un equipo de trabajo ganador, nosotros te apoyamos con la transferencia de conocimiento y el desarrollo de habilidades en temas como ingeniería de costos, evaluación financiera de proyectos, programación de obra, diagramas tiempo-espacio y más.',
-        image: imagesArray.imgTraining,
+        text: 'Te ayudamos a establecer y capacitar todos los tipo de oficinas de gestión de proyectos: PMOs de Soporte con funciones meramente consultativas, PMOs de Control encargadas del cumplimiento de los procesos y la evaluación y reporte del desempeño de los proyectos, o PMOs Directivas encargadas totalmente de la gestión de los proyectos.',
+        image: imagesArray.imgOffice,
         accent: 'primary',
       },
       featureLink: '/contact',
@@ -168,13 +168,27 @@ const Home = () => {
       featureName: '2',
       featureIntro: {
         title: {
-          start: 'Implementación y capacitación de',
-          middle: 'oficinas de gestión de proyectos',
-          end: 'en empresas constructoras.',
+          start: 'Capacitación de',
+          middle: 'equipos de licitaciones',
+          end: 'para ganar más y mejores contratos.',
         },
-        text: 'Te ayudamos a establecer y capacitar todos los tipo de oficinas de gestión de proyectos: PMOs de Soporte con funciones meramente consultativas, PMOs de Control encargadas del cumplimiento de los procesos y la evaluación y reporte del desempeño de los proyectos, o PMOs Directivas encargadas totalmente de la gestión de los proyectos.',
-        image: imagesArray.imgOfficeAlt,
+        text: 'Si necesitas potenciar tu equipo de licitaciones o estás formando un equipo de trabajo ganador, nosotros te apoyamos con la transferencia de conocimiento y el desarrollo de habilidades en temas como ingeniería de costos, evaluación financiera de proyectos, programación de obra, diagramas espacio-tiempo y más.',
+        image: imagesArray.imgTrainingAlt,
         accent: 'secondary',
+      },
+      featureLink: '/contact',
+    },
+    {
+      featureName: '3',
+      featureIntro: {
+        title: {
+          start: 'Formación de',
+          middle: 'equipos de innovación',
+          end: 'para desarrollar y mantener aplicativos.',
+        },
+        text: 'No solo te ofrecemos licencias y desarrollo rápido de aplicaciones personalizadas para la plataforma Claris FileMaker Pro, también podemos capacitar a tu personal para formar un equipo de innovación al interior de tu empresa, que se encargue de mantener los aplicativos desarrollados y, porque no, crear nuevas soluciones innovadoras.',
+        image: imagesArray.imgLowCode,
+        accent: 'primary',
       },
       featureLink: '/contact',
     },

@@ -21,7 +21,7 @@ const About = () => {
     },
     {
       icon: 'fa-solid fa-clipboard-question',
-      title: 'FAQ',
+      title: 'Preguntas frecuentes',
       style: 'primary',
     },
   ];

@@ -24,7 +24,7 @@
 .services__item {
   flex-basis: 40rem;
   flex-grow: 1;
-  max-width: 80rem;
+  max-width: 60rem;
   min-width: 40rem;
 }
 

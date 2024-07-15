@@ -15,7 +15,7 @@ const Community = () => {
     },
     {
       icon: 'fa-solid fa-file-circle-check',
-      title: 'Recursos y plantillas',
+      title: 'Herramientas y plantillas',
       style: 'primary',
     },
   ];
