@@ -146,7 +146,7 @@ const Home = () => {
   // SERVICE TRAINING DETAILS
   const headingTraining = {
     title: 'Formación de equipos',
-    text: 'PMOs, licitaciones e innovación',
+    text: 'PMOs, licitaciones y transformación digital',
   };
 
   const featuresTraining = [
@@ -156,9 +156,9 @@ const Home = () => {
         title: {
           start: 'Formación y desarrollo de',
           middle: 'oficinas de gestión de proyectos',
-          end: 'en empresas.',
+          end: 'en empresas constructoras.',
         },
-        text: 'Te ayudamos a establecer y capacitar todos los tipo de oficinas de gestión de proyectos: PMOs de Soporte con funciones meramente consultativas, PMOs de Control encargadas del cumplimiento de los procesos y la evaluación y reporte del desempeño de los proyectos, o PMOs Directivas encargadas totalmente de la gestión de los proyectos.',
+        text: 'Te ayudamos a establecer tu oficina de gestión de proyectos y desarrollar a tu equipo de trabajo. Ya sea en una o todas las áreas de conocimiento de la gestión de proyectos, desde las más básicas como la gestión del alcance, costos, cronograma y calidad; hasta las más complejas como la gestión de riesgos, las comunicaciones y los interesados.',
         image: imagesArray.imgOffice,
         accent: 'primary',
       },
@@ -182,11 +182,11 @@ const Home = () => {
       featureName: '3',
       featureIntro: {
         title: {
-          start: 'Formación de',
-          middle: 'equipos de innovación',
-          end: 'para desarrollar y mantener aplicativos.',
+          start: 'Formación de equipos',
+          middle: 'de transformación digital',
+          end: 'para la innovación y el desarrollo empresarial.',
         },
-        text: 'No solo te ofrecemos licencias y desarrollo rápido de aplicaciones personalizadas para la plataforma Claris FileMaker Pro, también podemos capacitar a tu personal para formar un equipo de innovación al interior de tu empresa, que se encargue de mantener los aplicativos desarrollados y, porque no, crear nuevas soluciones innovadoras.',
+        text: 'No solo te ofrecemos soluciones en gestión de proyectos, también capacitamos a tu personal para formar equipos de transformación digital que se encarguen de promover la innovación al interior de tu empresa, generando iniciativas como la automatización de procesos, el análisis de datos, la inteligencia de negocios o cualquier otra que aporte al desarrollo empresarial.',
         image: imagesArray.imgLowCode,
         accent: 'primary',
       },
