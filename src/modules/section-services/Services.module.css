@@ -10,6 +10,8 @@
   max-width: 140rem;
   padding: 9.6rem 8rem 3.2rem 8rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .services__items__container {

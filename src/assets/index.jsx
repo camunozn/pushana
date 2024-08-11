@@ -25,6 +25,9 @@ import imgOffice from './images/img-office.png';
 import imgOfficeAlt from './images/img-office-alt.png';
 import imgOps from './images/img-ops.png';
 import imgOpsAlt from './images/img-ops-alt.png';
+import imgOrigin from './images/img-origin.jpeg';
+import imgPhilosophy from './images/img-philosophy.jpeg';
+import imgValues from './images/img-values.jpeg';
 
 const imagesArray = {
   imgConstruction,
@@ -54,6 +57,9 @@ const imagesArray = {
   imgOfficeAlt,
   imgOps,
   imgOpsAlt,
+  imgOrigin,
+  imgPhilosophy,
+  imgValues,
 };
 
 export default imagesArray;

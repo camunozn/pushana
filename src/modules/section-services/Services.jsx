@@ -13,26 +13,31 @@ const Services = props => {
     >
       <div className={styles['services__container']}>
         <HeadingMedium title={props.heading.title} text={props.heading.text} />
+        {props.heading.image && <img src={props.heading.image} />}
         <div className={styles['services__items__container']}>
-          {props.features.map(feature => (
-            <div key={feature.featureName} className={styles['services__item']}>
-              <MarginBox background={props.background}>
-                <FeatureIntro
-                  title={feature.featureIntro.title}
-                  text={feature.featureIntro.text}
-                  image={feature.featureIntro.image}
-                  accent={feature.featureIntro.accent}
-                />
-                <Button
-                  text="Conocer más"
-                  style="primary"
-                  align="center"
-                  type="page"
-                  element={feature.featureLink}
-                />
-              </MarginBox>
-            </div>
-          ))}
+          {props.features &&
+            props.features.map(feature => (
+              <div
+                key={feature.featureName}
+                className={styles['services__item']}
+              >
+                <MarginBox background={props.background}>
+                  <FeatureIntro
+                    title={feature.featureIntro.title}
+                    text={feature.featureIntro.text}
+                    image={feature.featureIntro.image}
+                    accent={feature.featureIntro.accent}
+                  />
+                  <Button
+                    text="Conocer más"
+                    style="primary"
+                    align="center"
+                    type="page"
+                    element={feature.featureLink}
+                  />
+                </MarginBox>
+              </div>
+            ))}
         </div>
       </div>
     </section>
