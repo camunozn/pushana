@@ -149,7 +149,7 @@
 /**************************/
 @media (max-width: 61em) {
   .hero {
-    max-height: 55rem;
+    /* max-height: 55rem; */
   }
 
   .hero__container {
