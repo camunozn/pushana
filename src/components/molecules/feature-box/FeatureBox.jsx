@@ -1,15 +1,32 @@
 import React from 'react';
-import FeatureList from '../feature-list/FeatureList';
-import HeadingSmall from '../heading-small/HeadingSmall';
 import styles from './FeatureBox.module.css';
+import MarginBox from '../../atoms/margin-box/MarginBox';
+import FeatureIntro from '../../atoms/feature-intro/FeatureIntro';
+import Button from '../../atoms/button/Button';
 
 const FeatureBox = props => {
-  const listItems = props.list;
-
   return (
-    <div className="feature-box">
-      <HeadingSmall title={props.title} text={props.text} />
-      <FeatureList list={listItems} cols={props.cols} />
+    <div className={styles['features__container']}>
+      {props.features &&
+        props.features.map(feature => (
+          <div key={feature.featureName} className={styles.feature}>
+            <MarginBox background={props.background}>
+              <FeatureIntro
+                title={feature.featureIntro.title}
+                text={feature.featureIntro.text}
+                image={feature.featureIntro.image}
+                accent={feature.featureIntro.accent}
+              />
+              <Button
+                text="Conocer más"
+                style="primary"
+                align="center"
+                type="page"
+                element={feature.featureLink}
+              />
+            </MarginBox>
+          </div>
+        ))}
     </div>
   );
 };

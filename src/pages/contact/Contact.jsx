@@ -1,7 +1,9 @@
 import React from 'react';
-import Introduction from '../../modules/section-intro/Introduction';
+import Intro from '../../components/organisms/intro/Intro';
 
 const Contact = () => {
+  const sectionBg = 'normal';
+
   const headingIntroContact = {
     title:
       'Contáctanos: no importa el medio, estamos disponibles para atender tus consultas.',
@@ -35,10 +37,10 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <Introduction
+      <Intro
         heading={headingIntroContact}
         cardsList={cardsListIntroContact}
-        background="normal"
+        background={sectionBg}
       />
     </div>
   );

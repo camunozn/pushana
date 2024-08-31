@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from './About.module.css';
-import Introduction from '../../modules/section-intro/Introduction';
-import Services from '../../modules/section-services/Services';
+import Intro from '../../components/organisms/intro/Intro';
+import FeatureBox from '../../components/molecules/feature-box/FeatureBox';
 import imagesArray from '../../assets';
+import HeadingMedium from '../../components/atoms/heading-medium/HeadingMedium';
 
 const About = () => {
+  const sectionBg = 'normal';
+
   const headingIntroAbout = {
     title: 'Pushana: nuestro origen y filosofía.',
     text: 'En quichua, Pushana significa guiar, dirigir. Para nosotros es una palabra que representa nuestras raíces y, al mismo tiempo, nuestro objetivo fundamental: guiar a las empresas constructoras del Ecuador y América Latina hacia una gestión de proyectos exitosa.',
@@ -59,25 +62,11 @@ const About = () => {
 
   return (
     <div className="about">
-      <Introduction
+      <Intro
         heading={headingIntroAbout}
         cardsList={cardsListIntroAbout}
-        background="normal"
+        background={sectionBg}
       />
-      <div className={`${styles['section-about']} ${'bg--dark'}`}>
-        <Services id="about-origin" heading={headingOrigin} background="dark" />
-        <Services
-          id="about-philosophy"
-          heading={headingPhilosophy}
-          background="dark"
-        />
-        <Services id="about-values" heading={headingValues} background="dark" />
-        <Services
-          id="about-questions"
-          heading={headingQuestions}
-          background="dark"
-        />
-      </div>
     </div>
   );
 };

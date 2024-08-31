@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import Button from '../../components/atoms/button/Button';
+import Button from '../../atoms/button/Button';
 import styles from './Hero.module.css';
 
 const Hero = props => {

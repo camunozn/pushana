@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../../molecules/nav-bar/Navbar';
-import LogoBox from '../../molecules/logo-box/LogoBox';
+import LogoBox from '../../atoms/logo-box/LogoBox';
 import ButtonMobile from '../../atoms/button-mobile/ButtonMobile';
 import logoImg from '../../../assets/logo/logo-transparent-bg.png';
 import styles from './Header.module.css';

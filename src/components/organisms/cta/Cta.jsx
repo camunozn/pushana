@@ -1,5 +1,5 @@
 import React from 'react';
-import HeadingSmall from '../../molecules/heading-small/HeadingSmall';
+import HeadingSmall from '../../atoms/heading-small/HeadingSmall';
 import MarginBox from '../../atoms/margin-box/MarginBox';
 import styles from './Cta.module.css';
 import Form from '../../molecules/form/Form';

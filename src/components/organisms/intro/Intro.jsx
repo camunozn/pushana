@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
-import HeadingLarge from '../../components/molecules/heading-large/HeadingLarge';
-import CardsBox from '../../components/molecules/cards-box/CardsBox';
-import Cta from '../../components/organisms/cta/Cta';
-import styles from './Introduction.module.css';
+import HeadingLarge from '../../atoms/heading-large/HeadingLarge';
+import CardsBox from '../../molecules/cards-box/CardsBox';
+import Cta from '../cta/Cta';
+import styles from './Intro.module.css';
 
-const Introduction = props => {
+const Intro = props => {
   return (
     <section
       id={props.id}
@@ -21,4 +21,4 @@ const Introduction = props => {
   );
 };
 
-export default Introduction;
+export default Intro;

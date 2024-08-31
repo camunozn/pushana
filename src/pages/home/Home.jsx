@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from './Home.module.css';
-import Hero from '../../modules/section-hero/Hero';
-import Services from '../../modules/section-services/Services';
+import Hero from '../../components/organisms/hero/Hero';
+import FeatureBox from '../../components/molecules/feature-box/FeatureBox';
+import HeadingMedium from '../../components/atoms/heading-medium/HeadingMedium';
 import imagesArray from '../../assets';
 
 const Home = () => {
   //HERO CONTENT
+  const sectionBg = 'dark';
+
   const headingHero = {
     start: 'Gestión de proyectos',
     middle: 'de construcción',
@@ -202,26 +205,31 @@ const Home = () => {
         primaryBtnOptions={primaryBtnOptions}
         secondaryBtnOptions={secondaryBtnOptions}
       />
-      <div className={`${styles['section-services']} ${'bg--dark'}`}>
-        <Services
-          id="service-consulting"
-          heading={headingConsulting}
-          features={featuresConsulting}
-          background="dark"
-        />
-        <Services
-          id="service-development"
-          heading={headingDevelopment}
-          features={featuresDevelopment}
-          background="dark"
-        />
-        <Services
-          id="service-training"
-          heading={headingTraining}
-          features={featuresTraining}
-          background="dark"
-        />
-      </div>
+      <section
+        className={`${styles['section__services']} ${`bg--${sectionBg}`}`}
+      >
+        <div id="service-consulting" className={styles['service__container']}>
+          <HeadingMedium
+            title={headingConsulting.title}
+            text={headingConsulting.text}
+          />
+          <FeatureBox features={featuresConsulting} background={sectionBg} />
+        </div>
+        <div id="service-development" className={styles['service__container']}>
+          <HeadingMedium
+            title={headingDevelopment.title}
+            text={headingDevelopment.text}
+          />
+          <FeatureBox features={featuresDevelopment} background={sectionBg} />
+        </div>
+        <div id="service-training" className={styles['service__container']}>
+          <HeadingMedium
+            title={headingTraining.title}
+            text={headingTraining.text}
+          />
+          <FeatureBox features={featuresTraining} background={sectionBg} />
+        </div>
+      </section>
     </div>
   );
 };

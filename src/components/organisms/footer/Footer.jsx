@@ -72,7 +72,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link className={styles['footer__link']} to={'/community'}>
+              <Link className={styles['footer__link']} to={'/'}>
                 Recursos
               </Link>
             </li>
