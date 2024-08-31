@@ -47,7 +47,7 @@
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
-  .services__container {
+  .service__container {
     padding: 8rem 2.4rem 0rem 2.4rem;
   }
 }
