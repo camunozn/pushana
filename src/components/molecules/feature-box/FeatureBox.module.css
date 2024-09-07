@@ -6,14 +6,12 @@
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-around;
-  gap: 3.2rem;
+  gap: 6.4rem;
   padding: 0;
 }
 
 .feature {
-  flex-basis: 40rem;
   flex-grow: 1;
-  max-width: 60rem;
   min-width: 40rem;
 }
 
@@ -35,7 +33,10 @@
 /**************************/
 /* BELOW 960px (Portrait tablets) */
 /**************************/
-@media (max-width: 59em) {
+@media (max-width: 60em) {
+  .features__container {
+    gap: 3.2rem;
+  }
 }
 
 /**************************/

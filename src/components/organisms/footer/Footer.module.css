@@ -107,7 +107,7 @@
 /**************************/
 /* BELOW 960px (Portrait tablets) */
 /**************************/
-@media (max-width: 59em) {
+@media (max-width: 60em) {
   .footer__container {
     gap: 1.2rem;
   }

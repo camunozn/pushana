@@ -93,9 +93,9 @@
 }
 
 /**************************/
-/* BELOW 944px (Portrait tablets) */
+/* BELOW 960px (Portrait tablets) */
 /**************************/
-@media (max-width: 59em) {
+@media (max-width: 60em) {
   .title--primary {
     font-size: 2.4rem;
   }

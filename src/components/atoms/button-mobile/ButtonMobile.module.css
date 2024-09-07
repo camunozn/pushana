@@ -10,9 +10,9 @@
 }
 
 /**************************/
-/* BELOW 944px (Portrait tablets) */
+/* BELOW 960px (Portrait tablets) */
 /**************************/
-@media (max-width: 59em) {
+@media (max-width: 60em) {
   .btn--mobile {
     display: block;
     z-index: 1000;

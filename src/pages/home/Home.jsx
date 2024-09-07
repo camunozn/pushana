@@ -37,7 +37,7 @@ const Home = () => {
   };
 
   const secondaryBtnOptions = {
-    text: 'Descubre más',
+    text: 'Ver más',
     style: 'secondary',
     align: 'center',
     type: 'section',

@@ -16,13 +16,7 @@ const FeatureBox = props => {
                 text={feature.featureIntro.text}
                 image={feature.featureIntro.image}
                 accent={feature.featureIntro.accent}
-              />
-              <Button
-                text="Conocer más"
-                style="primary"
-                align="center"
-                type="page"
-                element={feature.featureLink}
+                link={feature.featureLink}
               />
             </MarginBox>
           </div>

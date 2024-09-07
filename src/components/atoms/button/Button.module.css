@@ -13,14 +13,14 @@
 .btn,
 .btn:link,
 .btn:visited {
-  min-width: 18rem;
+  min-width: 23rem;
   text-align: center;
   text-decoration: none;
   color: var(--color-white);
   display: inline-block;
   position: relative;
   border-radius: 11px;
-  padding: 1.6rem 2.4rem;
+  padding: 1.8rem 4.8rem;
   transition: all 0.3s;
 }
 
@@ -81,9 +81,9 @@
 /* QUERIES*/
 /*****************************/
 /**************************/
-/* BELOW 592px (Phones) */
+/* BELOW 960px (Portrait tablets) */
 /**************************/
-@media (max-width: 37em) {
+@media (max-width: 60em) {
   .btn-box {
     width: 100%;
   }
@@ -96,4 +96,10 @@
     border-radius: 9px;
     padding: 2.4rem 4.8rem;
   }
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+@media (max-width: 37em) {
 }

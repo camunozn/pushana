@@ -42,7 +42,7 @@
   max-width: 140rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   column-gap: 4.8rem;
   padding: 0 6.4rem 8rem 6.4rem;
@@ -51,7 +51,6 @@
 
 .hero__text-box {
   width: 100%;
-  overflow: hidden;
 }
 
 .hero__heading {
@@ -79,12 +78,11 @@
 }
 
 .hero__img-box {
-  width: 95%;
+  width: 100%;
   grid-column: 2;
   grid-row: 1 / 3;
   text-align: center;
-  backface-visibility: hidden;
-  padding-top: 2.4rem;
+  padding: 1.2rem;
 }
 
 .hero__img-box img {
@@ -92,7 +90,6 @@
   border-radius: 3.2rem;
   animation: moveInRight 1s ease-out 0.5s;
   animation-fill-mode: backwards;
-  box-shadow: 1.2rem 1.2rem 2rem var(--color-shades-darker);
 }
 
 .hero__btn-box {
@@ -127,40 +124,8 @@
     font-size: 5.2rem;
     margin-bottom: 1.6rem;
   }
-}
-
-/**************************/
-/* BELOW 1120px (Landscape tablets) */
-/**************************/
-@media (max-width: 70em) {
-  .hero__heading {
-    font-size: 4.4rem;
-    margin-bottom: 1.2rem;
-  }
-
   .hero__text {
     font-size: 2rem;
-  }
-}
-
-/**************************/
-/* BELOW 976px (Portrait tablets) */
-/**************************/
-@media (max-width: 61em) {
-  .hero__container {
-    padding: 0 4.8rem 8rem 4.8rem;
-  }
-
-  .hero__text-box span {
-    margin-left: 1rem;
-  }
-
-  .hero__heading {
-    font-size: 3.8rem;
-  }
-
-  .hero__text {
-    margin-bottom: 2.4rem;
   }
 
   .hero__btn-box {
@@ -169,15 +134,93 @@
 }
 
 /**************************/
-/* BELOW 768px (Portrait small tablets) */
+/* BELOW 1120px (Landscape tablets) */
 /**************************/
-@media (max-width: 48em) {
+@media (max-width: 70em) {
   .hero__heading {
-    font-size: 3.4rem;
+    font-size: 4.2rem;
+    margin-bottom: 1.2rem;
   }
 
   .hero__text {
     font-size: 1.8rem;
+  }
+
+  .hero__btn-box {
+    grid-column: 1 / 3;
+  }
+
+  .hero__img-box {
+    grid-row: 1 / 2;
+    padding-top: 4.8rem;
+  }
+}
+
+/**************************/
+/* BELOW 960px (Portrait tablets) */
+/**************************/
+@media (max-width: 60em) {
+  .hero {
+    height: 100%;
+  }
+
+  .hero__container {
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    padding: 2.4rem 6.4rem 8rem 6.4rem;
+  }
+
+  .hero__text-box {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .hero__text-box span {
+    margin-left: 1rem;
+  }
+
+  .hero__heading {
+    text-align: left;
+    font-size: 5.2rem;
+  }
+
+  .hero__text {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .hero__btn-box {
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 2;
+    grid-row: 3;
+    gap: 1.6rem;
+  }
+
+  .hero__img-box {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    padding: 0 0 4.8rem 0;
+  }
+}
+
+/**************************/
+/* BELOW 768px (Portrait small tablets) */
+/**************************/
+@media (max-width: 48em) {
+  .hero__container {
+    width: 80%;
+  }
+
+  .hero__text {
+    font-size: 3rem;
   }
 }
 
@@ -185,31 +228,9 @@
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
-  .hero {
-    max-height: calc(100vh - 8rem);
-    min-height: 75rem;
-    height: 100%;
-    background-image: var(--linear-gradient-hero),
-      url(../../assets/images/img-hero.png);
-    background-size: 200%;
-    background-repeat: no-repeat;
-    background-position: 0 0, 130% -90px;
-  }
-
-  .hero::before {
-    display: none;
-  }
-
-  .hero::after {
-    display: none;
-  }
-
   .hero__container {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    padding: 8rem 2.4rem 12.8rem 2.4rem;
+    width: 100%;
+    padding: 2.4rem 4.8rem 8rem 4.8rem;
   }
 
   .hero__text-box {
@@ -217,7 +238,6 @@
   }
 
   .hero__heading {
-    text-align: left;
     font-size: 4.8rem;
     margin: 3.2rem 0;
   }
@@ -229,13 +249,7 @@
     margin: 0;
   }
 
-  .hero__img-box {
-    display: none;
-  }
-
   .hero__btn-box {
-    flex-wrap: wrap;
-    justify-content: space-between;
     gap: 1.2rem;
   }
 }
