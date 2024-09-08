@@ -10,9 +10,7 @@ const Hero = props => {
         <div className={styles['hero__text-box']}>
           <h1 className={styles['hero__heading']}>
             {props.heading.start}
-            <br />
             {props.heading.middle}
-            <br />
             {props.heading.end}
             <TypeAnimation
               sequence={props.sequenceWords}

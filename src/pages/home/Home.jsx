@@ -10,9 +10,9 @@ const Home = () => {
   const sectionBg = 'dark';
 
   const headingHero = {
-    start: 'Gestión de proyectos',
-    middle: 'de construcción',
-    end: 'hecha',
+    start: 'Gestión de proyectos ',
+    middle: 'de construcción ',
+    end: 'hecha ',
     text: 'Implementamos y optimizamos procesos, desarrollamos soluciones a medida, capacitamos equipos de trabajo... Todo para mejorar el desempeño de tus proyectos.',
     image: imagesArray.imgHeroGif,
   };
@@ -57,9 +57,9 @@ const Home = () => {
         title: {
           start: 'Implementamos y optimizamos los',
           middle: 'procesos de la gestión de proyectos',
-          end: 'en empresas constructoras e inmobiliarias.',
+          end: 'en la industria de la construcción.',
         },
-        text: 'Te ayudamos a implementar y optimizar los procesos y buenas prácticas de la gestión de proyectos en tu empresa. Orientados específicamente para satisfacer las necesidades de la industria de la construcción.',
+        text: 'Te ayudamos a implementar y optimizar los procesos, aplicando las mejores prácticas de gestión de proyectos en tu empresa u organización. Nos orientamos específicamente a satisfacer las necesidades de la industria de la construcción.',
         image: imagesArray.imgProcess,
         accent: 'primary',
       },

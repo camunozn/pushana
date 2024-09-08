@@ -20,11 +20,26 @@
 }
 
 /**************************/
-/* BELOW 1088px (Landscape tablets) */
+/* QUERIES*/
 /**************************/
-@media (max-width: 68em) {
+/**************************/
+/* BELOW 1280px (Small desktop) */
+/**************************/
+@media (max-width: 80em) {
   .navbar__list {
     gap: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 1120px (Landscape tablets) */
+/**************************/
+@media (max-width: 70em) {
+  .navbar {
+    margin-right: 0;
+  }
+  .navbar__list {
+    gap: 1.8rem;
   }
 }
 

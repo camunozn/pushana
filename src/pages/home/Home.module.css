@@ -26,9 +26,9 @@
 }
 
 /**************************/
-/* BELOW 1088px (Landscape tablets) */
+/* BELOW 1120px (Landscape tablets) */
 /**************************/
-@media (max-width: 68em) {
+@media (max-width: 70em) {
 }
 
 /**************************/

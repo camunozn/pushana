@@ -17,9 +17,9 @@
 /* QUERIES*/
 /**************************/
 /**************************/
-/* BELOW 1088px (Landscape tablets) */
+/* BELOW 1120px (Landscape tablets) */
 /**************************/
-@media (max-width: 68em) {
+@media (max-width: 70em) {
   .cards-box {
     padding: 3.2rem 6.4rem;
     gap: 4.8rem;
