@@ -20,11 +20,11 @@ const Home = () => {
   const sequenceWords = [
     'simple',
     1000,
-    'clara',
+    'efectiva',
     1000,
     'eficiente',
     1000,
-    'efectiva',
+    'clara',
     1000,
   ];
 

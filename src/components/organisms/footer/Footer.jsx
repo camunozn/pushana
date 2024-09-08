@@ -40,7 +40,7 @@ const Footer = () => {
           </p>
         </div>
         <div className={styles['footer__contact-col']}>
-          <p className={styles['footer__heading']}>Contáctanos</p>
+          <p className={styles['footer__heading']}>Contáctenos</p>
           <address className={styles['footer__contact-info']}>
             <p className={styles['footer__address']}>
               Av. Eugenio Espejo 2410.
@@ -68,22 +68,22 @@ const Footer = () => {
           <ul className={styles['footer__nav-list']}>
             <li>
               <Link className={styles['footer__link']} to={'/'}>
-                Que Hacemos
+                Gestión de Proyectos
               </Link>
             </li>
             <li>
               <Link className={styles['footer__link']} to={'/'}>
-                Recursos
+                Soluciones a medida
+              </Link>
+            </li>
+            <li>
+              <Link className={styles['footer__link']} to={'/'}>
+                Capacitaciones
               </Link>
             </li>
             <li>
               <Link className={styles['footer__link']} to={'/about'}>
-                Sobre Nosotros
-              </Link>
-            </li>
-            <li>
-              <Link className={styles['footer__link']} to={'/contact'}>
-                Contacto
+                Nosotros
               </Link>
             </li>
           </ul>
@@ -93,7 +93,7 @@ const Footer = () => {
           <ul className={styles['footer__nav-list']}>
             <li>
               <Link className={styles['footer__link']} to={'/'}>
-                Purple Sky Tech
+                Purple Sky Technologies
               </Link>
             </li>
             <li>

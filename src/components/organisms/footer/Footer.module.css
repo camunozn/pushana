@@ -5,23 +5,25 @@
 
 .footer__container {
   max-width: 140rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 4.8rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
   padding: 2.4rem 8rem 3.2rem 8rem;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .footer__logo-col,
 .footer__contact-col,
 .footer__account-col,
 .footer__company-col {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-  margin: 0 auto;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-basis: 25rem;
 }
 
 .footer__brand-logo {
@@ -39,8 +41,7 @@
   align-items: center;
   justify-content: space-around;
   gap: 2.4rem;
-  margin-bottom: 3.2rem;
-  flex-grow: 1;
+  margin-bottom: 4.8rem;
 }
 
 .footer__social-list a {
@@ -54,18 +55,15 @@
 }
 
 .footer__heading {
+  width: 100%;
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--color-white);
   margin: 3.2rem 0;
-  flex-grow: 0;
-}
-
-.footer__contact-info {
-  flex-grow: 1;
 }
 
 .footer__address {
+  width: 100%;
   font-size: 1.4rem;
   font-style: normal;
   line-height: 1.6;
@@ -73,13 +71,14 @@
 }
 
 .footer__nav-list {
+  width: 100%;
   list-style: none;
   text-align: left;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 1.6rem;
-  flex-grow: 1;
+  gap: 2rem;
 }
 
 .footer__link:link,
@@ -108,14 +107,25 @@
 /* BELOW 960px (Portrait tablets) */
 /**************************/
 @media (max-width: 60em) {
-  .footer__container {
-    gap: 1.2rem;
-  }
 }
 /**************************/
 /* BELOW 768px (Portrait small tablets) */
 /**************************/
 @media (max-width: 48em) {
+  .footer__container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .footer__logo-col,
+  .footer__contact-col,
+  .footer__account-col,
+  .footer__company-col {
+    min-width: 28rem;
+  }
+
+  .footer__social-list {
+    margin-bottom: 3.2rem;
+  }
 }
 
 /**************************/
@@ -123,21 +133,28 @@
 /**************************/
 @media (max-width: 37em) {
   .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3.2rem;
-    padding: 1.8rem 2.4rem 3.2rem 4.8rem;
+    gap: 1.2rem;
+    padding: 1.8rem 2.4rem 3.2rem 3.2rem;
   }
 
-  .footer__logo-col {
-    order: 3;
-  }
-  .footer__contact-col {
-    order: 4;
-  }
-  .footer__account-col {
-    order: 2;
-  }
+  .footer__logo-col,
+  .footer__contact-col,
+  .footer__account-col,
   .footer__company-col {
-    order: 1;
+    flex-basis: 22rem;
+    min-width: 15rem;
+  }
+}
+
+/**************************/
+/* BELOW 480px (Phones) */
+/**************************/
+@media (max-width: 30em) {
+  .footer__logo-col,
+  .footer__contact-col,
+  .footer__account-col,
+  .footer__company-col {
+    flex-basis: 18rem;
+    min-width: 15rem;
   }
 }
