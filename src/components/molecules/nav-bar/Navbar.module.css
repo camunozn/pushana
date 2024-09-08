@@ -35,9 +35,6 @@
 /* BELOW 1120px (Landscape tablets) */
 /**************************/
 @media (max-width: 70em) {
-  .navbar {
-    margin-right: 0;
-  }
   .navbar__list {
     gap: 1.8rem;
   }

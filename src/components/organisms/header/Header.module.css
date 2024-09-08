@@ -21,10 +21,23 @@
 }
 
 /**************************/
+/* QUERIES*/
+/**************************/
+/**************************/
+/* BELOW 1120px (Landscape tablets) */
+/**************************/
+@media (max-width: 70em) {
+  .header__container {
+    padding: 0;
+  }
+}
+
+/**************************/
 /* BELOW 960px (Portrait tablets) */
 /**************************/
 @media (max-width: 60em) {
   .header__container {
     position: relative;
+    padding: 0 2.4rem;
   }
 }
