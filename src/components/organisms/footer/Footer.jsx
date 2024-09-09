@@ -98,12 +98,12 @@ const Footer = () => {
             </li>
             <li>
               <Link className={styles['footer__link']} to={'/about'}>
-                Origen
+                Sobre Nosotros
               </Link>
             </li>
             <li>
               <Link className={styles['footer__link']} to={'/about'}>
-                Filosofía
+                Contacto
               </Link>
             </li>
             <li>
