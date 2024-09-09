@@ -34,9 +34,7 @@ const Footer = () => {
             </li>
           </ul>
           <p className={styles['footer__copyright']}>
-            Copyright &copy; 2023 Pushana S.A.S.
-            <br />
-            Todos los derechos reservados
+            Copyright &copy; 2024 Pushana S.A.S. Todos los derechos reservados
           </p>
         </div>
         <div className={styles['footer__contact-col']}>
