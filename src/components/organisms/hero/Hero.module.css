@@ -226,10 +226,6 @@
 /* BELOW 768px (Portrait small tablets) */
 /**************************/
 @media (max-width: 48em) {
-  .hero__container {
-    padding: 2.4rem 8rem 8rem 8rem;
-  }
-
   .hero__heading {
     font-size: 5.8rem;
   }
@@ -249,7 +245,7 @@
 /**************************/
 @media (max-width: 37em) {
   .hero__container {
-    padding: 2.4rem 1.2rem 8rem 1.2rem;
+    padding: 2.4rem 2.4rem 8rem 2.4rem;
   }
 
   .hero__text-box {
