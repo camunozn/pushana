@@ -178,7 +178,6 @@
   }
 
   .hero__container {
-    text-align: center;
     align-items: center;
     justify-items: center;
     grid-template-columns: 1fr;
