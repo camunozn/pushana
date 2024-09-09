@@ -91,7 +91,7 @@ const Footer = () => {
           <ul className={styles['footer__nav-list']}>
             <li>
               <Link className={styles['footer__link']} to={'/'}>
-                Purple Sky Technologies
+                Purple Sky Solutions
               </Link>
             </li>
             <li>
@@ -100,12 +100,12 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link className={styles['footer__link']} to={'/about'}>
+              <Link className={styles['footer__link']} to={'/contact'}>
                 Contacto
               </Link>
             </li>
             <li>
-              <Link className={styles['footer__link']} to={'/about'}>
+              <Link className={styles['footer__link']} to={'/'}>
                 FAQ
               </Link>
             </li>
