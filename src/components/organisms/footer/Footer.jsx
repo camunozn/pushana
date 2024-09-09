@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
           <ul className={styles['footer__social-list']}>
             <li>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <a href="https://linkedin.com/company/pushana" target="_blank" rel="noreferrer">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </li>
@@ -39,25 +39,28 @@ const Footer = () => {
         </div>
         <div className={styles['footer__contact-col']}>
           <p className={styles['footer__heading']}>Contáctenos</p>
-          <address className={styles['footer__contact-info']}>
-            <p className={styles['footer__address']}>
-              Av. Eugenio Espejo 2410. Cumbaya, Quito &mdash; Ecuador.
-            </p>
-            <p className={styles['footer__contact']}>
-              <a className={styles['footer__link']} href="tel:+593998043941">
+          <ul className={styles['footer__contact-info']}>
+            <li className={styles['footer__address']}>
+              <Link className={styles['footer__link']} to={'/'}>
+                Plaza del Rancho, Cumbaya.
+              </Link>
+            </li>
+            <li className={styles['footer__address']}>
+              <Link className={styles['footer__link']} to={'/'}>
+                Quito &mdash; Ecuador.
+              </Link>
+            </li>
+            <li className={styles['footer__contact']}>
+              <Link className={styles['footer__link']} to={'tel:+593998043941'}>
                 +593 998043941
-              </a>
-            </p>
-            <br />
-            <p className={styles['footer__contact']}>
-              <a
-                className={styles['footer__link']}
-                href="mailto:camunozn@pushana.com"
-              >
+              </Link>
+            </li>
+            <li className={styles['footer__contact']}>
+              <Link className={styles['footer__link']} to={'mailto:camunozn@pushana.com'}>
                 camunozn@pushana.com
-              </a>
-            </p>
-          </address>
+              </Link>
+            </li>
+          </ul>
         </div>
         <div className={styles['footer__account-col']}>
           <p className={styles['footer__heading']}>Mapa del sitio</p>

@@ -7,7 +7,7 @@
   max-width: 140rem;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 1.2rem;
   padding: 2.4rem 8rem 3.2rem 8rem;
@@ -22,13 +22,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  flex-grow: 1;
   flex-basis: 25rem;
+  flex-grow: 1;
 }
 
 .footer__brand-logo {
   cursor: pointer;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 
 .footer__brand-logo img {
@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: space-around;
   gap: 2.4rem;
-  margin-bottom: 4.8rem;
+  margin-bottom: 3.2rem;
 }
 
 .footer__social-list a {
@@ -49,6 +49,7 @@
 }
 
 .footer__copyright {
+  width: 80%;
   font-size: 1.4rem;
   text-align: left;
   line-height: 1.6;
@@ -62,14 +63,7 @@
   margin: 3.2rem 0;
 }
 
-.footer__address {
-  width: 100%;
-  font-size: 1.4rem;
-  font-style: normal;
-  line-height: 1.6;
-  margin-bottom: 3.2rem;
-}
-
+.footer__contact-info,
 .footer__nav-list {
   width: 100%;
   list-style: none;
@@ -94,22 +88,24 @@
   color: var(--color-accent-primary);
 }
 
-.footer__contact .footer__link:link,
-.footer__contact .footer__link:visited {
-  display: inline-block;
-  font-size: 1.4rem;
-}
-
 /*****************************/
 /* QUERIES*/
 /*****************************/
+/**************************/
+/* BELOW 1120px (Landscape tablets) */
+/**************************/
+@media (max-width: 70em) {
+  .footer__copyright {
+    width: 100%;
+  }
+}
 /**************************/
 /* BELOW 768px (Portrait small tablets) */
 /**************************/
 @media (max-width: 48em) {
   .footer__container {
     flex-wrap: wrap-reverse;
-    row-gap: 2.4rem;
+    row-gap: 3.2rem;
   }
 
   .footer__logo-col,
@@ -119,8 +115,8 @@
     min-width: 28rem;
   }
 
-  .footer__social-list {
-    margin-bottom: 3.2rem;
+  .footer__copyright {
+    width: 60%;
   }
 }
 
@@ -129,7 +125,7 @@
 /**************************/
 @media (max-width: 37em) {
   .footer__container {
-    padding: 1.8rem 2.4rem 3.2rem 3.2rem;
+    padding: 1.8rem 2.4rem 3.2rem 4.8rem;
   }
 
   .footer__logo-col,
@@ -138,6 +134,10 @@
   .footer__company-col {
     flex-basis: 22rem;
     min-width: 15rem;
+  }
+
+  .footer__copyright {
+    width: 70%;
   }
 }
 
