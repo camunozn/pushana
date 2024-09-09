@@ -178,7 +178,6 @@
   }
 
   .hero__container {
-    width: 100%;
     text-align: center;
     align-items: center;
     justify-items: center;
@@ -250,7 +249,7 @@
 /**************************/
 @media (max-width: 37em) {
   .hero__container {
-    padding: 2.4rem 2.4rem 8rem 2.4rem;
+    padding: 2.4rem 1.2rem 8rem 1.2rem;
   }
 
   .hero__text-box {
