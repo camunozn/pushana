@@ -105,6 +105,7 @@
 @media (max-width: 48em) {
   .footer__container {
     flex-wrap: wrap-reverse;
+    align-items: flex-end;
     row-gap: 3.2rem;
   }
 
