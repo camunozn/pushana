@@ -46,6 +46,7 @@
 
   .heading__text {
     width: 100%;
+    text-align: left;
     hyphens: auto;
     font-size: 3rem;
     line-height: 1.4;

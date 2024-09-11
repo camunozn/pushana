@@ -57,12 +57,6 @@
 /* QUERIES*/
 /**************************/
 /**************************/
-/* BELOW 1232px (Small desktop) */
-/**************************/
-@media (max-width: 77em) {
-}
-
-/**************************/
 /* BELOW 960px (Portrait tablets) */
 /**************************/
 @media (max-width: 60em) {
@@ -73,12 +67,6 @@
     margin-top: 0;
     align-self: center;
   }
-}
-
-/**************************/
-/* BELOW 768px (Portrait small tablets) */
-/**************************/
-@media (max-width: 48em) {
 }
 
 /**************************/

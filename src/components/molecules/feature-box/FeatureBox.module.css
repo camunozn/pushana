@@ -19,34 +19,10 @@
 /* QUERIES*/
 /**************************/
 /**************************/
-/* BELOW 1232px (Small desktop) */
-/**************************/
-@media (max-width: 77em) {
-}
-
-/**************************/
-/* BELOW 1120px (Landscape tablets) */
-/**************************/
-@media (max-width: 70em) {
-}
-
-/**************************/
 /* BELOW 960px (Portrait tablets) */
 /**************************/
 @media (max-width: 60em) {
   .features__container {
     gap: 3.2rem;
   }
-}
-
-/**************************/
-/* BELOW 768px (Portrait small tablets) */
-/**************************/
-@media (max-width: 48em) {
-}
-
-/**************************/
-/* BELOW 592px (Phones) */
-/**************************/
-@media (max-width: 37em) {
 }
