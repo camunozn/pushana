@@ -107,7 +107,7 @@ const Footer = () => {
             </li>
             <li>
               <Link className={styles['footer__link']} to={'/'}>
-                FAQ
+                Blog
               </Link>
             </li>
           </ul>
