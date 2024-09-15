@@ -8,7 +8,7 @@
 }
 
 .card-item {
-  flex-basis: 30rem;
+  flex-basis: 20rem;
   flex-grow: 1;
   max-width: 38rem;
 }
@@ -31,7 +31,7 @@
 /**************************/
 @media (max-width: 48em) {
   .card-item {
-    flex-basis: 30rem;
+    flex-basis: 25rem;
   }
 }
 

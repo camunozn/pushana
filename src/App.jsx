@@ -13,7 +13,7 @@ function App() {
     { name: 'Gestión', link: '/' },
     { name: 'Soluciones', link: '/' },
     { name: 'Capacitaciones', link: '/' },
-    { name: 'Nosotros', link: '/' },
+    { name: 'Nosotros', link: '/about' },
   ];
 
   return (
