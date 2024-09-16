@@ -2,50 +2,24 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: center;
+  justify-content: space-between;
   gap: 3.2rem;
   padding: 3.2rem 0;
 }
 
 .card-item {
-  flex-basis: 20rem;
+  flex-basis: 25rem;
   flex-grow: 1;
-  max-width: 38rem;
 }
 
 /**************************/
 /* QUERIES*/
 /**************************/
 /**************************/
-/* BELOW 1120px (Landscape tablets) */
-/**************************/
-@media (max-width: 70em) {
-  .cards-box {
-    padding: 3.2rem 6.4rem;
-    gap: 4.8rem;
-  }
-}
-
-/**************************/
-/* BELOW 768px (Portrait small tablets) */
-/**************************/
-@media (max-width: 48em) {
-  .card-item {
-    flex-basis: 25rem;
-  }
-}
-
-/**************************/
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
-  .cards-box {
-    padding: 3.2rem 0;
-    gap: 6.4rem;
-  }
-
   .card-item {
-    flex-basis: 35rem;
-    max-width: 45rem;
+    flex-basis: 30rem;
   }
 }
