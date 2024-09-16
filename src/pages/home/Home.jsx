@@ -189,7 +189,7 @@ const Home = () => {
           middle: 'de transformación digital',
           end: 'para la innovación y el desarrollo empresarial.',
         },
-        text: 'No solo te ofrecemos soluciones en gestión de proyectos, también capacitamos a tu personal para formar equipos de transformación digital que se encarguen de promover la innovación al interior de tu empresa, generando iniciativas como la automatización de procesos, el análisis de datos, la inteligencia de negocios o cualquier otra que aporte al desarrollo empresarial.',
+        text: 'No solo te ofrecemos soluciones en gestión de proyectos, también capacitamos a tu personal para formar equipos de transformación digital que se encarguen de promover la innovación al interior de tu empresa, generando iniciativas que aporten al desarrollo empresarial como son la automatización de procesos, el análisis de datos, la inteligencia de negocios y el uso de inteligencia artificial.',
         image: imagesArray.imgLowCode,
         accent: 'primary',
       },
