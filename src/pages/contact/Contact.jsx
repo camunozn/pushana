@@ -7,7 +7,7 @@ const Contact = () => {
   const headingIntroContact = {
     title:
       'Contáctenos: estaremos gustosos de atender sus consultas.',
-    text: 'No importa el medio: llámanos, envíanos un correo electrónico o escríbenos por Whatsapp; estamos disponibles para atender tus requerimientos.',
+    text: 'No importa el medio: llámanos, envíanos un correo electrónico o escríbenos por Whatsapp; estamos atentos a tus requerimientos.',
   };
 
   const cardsListIntroContact = [
