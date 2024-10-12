@@ -46,7 +46,7 @@ const Home = () => {
 
   // SERVICE CONSULTING DETAILS
   const headingConsulting = {
-    title: 'Gestión de proyectos',
+    title: 'Consultoría en gestión',
     text: 'Procesos, planificación y control',
   };
 
@@ -161,7 +161,7 @@ const Home = () => {
           middle: 'oficinas de gestión de proyectos',
           end: 'en empresas constructoras.',
         },
-        text: 'Te ayudamos a establecer tu oficina de gestión de proyectos y desarrollar a tu equipo de trabajo. Ya sea en una o todas las áreas de conocimiento de la gestión de proyectos, desde las más básicas como la gestión del alcance, costos, cronograma y calidad; hasta las más complejas como la gestión de riesgos, las comunicaciones y los interesados.',
+        text: 'Te ayudamos a establecer tu oficina de gestión de proyectos y desarrollar a tu equipo de trabajo. Ya sea en una o todas las áreas de conocimiento de la gestión de proyectos, desde las principales como la gestión del alcance, costos, cronograma y calidad; hasta las más complejas como la gestión de riesgos, las comunicaciones y los interesados.',
         image: imagesArray.imgOffice,
         accent: 'primary',
       },
