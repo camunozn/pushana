@@ -18,7 +18,11 @@ const Footer = () => {
           </div>
           <ul className={styles['footer__social-list']}>
             <li>
-              <a href="https://linkedin.com/company/pushana" target="_blank" rel="noreferrer">
+              <a
+                href="https://linkedin.com/company/pushana"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </li>
@@ -50,13 +54,16 @@ const Footer = () => {
                 Quito &mdash; Ecuador.
               </Link>
             </li>
-            <li className={styles['footer__contact']}>
+            {/* <li className={styles['footer__contact']}>
               <Link className={styles['footer__link']} to={'tel:+593998043941'}>
                 +593 998043941
               </Link>
-            </li>
+            </li> */}
             <li className={styles['footer__contact']}>
-              <Link className={styles['footer__link']} to={'mailto:camunozn@pushana.com'}>
+              <Link
+                className={styles['footer__link']}
+                to={'mailto:camunozn@pushana.com'}
+              >
                 camunozn@pushana.com
               </Link>
             </li>
