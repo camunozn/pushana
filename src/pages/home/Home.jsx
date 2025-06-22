@@ -20,11 +20,11 @@ const Home = () => {
   const sequenceWords = [
     'Transformación digital',
     1000,
+    'Software especializado',
+    1000,
     'Soluciones a medida',
     1000,
     'Inteligencia artificial',
-    1000,
-    'Software especializado',
     1000,
   ];
 
