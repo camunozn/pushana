@@ -27,9 +27,6 @@
 /* BELOW 1120px (Landscape tablets) */
 /**************************/
 @media (max-width: 70em) {
-  .header__container {
-    padding: 0;
-  }
 }
 
 /**************************/

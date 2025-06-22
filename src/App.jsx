@@ -10,9 +10,9 @@ import ScrollToTop from './components/atoms/scroll-to-top/ScrollToTop';
 function App() {
   const linksList = [
     { name: 'Inicio', link: '/' },
-    { name: 'Gestión', link: '/' },
+    { name: 'Software', link: '/' },
     { name: 'Soluciones', link: '/' },
-    { name: 'Capacitaciones', link: '/' },
+    { name: 'IA', link: '/' },
     { name: 'Nosotros', link: '/about' },
   ];
 

@@ -74,17 +74,17 @@ const Footer = () => {
           <ul className={styles['footer__nav-list']}>
             <li>
               <Link className={styles['footer__link']} to={'/'}>
-                Gestión de Proyectos
+                Software
               </Link>
             </li>
             <li>
               <Link className={styles['footer__link']} to={'/'}>
-                Soluciones a medida
+                Soluciones
               </Link>
             </li>
             <li>
               <Link className={styles['footer__link']} to={'/'}>
-                Capacitaciones
+                IA aplicada
               </Link>
             </li>
             <li>
@@ -99,7 +99,7 @@ const Footer = () => {
           <ul className={styles['footer__nav-list']}>
             <li>
               <Link className={styles['footer__link']} to={'/'}>
-                Purple Sky Solutions
+                Pushana S.A.S.
               </Link>
             </li>
             <li>

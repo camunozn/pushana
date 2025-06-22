@@ -9,17 +9,17 @@ const Hero = props => {
       <div className={styles['hero__container']}>
         <div className={styles['hero__text-box']}>
           <h1 className={styles['hero__heading']}>
-            {props.heading.start}
-            {props.heading.middle}
             <span className={styles['hero__heading__animation']}>
-              {props.heading.end}
+              {props.heading.start}
               <TypeAnimation
                 sequence={props.sequenceWords}
-                speed={10} // Custom Speed from 1-99 - Default Speed: 40
+                speed={40} // Custom Speed from 1-99 - Default Speed: 40
                 wrapper="span" // Animation will be rendered as a <span>
                 repeat={Infinity} // Repeat this Animation Sequence infinitely
               />
             </span>
+            {props.heading.middle}
+            {props.heading.end}
           </h1>
           <p className={styles['hero__text']}>{props.heading.text}</p>
         </div>

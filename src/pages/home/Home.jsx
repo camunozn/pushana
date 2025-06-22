@@ -10,21 +10,21 @@ const Home = () => {
   const sectionBg = 'dark';
 
   const headingHero = {
-    start: 'Gestión de proyectos ',
-    middle: 'de construcción ',
-    end: 'hecha ',
-    text: 'Implementamos y optimizamos procesos, desarrollamos soluciones a medida, capacitamos equipos de trabajo... Todo para mejorar el desempeño de tus proyectos.',
+    start: '',
+    middle: 'para la industria de la ',
+    end: 'construcción: ',
+    text: 'Optimizamos tus procesos y mejoramos la operación de tu empresa con soluciones a medida, inteligencia artificial y nuestro software especializado para la gestión de proyectos de construcción. Todo para llevar el desempeño de tus proyectos al siguiente nivel.',
     image: imagesArray.imgHeroGif,
   };
 
   const sequenceWords = [
-    'simple',
+    'Transformación digital',
     1000,
-    'efectiva',
+    'Soluciones a medida',
     1000,
-    'eficiente',
+    'Inteligencia artificial',
     1000,
-    'clara',
+    'Software especializado',
     1000,
   ];
 
@@ -41,26 +41,26 @@ const Home = () => {
     style: 'secondary',
     align: 'center',
     type: 'section',
-    element: 'service-consulting',
+    element: 'section-one',
   };
 
   // SERVICE CONSULTING DETAILS
-  const headingConsulting = {
-    title: 'Consultoría en gestión',
-    text: 'Procesos, planificación y control',
+  const headingSectionOne = {
+    title: 'Software especializado',
+    text: 'Solución integral para la gestión de proyectos de construcción',
   };
 
-  const featuresConsulting = [
+  const featuresSectionOne = [
     {
       featureName: '1',
       featureIntro: {
         title: {
-          start: 'Implementamos y optimizamos los',
-          middle: 'procesos de la gestión de proyectos',
-          end: 'en la industria de la construcción.',
+          start: 'Planifica con precisión ',
+          middle: 'el alcance, los costos y los tiempos',
+          end: 'en un entorno estructurado y eficiente.',
         },
-        text: 'Te ayudamos a implementar y optimizar los procesos, aplicando las mejores prácticas de gestión de proyectos en tu empresa u organización. Nos orientamos específicamente a satisfacer las necesidades de la industria de la construcción.',
-        image: imagesArray.imgProcess,
+        text: 'Define de forma clara el alcance, el presupuesto y el cronograma de tu proyecto. Organiza cuentas de control, rubros y clasifica costos directos e indirectos para tener un control detallado desde el inicio.',
+        image: imagesArray.imgPlanning,
         accent: 'primary',
       },
       featureLink: '/contact',
@@ -69,12 +69,12 @@ const Home = () => {
       featureName: '2',
       featureIntro: {
         title: {
-          start: 'Planificación de proyectos:',
-          middle: 'alcance, costos y tiempos,',
-          end: 'nos encargamos de las principales restricciones.',
+          start: 'Ejecución sin contratiempos:',
+          middle: 'centraliza la información y automatiza procesos',
+          end: 'para que la obra avance sin interrupciones.',
         },
-        text: 'Te apoyamos con la planificación de las principales restricciones de tus proyectos: alcance, costos y tiempos. Planificamos la gestión del alcance, analizamos el presupuesto de construcción y desarrollamos el cronograma de trabajo de tu proyecto.',
-        image: imagesArray.imgPlanningAlt,
+        text: 'Gestiona la adquisición de materiales, controla los inventarios y supervisa la contratación de servicios y subcontratos. Optimiza el uso de maquinaria, ya sea propia o alquilada, y organiza a tu equipo de trabajo de forma eficiente. Centraliza toda esta información para garantizar un avance continuo y sin interrupciones.',
+        image: imagesArray.imgProcessAlt,
         accent: 'secondary',
       },
       featureLink: '/contact',
@@ -83,11 +83,11 @@ const Home = () => {
       featureName: '3',
       featureIntro: {
         title: {
-          start: 'Monitoreo y control de proyectos:',
-          middle: 'monitorea lo que quieres controlar,',
-          end: 'controla lo que importa.',
+          start: 'Monitorea y controla en tiempo real:',
+          middle: 'aplica la gestión de valor ganado',
+          end: 'para decisiones basadas en datos.',
         },
-        text: 'Te ayudamos a implementar y aplicar la gestión del valor ganado para el control de tus proyectos. Realizamos el control integrado de cambios y llevamos el control de costos y de cronograma para evaluar el desempeño de tus proyectos.',
+        text: 'Registra el avance físico y controla subcontratos, consumo de materiales, horas hombre y horas máquina. Genera reportes claros y tableros de control interactivos. Aplica la gestión de valor ganado para medir el desempeño y tomar decisiones informadas basadas en datos.',
         image: imagesArray.imgControl,
         accent: 'primary',
       },
@@ -96,21 +96,21 @@ const Home = () => {
   ];
 
   // SERVICE DEVELOPMENT DETAILS
-  const headingDevelopment = {
-    title: 'Soluciones innovadoras',
-    text: 'Desarrollo de soluciones a medida',
+  const headingSectionTwo = {
+    title: 'Desarrollos a medida',
+    text: 'Soluciones prácticas para necesidades específicas',
   };
 
-  const featuresDevelopment = [
+  const featuresSectionTwo = [
     {
       featureName: '1',
       featureIntro: {
         title: {
-          start: 'Claris FileMaker®:',
-          middle: 'desarrollo rápido',
-          end: 'de aplicaciones personalizadas.',
+          start: 'Claris FileMaker®: ',
+          middle: 'aplicaciones personalizadas ',
+          end: 'para empresas constructoras.',
         },
-        text: 'No adaptes tu empresa ni tus procesos para que encajen con una aplicación predeterminada, en su lugar, crea aplicaciones rápidamente y a la medida de tus necesidades con la plataforma Claris FileMaker Pro. Nosotros te ofrecemos los paquetes de licencias y el servicio de desarrollo para brindarte una solución integral a tus problemas.',
+        text: 'Desarrollamos y personalizamos aplicaciones que optimizan procesos y mejoran la operación de tu empresa. Nuestras soluciones te ayudan a ejecutar tareas y administrar recursos de forma efectiva y eficiente, con un enfoque específico en la industria de la construcción, para maximizar la rentabilidad de tus proyectos.',
         image: imagesArray.imgLowCode,
         accent: 'primary',
       },
@@ -120,12 +120,12 @@ const Home = () => {
       featureName: '2',
       featureIntro: {
         title: {
-          start: 'Claris FileMaker®:',
-          middle: 'aplicaciones operativas',
-          end: 'para empresas constructoras.',
+          start: 'Microsoft® Power Platform: ',
+          middle: 'aplicaciones y automatización ',
+          end: 'dentro de tu ecosistema Microsoft 365.',
         },
-        text: 'Desarrollamos y personalizamos aplicaciones que optimizan los procesos y mejoran la operación de tu empresa. Nuestras soluciones te ayudan a ejecutar procesos y administrar recursos de forma efectiva y eficiente, enfocadas específicamente a la industria de la construcción, te ayudamos a mejorar la rentabilidad de tus proyectos.',
-        image: imagesArray.imgOpsAlt,
+        text: 'Diseñamos y desarrollamos aplicaciones personalizadas utilizando Power Apps y Power Automate. Nuestras soluciones te ayudan a automatizar procesos, conectar sistemas y maximizar la interoperabilidad dentro de tu entorno Microsoft 365, optimizando tu inversión existente con herramientas prácticas, escalables y totalmente integradas.',
+        image: imagesArray.imgAppAlt,
         accent: 'secondary',
       },
       featureLink: '/contact',
@@ -134,12 +134,12 @@ const Home = () => {
       featureName: '3',
       featureIntro: {
         title: {
-          start: 'Claris FileMaker®:',
-          middle: 'soluciones útiles y confiables',
-          end: 'para resolver cualquier problema.',
+          start: 'Análisis y gestión de datos: ',
+          middle: 'información clara',
+          end: 'para decisiones inteligentes.',
         },
-        text: 'Manejar el inventario de obra, controlar horas-hombre y horas-máquina, optimizar el proceso de compras, mejorar la gestión documental, desarrollar presupuestos de construcción, aplicar la gestión del valor ganado... Lo que necesites para mejorar la gestión de tus proyectos, nosotros lo desarrollamos con Claris FileMaker Pro.',
-        image: imagesArray.imgApp,
+        text: ' Procesamos y analizamos tus datos usando MS Excel de forma avanzada, creando modelos complejos, automatizando tareas mediante macros y optimizando flujos de trabajo. Conectamos tu información a tableros interactivos y visualizaciones dinámicas en Power BI, para que comprendas y aproveches tus datos a fondo.',
+        image: imagesArray.imgOps,
         accent: 'primary',
       },
       featureLink: '/contact',
@@ -147,54 +147,54 @@ const Home = () => {
   ];
 
   // SERVICE TRAINING DETAILS
-  const headingTraining = {
-    title: 'Formación de equipos',
-    text: 'PMOs, licitaciones y transformación digital',
+  const headingSectionThree = {
+    title: 'Inteligencia artificial',
+    text: 'Desata el poder de la IA en la construcción',
   };
 
-  const featuresTraining = [
+  const featuresSectionThree = [
     {
       featureName: '1',
       featureIntro: {
         title: {
-          start: 'Formación y desarrollo de',
-          middle: 'oficinas de gestión de proyectos',
-          end: 'en empresas constructoras.',
+          start: 'Inteligencia Artificial: ',
+          middle: 'impulsa la productividad ',
+          end: 'y la precisión en cada proyecto.',
         },
-        text: 'Te ayudamos a establecer tu oficina de gestión de proyectos y desarrollar a tu equipo de trabajo. Ya sea en una o todas las áreas de conocimiento de la gestión de proyectos, desde las principales como la gestión del alcance, costos, cronograma y calidad; hasta las más complejas como la gestión de riesgos, las comunicaciones y los interesados.',
-        image: imagesArray.imgOffice,
+        text: 'Aplicamos inteligencia artificial para analizar grandes volúmenes de datos y detectar patrones que optimizan la planificación, la ejecución y el control de obras. Nuestras soluciones permiten prever desviaciones de cronograma, anticipar necesidades de recursos y mejorar la toma de decisiones con información predictiva. Así, tu empresa reduce riesgos, mejora la productividad y maximiza la eficiencia operativa.',
+        image: imagesArray.imgBid,
         accent: 'primary',
       },
       featureLink: '/contact',
     },
-    {
-      featureName: '2',
-      featureIntro: {
-        title: {
-          start: 'Capacitación de',
-          middle: 'equipos de licitaciones',
-          end: 'para ganar más y mejores contratos.',
-        },
-        text: 'Si necesitas potenciar tu equipo de licitaciones o estás formando un equipo de trabajo ganador, nosotros te apoyamos con la transferencia de conocimiento y el desarrollo de habilidades en temas como ingeniería de costos, evaluación financiera de proyectos, programación de obra, diagramas espacio-tiempo y más.',
-        image: imagesArray.imgTrainingAlt,
-        accent: 'secondary',
-      },
-      featureLink: '/contact',
-    },
-    {
-      featureName: '3',
-      featureIntro: {
-        title: {
-          start: 'Formación de equipos',
-          middle: 'de transformación digital',
-          end: 'para la innovación y el desarrollo empresarial.',
-        },
-        text: 'No solo te ofrecemos soluciones en gestión de proyectos, también capacitamos a tu personal para formar equipos de transformación digital que se encarguen de promover la innovación al interior de tu empresa, generando iniciativas que aporten al desarrollo empresarial como son la automatización de procesos, el análisis de datos, la inteligencia de negocios y el uso de inteligencia artificial.',
-        image: imagesArray.imgLowCode,
-        accent: 'primary',
-      },
-      featureLink: '/contact',
-    },
+    // {
+    //   featureName: '2',
+    //   featureIntro: {
+    //     title: {
+    //       start: 'Capacitación de',
+    //       middle: 'equipos de licitaciones',
+    //       end: 'para ganar más y mejores contratos.',
+    //     },
+    //     text: 'Si necesitas potenciar tu equipo de licitaciones o estás formando un equipo de trabajo ganador, nosotros te apoyamos con la transferencia de conocimiento y el desarrollo de habilidades en temas como ingeniería de costos, evaluación financiera de proyectos, programación de obra, diagramas espacio-tiempo y más.',
+    //     image: imagesArray.imgTrainingAlt,
+    //     accent: 'secondary',
+    //   },
+    //   featureLink: '/contact',
+    // },
+    // {
+    //   featureName: '3',
+    //   featureIntro: {
+    //     title: {
+    //       start: 'Formación de equipos',
+    //       middle: 'de transformación digital',
+    //       end: 'para la innovación y el desarrollo empresarial.',
+    //     },
+    //     text: 'No solo te ofrecemos soluciones en gestión de proyectos, también capacitamos a tu personal para formar equipos de transformación digital que se encarguen de promover la innovación al interior de tu empresa, generando iniciativas que aporten al desarrollo empresarial como son la automatización de procesos, el análisis de datos, la inteligencia de negocios y el uso de inteligencia artificial.',
+    //     image: imagesArray.imgLowCode,
+    //     accent: 'primary',
+    //   },
+    //   featureLink: '/contact',
+    // },
   ];
 
   return (
@@ -208,26 +208,26 @@ const Home = () => {
       <section
         className={`${styles['section__services']} ${`bg--${sectionBg}`}`}
       >
-        <div id="service-consulting" className={styles['service__container']}>
+        <div id="section-one" className={styles['service__container']}>
           <HeadingMedium
-            title={headingConsulting.title}
-            text={headingConsulting.text}
+            title={headingSectionOne.title}
+            text={headingSectionOne.text}
           />
-          <FeatureBox features={featuresConsulting} background={sectionBg} />
+          <FeatureBox features={featuresSectionOne} background={sectionBg} />
         </div>
-        <div id="service-development" className={styles['service__container']}>
+        <div id="section-two" className={styles['service__container']}>
           <HeadingMedium
-            title={headingDevelopment.title}
-            text={headingDevelopment.text}
+            title={headingSectionTwo.title}
+            text={headingSectionTwo.text}
           />
-          <FeatureBox features={featuresDevelopment} background={sectionBg} />
+          <FeatureBox features={featuresSectionTwo} background={sectionBg} />
         </div>
-        <div id="service-training" className={styles['service__container']}>
+        <div id="section-three" className={styles['service__container']}>
           <HeadingMedium
-            title={headingTraining.title}
-            text={headingTraining.text}
+            title={headingSectionThree.title}
+            text={headingSectionThree.text}
           />
-          <FeatureBox features={featuresTraining} background={sectionBg} />
+          <FeatureBox features={featuresSectionThree} background={sectionBg} />
         </div>
       </section>
     </div>

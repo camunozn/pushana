@@ -20,7 +20,7 @@ const Header = props => {
         <LogoBox
           image={logoImg}
           text="Pushana"
-          slogan="Construction Project Management"
+          slogan="Transformación digital para la construcción"
           link={'/'}
         />
         <Navbar linksList={linksList} openNav={openNav} toggleNav={toggleNav} />
