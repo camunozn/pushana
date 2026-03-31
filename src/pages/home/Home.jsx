@@ -10,23 +10,14 @@ const Home = () => {
   const sectionBg = 'dark';
 
   const headingHero = {
-    start: '',
-    middle: 'para la industria de la ',
-    end: 'construcción: ',
-    text: 'Optimizamos tus procesos y mejoramos la operación de tu empresa con soluciones a medida, inteligencia artificial y nuestro software especializado para la gestión de proyectos de construcción. Todo para llevar el desempeño de tus proyectos al siguiente nivel.',
-    image: imagesArray.imgHeroGif,
+    start: 'Protección social ',
+    middle: '',
+    end: '',
+    text: 'Diseñamos e implementamos modelos innovadores que combinan asistencia humanitaria con mecanismos de mercado, permitiendo transitar de esquemas dependientes de donantes hacia soluciones sostenibles, escalables y centradas en las personas.',
+    image: imagesArray.imgEffective,
   };
 
-  const sequenceWords = [
-    'Transformación digital',
-    1000,
-    'Software especializado',
-    1000,
-    'Soluciones a medida',
-    1000,
-    'Inteligencia artificial',
-    1000,
-  ];
+  const sequenceWords = ['sostenible', 1000, 'escalable', 1000, 'humana', 1000];
 
   const primaryBtnOptions = {
     text: 'Contáctenos',
@@ -205,7 +196,7 @@ const Home = () => {
         primaryBtnOptions={primaryBtnOptions}
         secondaryBtnOptions={secondaryBtnOptions}
       />
-      <section
+      {/* <section
         className={`${styles['section__services']} ${`bg--${sectionBg}`}`}
       >
         <div id="section-one" className={styles['service__container']}>
@@ -229,7 +220,7 @@ const Home = () => {
           />
           <FeatureBox features={featuresSectionThree} background={sectionBg} />
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

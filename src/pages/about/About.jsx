@@ -10,7 +10,7 @@ const About = () => {
 
   const headingIntroAbout = {
     title: 'Pushana: nuestro origen y filosofía.',
-    text: 'En quichua, Pushana significa guiar, dirigir. Para nosotros es una palabra que representa nuestras raíces y, al mismo tiempo, nuestro objetivo fundamental: guiar a las empresas constructoras del Ecuador y América Latina hacia una gestión de proyectos exitosa.',
+    text: 'Somos una organización especializada en el diseño e implementación de soluciones innovadoras de protección social, con un enfoque particular en poblaciones en situación de vulnerabilidad y economías informales.',
   };
 
   const cardsListIntroAbout = [

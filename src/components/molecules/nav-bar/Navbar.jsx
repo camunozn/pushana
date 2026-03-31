@@ -22,7 +22,7 @@ const Navbar = props => {
             </Link>
           </li>
         ))}
-        <li>
+        {/* <li>
           <Button
             text="Contáctenos"
             style="primary"
@@ -31,7 +31,7 @@ const Navbar = props => {
             element="/contact"
             toggleNav={props.toggleNav}
           />
-        </li>
+        </li> */}
       </ul>
     </div>
   );

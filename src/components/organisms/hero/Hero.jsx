@@ -7,10 +7,10 @@ const Hero = props => {
   return (
     <section id="section-hero" className={styles['hero']}>
       <div className={styles['hero__container']}>
-        <div className={styles['hero__text-box']}>
+        {/* <div className={styles['hero__text-box']}>
           <h1 className={styles['hero__heading']}>
+            {props.heading.start}
             <span className={styles['hero__heading__animation']}>
-              {props.heading.start}
               <TypeAnimation
                 sequence={props.sequenceWords}
                 speed={40} // Custom Speed from 1-99 - Default Speed: 40
@@ -25,8 +25,8 @@ const Hero = props => {
         </div>
         <div className={styles['hero__img-box']}>
           <img src={props.heading.image} alt="Hero image" />
-        </div>
-        <div className={styles['hero__btn-box']}>
+        </div> */}
+        {/* <div className={styles['hero__btn-box']}>
           <Button
             text={props.primaryBtnOptions.text}
             style={props.primaryBtnOptions.style}
@@ -41,7 +41,7 @@ const Hero = props => {
             type={props.secondaryBtnOptions.type}
             element={props.secondaryBtnOptions.element}
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

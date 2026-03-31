@@ -9,11 +9,11 @@ import ScrollToTop from './components/atoms/scroll-to-top/ScrollToTop';
 
 function App() {
   const linksList = [
-    { name: 'Inicio', link: '/' },
-    { name: 'Software', link: '/' },
-    { name: 'Soluciones', link: '/' },
-    { name: 'IA', link: '/' },
-    { name: 'Nosotros', link: '/about' },
+    // { name: 'Inicio', link: '/' },
+    // { name: 'Software', link: '/' },
+    // { name: 'Soluciones', link: '/' },
+    // { name: 'IA', link: '/' },
+    // { name: 'Nosotros', link: '/about' },
   ];
 
   return (
@@ -28,7 +28,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </HashRouter>
   );
