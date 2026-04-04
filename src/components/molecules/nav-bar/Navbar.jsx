@@ -1,39 +1,36 @@
 import React from 'react';
-import Button from '../../atoms/button/Button';
+import ButtonMobile from '../../atoms/button-mobile/ButtonMobile';
 import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = props => {
   return (
-    <div className={styles.navbar}>
+    <nav>
+      <a href="/" className={styles['nav-logo']}>
+        Pushana
+      </a>
       <ul
-        className={`${styles['navbar__list']} ${
-          props.openNav && styles.visible
-        }`}
+        className={`${styles['nav-links']} ${props.openNav && styles.visible}`}
       >
         {props.linksList.map(link => (
           <li key={link.name}>
-            <Link
-              className={styles['navbar__link']}
-              to={link.link}
-              onClick={props.toggleNav}
-            >
+            <Link to={link.link} onClick={props.toggleNav}>
               {link.name}
             </Link>
           </li>
         ))}
-        {/* <li>
-          <Button
-            text="Contáctenos"
-            style="primary"
-            align="center"
-            type="page"
-            element="/contact"
-            toggleNav={props.toggleNav}
-          />
-        </li> */}
+        <li>
+          <a
+            href="#cta-final"
+            className={styles['nav-cta']}
+            onClick={props.toggleNav}
+          >
+            Conversemos
+          </a>
+        </li>
       </ul>
-    </div>
+      <ButtonMobile buttonHandler={props.toggleNav} openNav={props.openNav} />
+    </nav>
   );
 };
 

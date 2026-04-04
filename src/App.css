@@ -26,12 +26,6 @@ Large: 1.8
  0.75px
 
 ---02 COLORS ---
-- Primary: #21033a
-- Tints: #170229 #1a022e #1e0334
-- Shades: #e1d9e8 #976ea5 #572981
-- Accents: #c91668 #1b93c2
-- Darks: #11021d #0d0117
-- Grays: #888 #666 #555 #333 #ebe0ea
 
 ---03 IMAGES ---
 
@@ -48,38 +42,23 @@ Medium: 11px
 */
 
 :root {
-  --color-primary: #21033a;
-  --color-accent-primary: #1b93c2;
-  --color-accent-secondary: #c91668;
-  --color-tints-lighter: #1e0334;
-  --color-tints-darker: #170229;
-  --color-shades-lighter: #e1d9e8;
-  --color-shades-normal: #976ea5;
-  --color-shades-darker: #572981;
-  --color-grays-lighter: #ebe0ea;
-  --color-grays-darker: #333;
-  --color-white: #fff;
-  --color-dark: #000;
-  --color-bg-normal: #170229;
-  --color-bg-dark: #11021d;
-  --color-bg-darker: #0d0117;
-  --color-bg-shapes: rgba(86, 41, 129, 0.1);
-  --color-bg-transparent: transparent;
-  --linear-gradient-bg: linear-gradient(to bottom right, #170229, #21033a);
-  --linear-gradient-hero: linear-gradient(
-    to bottom right,
-    rgba(23, 2, 41, 0.85),
-    rgba(33, 3, 58, 0.85)
-  );
-  --linear-gradient-accent: linear-gradient(to right, #1b93c2, #c91668);
-  --linear-gradient-border: linear-gradient(
-    to right,
-    #1b93c2,
-    #976ea5,
-    #c91668
-  );
-  --linear-gradient-btn-primary: linear-gradient(to right, #c91668, #572981);
-  --linear-gradient-btn-secondary: linear-gradient(to right, #1b93c2, #c91668);
+  --magenta: #c8365a;
+  --magenta-l: #e05070;
+  --plum: #2d1b4e;
+  --plum-mid: #3d2860;
+  --gold: #e8a44a;
+  --gold-l: #f5c070;
+  --cream: #faf6ee;
+  --warm: #fdfaf5;
+  --charcoal: #1a1220;
+  --gray: #7a6e82;
+  --gray-l: #b0a8bc;
+  --border: rgba(45, 27, 78, 0.1);
+
+  --ff-display: 'Fraunces', Georgia, serif;
+  --ff-body: 'DM Sans', system-ui, sans-serif;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 *,
@@ -92,16 +71,15 @@ Medium: 11px
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
   overflow-x: hidden;
-  /* scroll-behavior: smooth; */
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: var(--color-white);
-  background-image: var(--linear-gradient-bg);
+  font-family: var(--ff-body);
+  background: var(--warm);
+  color: var(--charcoal);
+  line-height: 1.6;
   overflow: hidden;
 }
 
@@ -111,42 +89,35 @@ body {
   height: 100%;
 }
 
-/*****************************/
-/* GENERAL COMPONENTS*/
-/*****************************/
-
-button {
-  font-size: 1.8rem;
-  font-weight: 700;
-  background-color: transparent;
-  border-style: none;
-  cursor: pointer;
+/* ─── SCROLL REVEAL ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.7s var(--ease-out),
+    transform 0.7s var(--ease-out);
 }
-
-a:link,
-a:visited {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: var(--color-white);
-  text-decoration: none;
-  transition: color 0.3s;
+.reveal.visible {
+  opacity: 1;
+  transform: none;
 }
-
-a:hover,
-a:active {
-  color: var(--color-accent-primary);
+.reveal-delay-1 {
+  transition-delay: 0.08s;
 }
-
-/*****************************/
-/* GENERAL STYLES*/
-/*****************************/
-
-.bg--normal {
-  background-color: var(--color-bg-normal);
+.reveal-delay-2 {
+  transition-delay: 0.16s;
 }
-
-.bg--dark {
-  background-color: var(--color-bg-dark);
+.reveal-delay-3 {
+  transition-delay: 0.24s;
+}
+.reveal-delay-4 {
+  transition-delay: 0.32s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /*****************************/
