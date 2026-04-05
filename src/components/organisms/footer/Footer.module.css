@@ -1,59 +1,59 @@
 footer {
   background: var(--charcoal);
-  padding: 64px 48px 36px;
+  padding: 6.4rem 4.8rem 3.6rem;
 }
 
 .footer-inner {
-  max-width: 1140px;
+  max-width: 114rem;
   margin: 0 auto;
 }
 
 .footer-top {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 60px;
-  padding-bottom: 48px;
+  gap: 6rem;
+  padding-bottom: 4.8rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .footer-brand-name {
   font-family: var(--ff-display);
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 900;
   color: #fff;
   letter-spacing: -0.02em;
-  margin-bottom: 6px;
+  margin-bottom: 0.6rem;
 }
 .footer-brand-tag {
-  font-size: 11px;
+  font-size: 1.1rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .footer-brand-desc {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.35);
   line-height: 1.7;
-  max-width: 280px;
+  max-width: 28rem;
 }
 
 .footer-col-title {
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .footer-col ul {
   list-style: none;
 }
 .footer-col li {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .footer-col a {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
   transition: color 0.2s;
@@ -66,49 +66,25 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 28px;
-  font-size: 11px;
+  padding-top: 2.8rem;
+  font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.2);
 }
 
 /*****************************/
 /* QUERIES*/
 /*****************************/
-/**************************/
-/* BELOW 1120px (Landscape tablets) */
-/**************************/
-@media (max-width: 70em) {
-  .footer__brand-logo img {
-    width: 80%;
-  }
 
-  .footer__copyright {
-    width: 100%;
-  }
-}
 /**************************/
-/* BELOW 768px (Portrait small tablets) */
+/* BELOW 960px (Portrait tablets) */
 /**************************/
-@media (max-width: 48em) {
-  .footer__container {
-    flex-wrap: wrap-reverse;
-    align-items: flex-end;
-    row-gap: 3.2rem;
+@media (max-width: 60em) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.6rem;
   }
-
-  .footer__logo-col,
-  .footer__contact-col,
-  .footer__account-col,
-  .footer__company-col {
-    min-width: 28rem;
-  }
-
-  .footer__brand-logo img {
-    width: 60%;
-  }
-
-  .footer__copyright {
-    width: 60%;
+  footer {
+    padding: 4.8rem 2.4rem 2.8rem;
   }
 }
 
@@ -116,10 +92,7 @@ footer {
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
-}
-
-/**************************/
-/* BELOW 480px (Phones) */
-/**************************/
-@media (max-width: 30em) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
 }
