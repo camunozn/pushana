@@ -1,9 +1,6 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import imgBrand from '../../../assets/logo/logo-name-transparent-bg.png';
 import styles from './Footer.module.css';
-import LogoBox from '../../atoms/logo-box/LogoBox';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -15,7 +12,9 @@ const Footer = () => {
       <div className={styles['footer-inner']}>
         <div className={styles['footer-top']}>
           <div>
-            <div className={styles['footer-brand-name']}>Pushana</div>
+            <div className={styles['footer-brand-name']} onClick={scrollToTop}>
+              Pushana
+            </div>
             <div className={styles['footer-brand-tag']}>
               De la asistencia a la autonomía
             </div>
