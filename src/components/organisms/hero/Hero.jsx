@@ -2,6 +2,23 @@ import React from 'react';
 import styles from './Hero.module.css';
 
 const Hero = props => {
+  const handleScroll = (e, targetId) => {
+    // 1. Prevent the default <a> tag "jump" behavior
+    e.preventDefault();
+
+    // 2. Remove the '#' from the string to get the actual ID
+    const id = targetId.replace('#', '');
+    const element = document.getElementById(id);
+
+    if (element) {
+      // 3. Scroll to the element smoothly
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <section id="hero" className={styles.hero}>
       <div className={`${styles['hero-bg-circle']} ${styles['c1']}`}></div>
@@ -24,10 +41,18 @@ const Hero = props => {
       </p>
 
       <div className={styles['hero-ctas']}>
-        <a href="#cta-final" className={styles['btn-primary']}>
+        <a
+          href="#cta-final"
+          className={styles['btn-primary']}
+          onClick={e => handleScroll(e, 'cta-final')}
+        >
           Solicitar una alianza →
         </a>
-        <a href="#solucion" className={styles['btn-outline']}>
+        <a
+          href="#solucion"
+          className={styles['btn-outline']}
+          onClick={e => handleScroll(e, 'solucion')}
+        >
           Conocer nuestro modelo
         </a>
       </div>

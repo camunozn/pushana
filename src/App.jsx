@@ -8,7 +8,7 @@ import ScrollToTop from './components/atoms/scroll-to-top/ScrollToTop';
 function App() {
   const linksList = [
     { name: 'El problema', link: 'problema' },
-    { name: 'Modelo', link: 'modelo' },
+    { name: 'Modelo', link: 'solucion' },
     { name: 'Servicios', link: 'servicios' },
     { name: 'Impacto', link: 'impacto' },
     { name: 'Nosotros', link: 'nosotros' },

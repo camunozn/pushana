@@ -83,11 +83,51 @@ body {
   overflow: hidden;
 }
 
-/* .App {
-  min-width: 40em;
-  width: 100%;
-  height: 100%;
-} */
+/* ─── SECTION COMMON ─── */
+.section-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--magenta);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.section-title {
+  font-family: var(--ff-display);
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 700;
+  color: var(--plum);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.section-title em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--magenta);
+}
+
+.section-body {
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.75;
+  max-width: 600px;
+}
 
 /* ─── SCROLL REVEAL ─── */
 .reveal {
@@ -130,6 +170,9 @@ body {
 @media (max-width: 60em) {
   html {
     font-size: 56.25%;
+  }
+  .section-wrap {
+    padding: 0 2.4rem;
   }
 }
 

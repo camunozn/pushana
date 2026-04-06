@@ -1,0 +1,109 @@
+/* ─── PROBLEMA ─── */
+.problem-section {
+  padding: 100px 0;
+  background: var(--warm);
+}
+
+.problema-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 56px;
+}
+
+.problema-text p {
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.problema-highlight {
+  border-left: 3px solid var(--magenta);
+  padding-left: 20px;
+  margin: 28px 0;
+}
+.problema-highlight p {
+  font-family: var(--ff-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--plum) !important;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.pushana-cta {
+  margin-top: 20px;
+  font-weight: 600;
+  color: var(--plum) !important;
+}
+
+.problema-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 32px;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.3s var(--ease-out),
+    box-shadow 0.3s;
+  cursor: default;
+}
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--magenta), var(--gold));
+}
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(45, 27, 78, 0.1);
+}
+
+.stat-number {
+  font-family: var(--ff-display);
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--plum);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.stat-number span {
+  color: var(--magenta);
+}
+.stat-label {
+  font-size: 13px;
+  color: var(--gray);
+  margin-top: 6px;
+}
+
+/**************************/
+/* QUERIES*/
+/**************************/
+
+/**************************/
+/* BELOW 960px (Portrait tablets) */
+/**************************/
+@media (max-width: 60em) {
+  .problema-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+@media (max-width: 37em) {
+}

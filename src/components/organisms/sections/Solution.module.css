@@ -1,0 +1,185 @@
+/* ─── SOLUCIÓN ─── */
+.solution-section {
+  padding: 100px 0;
+  background: var(--plum);
+  position: relative;
+  overflow: hidden;
+}
+.solution-section::before {
+  content: '';
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(
+    circle,
+    rgba(200, 54, 90, 0.12) 0%,
+    transparent 65%
+  );
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+}
+
+.solution-section .section-label {
+  color: var(--gold);
+}
+.solution-section .section-label::after {
+  background: rgba(255, 255, 255, 0.1);
+}
+.solution-section .section-title {
+  color: #fff;
+}
+.solution-section .section-body {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.flow-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 56px 0 48px;
+  position: relative;
+}
+
+.flow-track > div {
+  flex: 1;
+  position: relative;
+}
+
+.flow-track > div::after {
+  content: '→';
+  position: absolute;
+  right: -8px; /* Adjust based on your gap */
+  top: 28px; /* Aligns with the center of the 56px icon */
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.2);
+  transform: translate(50%, -50%);
+  z-index: 2;
+}
+
+.flow-track > div:last-child::after {
+  display: none;
+}
+
+.flow-step {
+  text-align: center;
+  padding: 0 12px;
+}
+
+.flow-step {
+  text-align: center;
+  padding: 0 12px;
+}
+
+.flow-icon {
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin: 0 auto 14px;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
+}
+.flow-step:hover .flow-icon {
+  background: rgba(200, 54, 90, 0.25);
+  border-color: var(--magenta);
+  cursor: default;
+}
+
+.flow-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.flow-sublabel {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.25);
+  margin-top: 4px;
+}
+
+.phases-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.phase-card {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 24px 20px;
+  transition: background 0.3s;
+}
+.phase-card:hover {
+  background: rgba(255, 255, 255, 0.09);
+  cursor: default;
+}
+
+.phase-year {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.phase-pct {
+  font-family: var(--ff-display);
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+}
+.phase-pct sub {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+  vertical-align: baseline;
+  font-family: var(--ff-body);
+}
+.phase-desc {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/**************************/
+/* QUERIES*/
+/**************************/
+
+/**************************/
+/* BELOW 960px (Portrait tablets) */
+/**************************/
+@media (max-width: 60em) {
+  .phases-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+@media (max-width: 37em) {
+  .phases-grid {
+    grid-template-columns: 1fr;
+  }
+  .flow-track {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .flow-track > div::after {
+    display: none;
+  }
+}
