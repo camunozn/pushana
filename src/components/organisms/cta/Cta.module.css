@@ -1,0 +1,86 @@
+/* ─── CTA FINAL ─── */
+.cta-section {
+  padding: 120px 0;
+  background: var(--magenta);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-section::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cta-section::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cta-section .section-label {
+  color: rgba(255, 255, 255, 0.6);
+  justify-content: center;
+}
+.cta-section .section-label::after {
+  display: none;
+}
+
+.cta-title {
+  font-family: var(--ff-display);
+  font-size: clamp(30px, 5vw, 58px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
+  position: relative;
+}
+.cta-sub {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 520px;
+  margin: 0 auto 44px;
+  line-height: 1.7;
+  position: relative;
+}
+
+.cta-contact {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 48px;
+  letter-spacing: 0.05em;
+}
+
+.btn-white {
+  background: #fff;
+  color: var(--magenta);
+  padding: 16px 36px;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  position: relative;
+  z-index: 10;
+}
+.btn-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}

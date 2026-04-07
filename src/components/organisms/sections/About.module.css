@@ -1,0 +1,95 @@
+/* ─── QUIÉNES SOMOS ─── */
+.about-section {
+  padding: 100px 0;
+  background: var(--warm);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 56px;
+}
+
+.about-text p {
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-quote {
+  margin-top: 24px;
+  padding: 16px 20px;
+  background: var(--cream, #fffdf5);
+  border-radius: 10px;
+  border-left: 3px solid var(--magenta, #c8365a);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--plum, #4a1a2c);
+  font-family: var(--ff-display);
+  line-height: 1.5;
+}
+
+.about-values {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.value-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  background: var(--cream);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: transform 0.2s;
+  cursor: default;
+}
+.value-row:hover {
+  transform: translateX(4px);
+}
+
+.value-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--magenta);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+.value-name {
+  font-family: var(--ff-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--plum);
+  margin-bottom: 4px;
+}
+.value-desc {
+  font-size: 13px;
+  color: var(--gray);
+  line-height: 1.5;
+}
+
+/**************************/
+/* QUERIES*/
+/**************************/
+
+/**************************/
+/* BELOW 960px (Portrait tablets) */
+/**************************/
+@media (max-width: 60em) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+@media (max-width: 37em) {
+}

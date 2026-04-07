@@ -8,7 +8,7 @@ const servicesData = [
     icon: <i className="fa-solid fa-shield-heart"></i>,
     tag: 'Inclusive Protection Design',
     title: 'Diseño de microseguros inclusivos',
-    body: "Creamos productos paramétricos adaptados a salud, ingresos, movilidad humana y protección familiar. Diseño actuarial con MIC Global y cobertura Lloyd's Syndicate.",
+    body: 'Creamos productos paramétricos adaptados a salud, ingresos, movilidad humana y protección familiar. Diseño actuarial y cobertura respaldados por líderes globales.',
   },
   {
     num: '02',

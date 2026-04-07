@@ -180,7 +180,7 @@ body {
 /* BELOW 592px (Phones) */
 /**************************/
 @media (max-width: 37em) {
-  html {
+  /* html {
     font-size: 50%;
-  }
+  } */
 }

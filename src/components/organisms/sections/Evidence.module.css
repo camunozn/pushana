@@ -1,0 +1,68 @@
+/* ─── EVIDENCIA ─── */
+.evidence-section {
+  padding: 100px 0;
+  background: var(--cream);
+}
+
+.evidencia-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 56px;
+}
+
+.evidence-card {
+  height: 100%;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+  cursor: default;
+}
+.evidence-source {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gray-l);
+  margin-bottom: 16px;
+}
+.evidence-pct {
+  font-family: var(--ff-display);
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--plum);
+  line-height: 1;
+}
+.evidence-pct span {
+  color: var(--magenta);
+}
+.evidence-text {
+  font-size: 13px;
+  color: var(--gray);
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+/**************************/
+/* QUERIES*/
+/**************************/
+
+/**************************/
+/* BELOW 960px (Portrait tablets) */
+/**************************/
+@media (max-width: 60em) {
+  .evidencia-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+@media (max-width: 37em) {
+  .evidencia-grid {
+    grid-template-columns: 1fr;
+  }
+}

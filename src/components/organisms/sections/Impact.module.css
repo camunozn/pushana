@@ -1,0 +1,115 @@
+/* ─── IMPACTO ─── */
+.impact-section {
+  padding: 100px 0;
+  background: var(--charcoal);
+  position: relative;
+  overflow: hidden;
+}
+.impact-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 70% 60% at 50% 100%,
+    rgba(200, 54, 90, 0.15) 0%,
+    transparent 60%
+  );
+}
+
+.impact-section .section-label {
+  color: var(--gold);
+}
+.impact-section .section-label::after {
+  background: rgba(255, 255, 255, 0.08);
+}
+.impact-section .section-title {
+  color: #fff;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 56px;
+}
+
+.impact-item {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 40px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+  cursor: default;
+}
+
+/* 1. Target the first wrapper inside the grid */
+.impact-grid > div:first-child .impact-item {
+  border-radius: 16px 0 0 16px;
+}
+
+/* 2. Target the last wrapper inside the grid */
+.impact-grid > div:last-child .impact-item {
+  border-radius: 0 16px 16px 0;
+}
+
+.impact-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.impact-num {
+  font-family: var(--ff-display);
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.impact-num span {
+  color: var(--gold);
+}
+
+.impact-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 10px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/**************************/
+/* QUERIES*/
+/**************************/
+
+/**************************/
+/* BELOW 960px (Portrait tablets) */
+/**************************/
+@media (max-width: 60em) {
+  .impact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .impact-grid > div:first-child .impact-item {
+    border-radius: 16px 0 0 0;
+  }
+  .impact-grid > div:last-child .impact-item {
+    border-radius: 0 0 16px 16px;
+  }
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+@media (max-width: 37em) {
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+  .impact-grid > div:first-child .impact-item {
+    border-radius: 16px 16px 0 0;
+  }
+  .impact-grid > div:last-child .impact-item {
+    border-radius: 0 0 16px 16px;
+  }
+}

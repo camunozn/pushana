@@ -11,7 +11,7 @@ function App() {
     { name: 'Modelo', link: 'solucion' },
     { name: 'Servicios', link: 'servicios' },
     { name: 'Impacto', link: 'impacto' },
-    { name: 'Nosotros', link: 'nosotros' },
+    { name: 'Nosotros', link: 'about' },
   ];
 
   return (
